@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <string.h>
-int ft_strlen(char *c)
+
+int	ft_strlen(char *c)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	while (c[i])
 		i++;
 	return (i);
 }
-char *ft_strchr(const char *s, int c)
+
+char	*ft_strchr(const char *s, int c)
 {
-	int i;
-	char *src;
-	
+	int		i;
+	char	*src;
+
 	i = 0;
 	src = (char *)(s);
-
 	if (c == '\0')
-		return(&src[ft_strlen(src)]);
+		return (&src[ft_strlen(src)]);
 	while (s[i])
 	{
 		if (c == src[i])
@@ -28,7 +29,7 @@ char *ft_strchr(const char *s, int c)
 	return (0);
 }
 
-int main()
+/*int main()
 {
 	char text[] = "abcdef";
 
@@ -38,4 +39,4 @@ int main()
 		printf("'%s' does not have z in it\n",text);
 
 	return(0);
-}
+}*/
