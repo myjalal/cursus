@@ -1,44 +1,28 @@
 #include <stdio.h>
 #include <string.h>
-
-int	ft_strlen(const char *s)
+​
+unsigned int	ft_strlcat (char *dest, char *src, unsigned int size)
 {
-	int	i;
-
+	unsigned int	i;
+	unsigned int	dest_size;
+	unsigned int	src_size;
+​
 	i = 0;
-	while (s[i])
+	dest_size = 0;
+	src_size = 0;
+	while (src[src_size])
+		src_size++;
+	while (dest[dest_size])
+		dest_size++;
+	if (size <= dest_size)
+		return (size + src_size);
+	while (i < size - dest_size - 1 && src[i])
 	{
+		dest[dest_size + i] = src[i];
 		i++;
 	}
-	return (i);
-}
-
-unsigned int ft_strlcat(char *restrict dst, const char *restrict src, unsigned int dstsize)
-{
-	int i;
-	int j;
-	int dstlen;
-	int srclen;
-	
-	dstlen = ft_strlen (dst);
-	srclen = ft_strlen (src);
-	j = 0;
-	i = ft_strlen (dst);
-	
-	if (dstsize == 0)
-		return (dstlen + srclen);
-
-	while (src[j] && i < dstsize - 1)
-	{
-		dst[i] = src[j];
-		i++;
-		j++;
-	}
-	
-	if (src[j] == '\0')
-		dst[i] = src[j];
-	
-	return (dstlen + srclen);
+	dest[dest_size + i] = '\0';
+	return (src_size + dest_size);
 }
 
 int main()
