@@ -1,9 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h> // <- to remove
-#include "ft_strlen.c"
+#include "libft.h"
 
-
-char *ft_substr(char const *s, unsigned int start, unsigned int len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char *dst;
 	unsigned int i;

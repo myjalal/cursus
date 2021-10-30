@@ -1,7 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
-//#include "ft_calloc.c"
-//#include "ft_strlen.c"
 
 char *ft_strjoin(char const *s1, char const *s2)
 {

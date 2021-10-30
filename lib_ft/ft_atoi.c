@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isdigit(int c)
 {
@@ -40,10 +39,10 @@ int ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
+/*
 int		main(void)
 {
 	printf("%d\n", ft_atoi("--123456789"));
 	printf("%d\n", atoi("--123456789"));
 	return (0);
-}
+}*/

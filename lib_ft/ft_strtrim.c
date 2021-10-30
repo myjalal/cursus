@@ -1,4 +1,4 @@
-#include "ft_substr.c"
+#include "libft.h"
 
 int	start_count(char const *s1, char const *set)
 {

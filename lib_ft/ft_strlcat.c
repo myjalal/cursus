@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 ​
-unsigned int	ft_strlcat (char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	dest_size;
@@ -24,7 +23,7 @@ unsigned int	ft_strlcat (char *dest, char *src, unsigned int size)
 	dest[dest_size + i] = '\0';
 	return (src_size + dest_size);
 }
-
+/*
 int main()
 {
 	char first[] = "This is ";
@@ -45,3 +44,4 @@ int main()
 
 	return(0);
 }
+*/

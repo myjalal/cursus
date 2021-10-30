@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-#include <stdio.h>
+#include "libft.h"
+
 void *ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t i;
@@ -16,7 +16,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (0);
 }
-int main(void)
+/*int main(void)
 {
 	char dst[] = "abc";
 	const char src[] = "12345";
@@ -27,7 +27,6 @@ int main(void)
 	return (0);
 }
 
-=======
 #include <string.h>
 #include <stdio.h>
 
@@ -90,4 +89,4 @@ int main(void)
   ft_test[d] = '\0';
   printf("this is memmove: %s and this is ft-memmove: %s", test, ft_test);
 }
->>>>>>> 7231911c62773e9dc75e4c2a6e866d6d01b80e6a
+*/

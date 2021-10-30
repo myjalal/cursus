@@ -1,18 +1,6 @@
-#include <string.h>
-#include <xlocale.h>
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strnstr(const char *haystack, const char *needle, unsigned int len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	int		i;
 	int		j;

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isascii(int c)
 {
@@ -7,9 +7,9 @@ int ft_isascii(int c)
 	return(0);
 }
 
-int main(void)
+/*int main(void)
 {
 	int c = 't';
 	printf("%d\n",isascii(c));
-}
+}*/
 

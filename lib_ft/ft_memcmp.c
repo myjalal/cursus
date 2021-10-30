@@ -1,5 +1,6 @@
+#include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, unsigned int n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char *src1;
 	unsigned char *src2;
