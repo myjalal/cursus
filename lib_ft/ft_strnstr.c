@@ -2,9 +2,9 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int		i;
-	int		j;
-	int		p;
+	unsigned int		i;
+	unsigned int		j;
+	unsigned int		p;
 
 	i = 0;
 	j = 0;
