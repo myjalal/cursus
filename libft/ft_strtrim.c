@@ -60,10 +60,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (ft_substr(s1, start, len));
 }
-/*
-int main(void)
-{
-	char s1[] = "ahjgvcbvvcvbbc12345abcggik6789bbbccabc";
-	char set[] = "abc";
-	printf("trimmed string is: %s\n", ft_strtrim(s1, set));
-}*/
