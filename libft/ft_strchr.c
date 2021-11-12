@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 11:21:00 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/12 11:21:00 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -10,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	if (c == '\0')
 		return (&src[ft_strlen(src)]);
 	while (c > 127)
-	  c = c - 128;
+		c = c - 128;
 	while (s[i])
 	{
 		if (c == src[i])
@@ -19,15 +30,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/*int main()
-{
-	char text[] = "abcdef";
-
-	if( ft_strchr("abcdefg",'a') )
-		printf("'%s' has a in it\n and the pointer of it is %p\n and the real pointer is %p\n",text, ft_strchr("abcdefg",'a'), strchr("abcdefg",'a'));
-	else
-		printf("'%s' does not have z in it\n",text);
-
-	return(0);
-}*/

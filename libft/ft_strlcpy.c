@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 11:24:24 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/12 11:24:24 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
@@ -7,7 +18,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	if (dstsize == 0)
 		return (ft_strlen(src));
-	
 	while (src[i] && i < dstsize - 1)
 	{
 		dst[i] = src[i];
@@ -16,14 +26,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-/*
-int	main(void)
-{
-	char	string[] = "Hello there, Venus";
-	char	buffer[19];
-	int		r;
-
-	r = ft_strlcpy (buffer, string, 0);
-	printf("Copied '%s' into '%s', length %d\n", string, buffer, r);
-}
-*/

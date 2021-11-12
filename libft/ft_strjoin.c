@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 11:21:36 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/12 11:21:36 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const	*s1, char const	*s2)
 {
 	unsigned int	size;
 	unsigned int	i;
 	unsigned int	j;
 	char			*dst;
-	
+
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
-	if ((dst = ft_calloc(sizeof(char), size))== NULL)
+	dst = ft_calloc(sizeof(char), size);
+	if (dst == NULL)
 		return (NULL);
 	i = 0;
 	while (*(s1 + i))

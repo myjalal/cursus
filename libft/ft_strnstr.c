@@ -1,17 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 11:26:55 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/12 11:26:55 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len)
 {
-	size_t        i;
-	unsigned int        j;
-	size_t        p;
+	size_t			i;
+	unsigned int	j;
+	size_t			p;
 
 	i = 0;
 	j = 0;
 	p = 0;
 	if (*needle == '\0')
 		return ((char *)haystack);
-	
 	while (haystack[i] && i < len)
 	{
 		if (haystack[i] == needle[j])
@@ -30,16 +41,3 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-int main(void)
-{
-  char haystack[30] = "aaabcabcd";
-  char needle[10] = "aabc";
- // char * empty = (char*)"";
-  
-  if (ft_strnstr(haystack, "c", -1) == strnstr(haystack, "c", -1))
-	printf("ok");
-  else
-	printf("ok");
-  return 0;
-}*/

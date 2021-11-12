@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 11:44:46 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/12 11:44:46 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *dst;
-	unsigned int i;
-	
+	char			*dst;
+	unsigned int	i;
+
 	if (ft_strlen(s) < start)
 	{
-		if((dst = malloc(sizeof(char))) == NULL)
+		dst = malloc(sizeof(char));
+		if (dst == NULL)
 			return (NULL);
 		dst[0] = '\0';
 		return (dst);
@@ -16,7 +28,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		if (start + len > ft_strlen(s))
 			len = ft_strlen(s) - start;
-		if ((dst = malloc(sizeof(char) * (len + 1))) == NULL)
+		dst = malloc(sizeof(char) * (len + 1));
+		if (dst == NULL)
 			return (NULL);
 		i = 0;
 		while (++i - 1 < len)
@@ -25,12 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (dst);
 	}
 }
-//to remove v
-/*int main(void)
-{
-	char *src;
-	
-	src = "I LOVE POTATO";
-	printf("This should output 'LOVE': %p\n", ft_substr(src, 2, 4));
-}*/
-
