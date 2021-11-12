@@ -6,10 +6,11 @@
 /*   By:  jechekao < jechekao@student.42quebec.com> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:20:48 by jechekao          #+#    #+#             */
-/*   Updated: 2021/11/12 15:53:44 by  jechekao        ###   ########.fr       */
+/*   Updated: 2021/11/12 15:59:20 by  jechekao        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 static int	char_is_separator(char c, char sep)
 {
