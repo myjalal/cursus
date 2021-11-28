@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:54:47 by  jechekao         #+#    #+#             */
-/*   Updated: 2021/11/13 16:39:22 by jechekao         ###   ########.fr       */
+/*   Updated: 2021/11/13 20:07:49 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*))
 {
-	t_list *new_list;
-	t_list *new_element;
+	t_list	*new_list;
+	t_list	*new_element;
 
 	if (lst == NULL)
 		return (NULL);

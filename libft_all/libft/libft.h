@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:32:49 by  jechekao         #+#    #+#             */
-/*   Updated: 2021/11/13 15:54:44 by jechekao         ###   ########.fr       */
+/*   Updated: 2021/11/14 13:57:48 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 char			*ft_strnstr(const char *haystack,
-					 const char *needle, size_t len);
+					const char *needle, size_t len);
 int				ft_atoi(const char *str);
 void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *s);

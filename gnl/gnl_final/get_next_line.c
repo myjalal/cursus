@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmitsuko <pmitsuko@student.42sp.org>       +#+  +:+       +#+        */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/24 08:27:16 by pmitsuko          #+#    #+#             */
-/*   Updated: 2021/02/28 15:15:35 by pmitsuko         ###   ########.fr       */
+/*   Created: 2021/11/27 17:39:22 by jechekao          #+#    #+#             */
+/*   Updated: 2021/11/27 20:01:13 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int		findchr(const char *s, char c)
+int	findchr(const char *s, char c)
 {
 	int		i;
 
@@ -46,9 +46,9 @@ char	*strjoin_free(char *s1, char *s2)
 	return (new_str);
 }
 
-int		strcpy_line_bl(char **line, char *str, int i, char *buff)
+int	strcpy_line_bl(char **line, char *str, int i, char *buff)
 {
-	int str_len;
+	int	str_len;
 
 	free(buff);
 	str_len = ft_strlen(str);
@@ -58,7 +58,7 @@ int		strcpy_line_bl(char **line, char *str, int i, char *buff)
 	return (1);
 }
 
-int		get_read(int fd, char **line, char *buff, char **str)
+int	get_read(int fd, char **line, char *buff, char **str)
 {
 	int	index_bl;
 	int	ret;
@@ -79,7 +79,7 @@ int		get_read(int fd, char **line, char *buff, char **str)
 	return (ret);
 }
 
-int		get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char	*str = NULL;
 	char		*buff;
@@ -87,7 +87,7 @@ int		get_next_line(int fd, char **line)
 	int			index;
 
 	if (fd < 0 || !line || BUFFER_SIZE < 1 || read(fd, str, 0) < 0
-			|| !(buff = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
+		|| !(buff = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 		return (R_ERROR);
 	if (str && (index = findchr(str, '\n')) != -1)
 		return (strcpy_line_bl(line, str, index, buff));
