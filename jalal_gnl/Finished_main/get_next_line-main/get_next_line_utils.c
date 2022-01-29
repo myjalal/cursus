@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ajordan- <ajordan-@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/01 13:24:32 by ajordan-          #+#    #+#             */
-/*   Updated: 2021/10/20 10:06:30 by ajordan-         ###   ########.fr       */
+/*   Created: 2022/01/29 14:19:16 by jechekao          #+#    #+#             */
+/*   Updated: 2022/01/29 14:19:17 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 /*
 *	---------
@@ -32,7 +33,7 @@
 *	line extracted.
 */
 
-#include "get_next_line_bonus.h"
+#include "get_next_line.h"
 
 size_t	ft_strlen(char *s)
 {

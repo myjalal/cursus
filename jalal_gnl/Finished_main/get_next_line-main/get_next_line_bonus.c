@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ajordan- <ajordan-@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/01 13:17:07 by ajordan-          #+#    #+#             */
-/*   Updated: 2021/10/20 10:04:39 by ajordan-         ###   ########.fr       */
+/*   Created: 2022/01/29 14:18:52 by jechekao          #+#    #+#             */
+/*   Updated: 2022/01/29 14:18:53 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
