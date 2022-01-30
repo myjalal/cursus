@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/30 12:48:55 by jechekao          #+#    #+#             */
-/*   Updated: 2022/01/30 13:18:45 by jechekao         ###   ########.fr       */
+/*   Created: 2022/01/30 13:20:33 by jechekao          #+#    #+#             */
+/*   Updated: 2022/01/30 13:25:13 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strchr(const char *string, int c)
 {

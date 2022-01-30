@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/30 12:48:59 by jechekao          #+#    #+#             */
-/*   Updated: 2022/01/30 13:24:19 by jechekao         ###   ########.fr       */
+/*   Created: 2022/01/30 13:22:46 by jechekao          #+#    #+#             */
+/*   Updated: 2022/01/30 13:23:57 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*retline(char *buff)
 {
@@ -85,15 +85,15 @@ char	*readnewline(int fd, char *res)
 
 char	*get_next_line(int fd)
 {
-	static char	*buff;
+	static char	*buffer[1024];
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
 		return (NULL);
-	buff = readnewline(fd, buff);
-	if (!buff)
+	buffer[fd] = readnewline(fd, buffer[fd]);
+	if (!buffer[fd])
 		return (NULL);
-	line = retline(buff);
-	buff = nextline(buff);
+	line = retline(buffer[fd]);
+	buffer[fd] = nextline(buffer[fd]);
 	return (line);
 }
