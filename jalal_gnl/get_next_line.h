@@ -40,4 +40,6 @@ char    *readnewline(int fd, char *res);
 /* Join old read and new read and free old read */
 char    *joinNfree(char *buffer, char *buf);
 
+/* Turn string into \0 for calloc */
+void	ft_bzero(void *s, size_t n);
 #endif

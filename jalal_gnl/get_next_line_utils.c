@@ -52,23 +52,29 @@ char	*ft_strjoin(char const	*s1, char const	*s2)
 	return (dst);
 }
 
-void	*ft_calloc(size_t count, size_t size)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned int	total;
-	char			*dest;
-	unsigned int	i;
+	char	*str;
+	size_t	i;
 
+	str = (char *)s;
 	i = 0;
-	total = count * size;
-	dest = malloc(total);
-	if (dest == NULL)
-		return (NULL);
-	while (i < total)
+	while (i < n)
 	{
-		dest[i] = 0;
+		str[i] = '\0';
 		i++;
 	}
-	return (dest);
+}
+
+void	*ft_calloc(size_t count, size_t size)
+{
+	char	*res;
+
+	res = malloc(size * count);
+	if (!res)
+		return (NULL);
+	ft_bzero(res, size * count);
+	return (res);
 }
 
 char    *joinNfree(char *buffer, char *buf)
