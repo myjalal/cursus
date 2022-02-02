@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "42header.email": "jechekao@student.42quebec.com",
+        "42header.username": "jechekao",
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false
+    }
+}
