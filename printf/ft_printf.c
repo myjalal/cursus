@@ -1,10 +1,20 @@
-#include <stdarg.h>
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/11 12:26:51 by jechekao          #+#    #+#             */
+/*   Updated: 2022/02/13 14:20:15 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-//1 = str, 2 = char
-int ft_putstr(char *s, char c, int i)
+#include "ft_printf.h"
+/*1 = str, 2 = char*/
+int	ft_putstr(char *s, char c, int i)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (!s && i == 1)
@@ -20,12 +30,11 @@ int ft_putstr(char *s, char c, int i)
 	return (count);
 }
 
-int ft_putnum(long ln)
+int	ft_putnum(long ln)
 {
 	int	x;
 
 	x = 0;
-	
 	if (ln < 0)
 	{
 		x++;
@@ -39,77 +48,72 @@ int ft_putnum(long ln)
 	return (x);
 }
 
-int ft_puthexa(unsigned long ln, char conver)
+int	ft_printhex(unsigned long long ln, char conver)
 {
-	char	*str;
+	char	*base;
+	char	*base_x;
 	int		x;
 
+	base = "0123456789abcdef";
+	base_x = "0123456789ABCDEF";
 	x = 0;
+	if (conver == 'p' && ln / 16 > 0)
+		x += ft_printhex(ln / 16, conver);
+	if (conver == 'p')
+		ft_putstr(0, base[ln % 16], 2);
+	if (conver == 'x' && (unsigned int)ln / 16 > 0)
+		x += ft_printhex((unsigned int)ln / 16, conver);
 	if (conver == 'x')
-		str = "0123456789abcdef";
-	else if (conver == 'X')
-		str = "0123456789ABCDEF";
-	else if (conver == 'p' && ln / 16 > 0);
-		x += ft_puthexa(ln / 16, conver);
-	
-
+		ft_putstr(0, base[ln % 16], 2);
+	if (conver == 'X' && (unsigned int)ln / 16 > 0)
+		x += ft_printhex((unsigned int)ln / 16, conver);
+	if (conver == 'X')
+		ft_putstr(0, base_x[ln % 16], 2);
+	x++;
+	return (x);
 }
 
-int is_percent(va_list args, const char *conver)
+int	is_percent(va_list args, const char *conver)
 {
 	if (*conver == 's')
-		return(ft_putstr(va_arg(args, char *), 0, 1));
+		return (ft_putstr(va_arg(args, char *), 0, 1));
 	else if (*conver == 'c')
 		return (ft_putstr(0, va_arg(args, int), 2));
 	else if (*conver == 'p')
-		{
-			write(1, "0x", 2);
-			return (ft_puthexa(va_arg(args, unsigned long), *conver));
-		}
+	{
+		write(1, "0x", 2);
+		return (ft_printhex(va_arg(args, unsigned long long), *conver) + 2);
+	}
 	else if (*conver == 'd' || *conver == 'i')
 		return (ft_putnum(va_arg(args, int)));
 	else if (*conver == 'u')
 		return (ft_putnum(va_arg(args, unsigned int)));
 	else if (*conver == 'x' || *conver == 'X')
-		return (ft_puthexa(va_arg(args, unsigned long), *conver));
+		return (ft_printhex(va_arg(args, unsigned long long), *conver));
 	else if (*conver == '%')
 		return (ft_putstr(0, '%', 2));
-
-	
 	return (0);
 }
 
-int ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
-	if (!str || !*str)
-		return (0);
 	va_list	args;
 	int		x;
 
 	x = 0;
+	if (!str || !*str)
+		return (0);
 	va_start (args, str);
-
 	while (*str != '\0')
 	{
 		if (*str == '%')
-			{
-				x += is_percent(args, ++str);
-				str++;
-			}
+		{
+			x += is_percent(args, ++str);
+			str++;
+		}
 		else
 			x += ft_putstr(0, *str++, 2);
 	}
 	va_end(args);
 	return (x);
-}
-
-
-int main(void)
-{
-	char str[] = "ninapoo";
-	char c = '\n';
-	int i = -123456789;
-	//ft_printf("number is: %s", str);
-	ft_printf("%u\n", -123456789);
-//	write(1, '\n', 1);
 }
