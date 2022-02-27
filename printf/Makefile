@@ -6,7 +6,7 @@
 #    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/12 10:44:05 by jechekao          #+#    #+#              #
-#    Updated: 2022/02/13 14:04:53 by jechekao         ###   ########.fr        #
+#    Updated: 2022/02/27 12:51:13 by jechekao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,3 +50,7 @@ fclean: clean
 	@echo "$(CYAN)libft executable files cleaned!$(DEF_COLOR)"
 re: fclean $(NAME)
 	@echo "$(GREEN)Cleaned and rebuilt everything for ft_printf!$(DEF_COLOR)"
+git:
+	git add .
+	git commit -m "$m"
+	git push origin main
