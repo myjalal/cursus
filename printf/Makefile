@@ -6,7 +6,7 @@
 #    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/12 10:44:05 by jechekao          #+#    #+#              #
-#    Updated: 2022/02/27 12:57:45 by jechekao         ###   ########.fr        #
+#    Updated: 2022/02/27 13:10:28 by jechekao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ CYAN = \033[0;96m
 WHITE = \033[0;97m
 
 
-all: $(NAME)
+all: update $(NAME)
 
 OBJ = $(SRC:.c=.o)
 
@@ -50,6 +50,10 @@ fclean: clean
 	@echo "$(CYAN)libft executable files cleaned!$(DEF_COLOR)"
 re: fclean $(NAME)
 	@echo "$(GREEN)Cleaned and rebuilt everything for ft_printf!$(DEF_COLOR)"
+
+update:
+	@git pull
+
 git:
 	git add .
 	git commit -m "$t" -m "$b"
