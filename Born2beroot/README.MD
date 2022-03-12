@@ -43,5 +43,5 @@ ucredit = (how many upercase)
 dcredit = (how many digits)
 enforce_for_root
  
-![test image](https://raw.githubusercontent.com/myjalal/cursus/main/Born2beroot/pics/Screen%20Shot%202022-03-12%20at%206.26.34%20PM.png"test image")
+![test image](https://raw.githubusercontent.com/myjalal/cursus/main/Born2beroot/pics/Screen%20Shot%202022-03-12%20at%206.26.34%20PM.png)
 
