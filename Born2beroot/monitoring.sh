@@ -14,19 +14,19 @@ RESET="\e[0m"
 #  le nom du noyau, le nom d'hote, la release du noyau, la version du noyau, nom de la machine et
 #  le nom du systeme d'exploitation.
 arc=$(uname -a)
-
+done
 # Nombre de Socket (CPU physique)
 #  La commande lscpu contient des information de base concernant le systeme. Dont le nombre de
 #  socket (processeur physique). pipe ces infos vers grep pour recuperer la ligne contenant
 #  le terme 'socket'. Finalement a l'aide de la fonction awk, la valeur est reécupéré.
-physical_CPU=$(lscpu | grep 'Socket' | awk '{n_cpu += $2 END {print n_cpu}')
-
+physical_CPU=$(lscpu | grep 'Socket' | awk '{n_cpu += $2} END {print n_cpu}')
+done
 # Nombre de CPUs (CPU logique)
 #  La commande lscpu contient des information de base concernant le systeme. Dont le nombre de
 #  CPU(s) (Coeur CPU). pipe ces infos vers grep pour recuperer la ligne contenant
 #  le terme 'CPU(s)'. Finalement a l'aide de la fonction awk, la valeur est récupéré.
 logical_CPU=$(lscpu | grep 'CPU(s)' | awk '{n_vcpu += $2} END {print n_vcpu}')
-
+done
 # CPU load
 #  La commande
 CPU_load=$(cat /proc/stat | grep 'cpu' | awk '{LOAD=($2+$4)*100/($2+$4+$5)} END {printf("%0.1f"), LOAD}')
