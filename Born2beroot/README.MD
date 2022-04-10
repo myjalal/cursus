@@ -1,11 +1,20 @@
 Login: jechekao
 Password: Vrockpokey1!
+
+# Patition
+### View partition:
+lsblk
+### LVM (Local Volume Management)
+manage partitions and can incrypt them
+
 # USERS
+### check users
+cat /etc/passwd
 ## add 
 sudo useradd jechekao -> fast lazy one without home directory
 sudo adduser jechekao -> full add
 ### add or modify password
-sudo paswd jechekao
+sudo passwd jechekao
 ### change shell
 sudo usermod jechekao --shell /bin/bash (or what ever shell you want)
 ### change username
@@ -47,7 +56,12 @@ ucredit = (how many upercase)
 dcredit = (how many digits)
 enforce_for_root (enforce it for root)
 _____________
-
+or 
+automatically from shell:
+sudo chage user_name -> follow the options
+_____________
+### see options:
+sudo chage -l user_name
 # Groups
 ### creat a group
 sudo groupadd user42
@@ -72,24 +86,59 @@ getent group user42
 less /etc/group
 or
 getent group
+_______________
+# script
+### location 
+/bin/monitoring.sh
+### cron
+to execute the script every 10min:
+sudo crontab -e -u root
+modify this line
+*/10 * * * * bash /home/jechekao/bin/monitoring.sh | wall
 
-# sudo
+# apparmor
+### status 
+sudo aa-status
 
+# sudo (root access)
+### give a user or groupe sudo privilage
+sudo visudo
+### how many sudo commande run
+cat /var/log/sudo/log | grep 'COMMAND' | wc -l
+# ufw  (uncomplicatedfirewall )
+### setup 
+sudo nano /etc/ssh/sshd_config
 
-# ufw
+Port 4242
+PermitRootLogin no
 
+### status
+sudo ufw status
+sudo systemctl status ufw
 
-# ssh
+### remove rule
+sudo ufw delete allow 8080/tcp
+or  
+sudo ufw delete deny 8080/tcp
+# ssh (secureshell)
+### status 
+sudo systemctl status ssh
 ### host ip adress
 hostname -I
 ### host mac 
 cat /sys/class/net/*/address
+### allow ssh with ufw
+sudo ufw allow 4242/tcp
 
 # hostname and partition
 ### find host name
 hostname
 ### change hostname
 sudo nano /etc/hostname
+or 
+sudo hostnamectl set_hostname machine1
+and
+from /etc/hosts change 127.0.0.1 machine1
 sudo reboot
 
 
@@ -100,9 +149,37 @@ bash /home/jechekao/bin/monitoring.sh
 automation using crontab (from chronos)
 login as root and: crontab -l
 
+## check cron 
+sudo crontab -e -u root
+
+### stop cron
 # sources
 ### Grep
 https://www.cyberciti.biz/faq/debian-ubuntu-linux-grep-command-tutorial-examples/
 ###  awk
 https://www.howtogeek.com/562941/how-to-use-the-awk-command-on-linux/
 ### 
+
+# mariadb
+-> created a database named "data"
+to verify the database: SHOW DATABASES;
+created a user: MariaDB [(none)]> CREATE USER 'jalal'@'localhost' IDENTIFIED BY 'Vrockpokey1!';
+La structure de formulation pour donner des droits sur une base de donnée à un utilisateur ce lit comme ceci: GRANT type_of_permission ON database_name.table_name TO 'username'@'localhost';
+GRANT ALL PRIVILEGES ON data.* to 'jalal'@'localhost';
+and
+FLUSH PRIVILEGES;
+
+# php
+The following NEW packages will be installed:
+  libsodium23 php php-cli php-common php-fpm php-mysql php7.3 php7.3-cli
+  php7.3-common php7.3-fpm php7.3-json php7.3-mysql php7.3-opcache
+  php7.3-readline
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+
+# wordpress
+http://10.12.232.44/wordpress/wp-admin/
+
+# plex server
+http://10.12.232.44:32400/web/
+
+
