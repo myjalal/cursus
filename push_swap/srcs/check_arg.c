@@ -64,7 +64,7 @@ int check_arg(char **argv)
 	int i;
 	
 	i = 1;
-	while (i < argc)
+	while (i < argc) // removed argc, need to fix it in a way ! 
 	{
 		if (check_int(argv[i]) == 0)
 			return (0);
