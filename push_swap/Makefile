@@ -23,7 +23,8 @@ RM			=	/bin/rm -f
 PS_FILES	=	main.c			\
 				check_duplic.c	\
 				check_arg.c		\
-				errors.c
+				errors.c		\
+				populate.c
 
 # C_FILES		=	c_srcs/c_main.c	
 

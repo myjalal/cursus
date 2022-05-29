@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:32:49 by  jechekao         #+#    #+#             */
-/*   Updated: 2021/11/14 13:57:48 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/05/29 19:49:54 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 char			*ft_strnstr(const char *haystack,
 					const char *needle, size_t len);
 int				ft_atoi(const char *str);
+long long		ps_atoll(const char *str);
 void			*ft_calloc(size_t count, size_t size);
 char			*ft_strdup(const char *s);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
