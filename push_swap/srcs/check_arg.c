@@ -1,17 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_arg.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
+/*   Updated: 2022/05/29 18:35:21 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // check if the arguments are valid 
 #include "push_swap.h"
 
-/* (in libft)
-int	ft_isdigit(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
-}
-*/
-
-static int digit_check(char *argv)
+static int	digit_check(char *argv)
 {
 	if (argv[0] == '-' && !ft_isdigit(argv[1]))
 		return (false);
@@ -24,9 +26,9 @@ static int digit_check(char *argv)
 	return (true);
 }
 
-static int is_neg(char *argv, bool *neg, int i)
+static int	is_neg(char *argv, bool *neg, int i)
 {
-	if (argv[i] == '-')
+	if (argv[0] == '-')
 	{
 		*neg = true;
 		i++;
@@ -36,43 +38,49 @@ static int is_neg(char *argv, bool *neg, int i)
 	return (i);
 }
 
-int check_int(char *argv)
+int	check_int(char *argv)
 {
-	int i;
-	long number;
-	bool neg;
-	
+	int		i;
+	long	number;
+	bool	neg;
+
+	i = -1;
+	neg = false;
 	number = 0;
 	if (!digit_check(argv))
 		return (0);
-	while(argv[i] != '\0')
+	i = is_neg(argv, &neg, i);
+
+	while (argv[++i])
 	{
 		if (!ft_isdigit(argv[i]))
 			return (0);
 		number = number * 10 + argv[i] - '0';
-		if (neg == true && -number < INT_MIN)
-			return (0);
+		if (neg == true && - number < INT_MIN)
+			return (2);
 		if (neg == false && number > INT_MAX)
-			return (0);
-		i++;
+			return (3);
 	}
 	return (1);
 }
 
-int check_arg(char **argv)
+int	check_arg(char **argv)
 {
-	int i;
-	
-	i = 1;
-	while (i < argc) // removed argc, need to fix it in a way ! 
+	int	i;
+
+	i = -1;
+	while (argv[++i])
 	{
 		if (check_int(argv[i]) == 0)
-			return (0);
-		i++;
+			error_exit("ERROR: not an int\n", 1);
+		else if (check_int(argv[i]) == 2)
+			error_exit("OVERFLOW ERROR: less then INT_MIN\n", 1);
+		else if (check_int(argv[i]) == 3)
+			error_exit("OVERFLOW ERROR: more then INT_MAX\n", 1);
 	}
+	printf("all good\n");
 	return (1);
 }
-
 
 /*
 int main(int argc, char **argv)

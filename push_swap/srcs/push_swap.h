@@ -25,21 +25,31 @@ typedef struct var
 	t_node *b; // list b
 } t_var;
 
-/*-------check_arg.c--------*/
-/*
-static int 	digit_check(char *argv);
-static int 	is_neg(char *argv, bool *neg, int i);
-int check_int(char *argv);
-int check_arg(int argc, char **argv);
-*/
 /*-------check_dup.c--------*/
+
 //check if there is a duplicate number in args
 void check_duplic(char **argv);
 //compare string
 int	ft_strcmp(const char	*s1, const char	*s2);
 
+/*-------check_arg.c--------*/
 
+// check if it's a digit
+//static int digit_check(char *argv);
 
+//check if int is negative
+//static int is_neg(char *argv, bool *neg, int i);
+
+// check if it's a valid int (INT_MAX and INT_MIN)
+int check_int(char *argv);
+
+// Runs all arg checks and outputs errors
+int check_arg(char **argv);
+
+/*-------errors.c--------*/
+
+// Prints erros with correct output
+int error_exit(char *error, int err_exit);
 
 
 #endif

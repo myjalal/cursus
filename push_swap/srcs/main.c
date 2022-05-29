@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/28 20:26:17 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/05/29 18:47:50 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	push_swap(int argc, char **argv, t_var *l)
 	s = NULL;
 	l->temp = gen_temp(argc, argv, l);
 	check_duplic(l->temp);
-	check_arg (); //stoped here !!
+	check_arg (l->temp);
 }
 
 int	main(int argc, char **argv)
@@ -52,10 +52,7 @@ int	main(int argc, char **argv)
 
 	l = NULL;
 	if (argc < 2)
-	{
-		printf("arg error, please try again\n");
-		return (0);
-	}
+		error_exit("No argument found\nPlease try again\n", 1);
 	else
 	{
 		l = list_init(l);

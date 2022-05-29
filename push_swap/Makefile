@@ -21,7 +21,9 @@ INCLUDE		=	-I include/					\
 RM			=	/bin/rm -f
 
 PS_FILES	=	main.c			\
-				check_duplic.c
+				check_duplic.c	\
+				check_arg.c		\
+				errors.c
 
 # C_FILES		=	c_srcs/c_main.c	
 
