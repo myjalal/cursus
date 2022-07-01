@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/29 19:05:59 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:43:38 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,24 @@ int	check_arg(char **argv)
 			error_exit("OVERFLOW ERROR: less then INT_MIN\n", 1);
 		else if (check_int(argv[i]) == 3)
 			error_exit("OVERFLOW ERROR: more then INT_MAX\n", 1);
+	}
+	return (1);
+}
+
+int	sort_checker(t_node **list, int len)
+{
+	t_node	*tmp;
+
+	tmp = *list;
+	while (tmp && tmp->next)
+	{
+		if (tmp->num < tmp->next->num)
+		{
+			tmp = tmp->next;
+			len--;
+		}
+		else
+			return (0);
 	}
 	return (1);
 }

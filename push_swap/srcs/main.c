@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/29 19:24:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:45:35 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,17 @@ char	**gen_temp(int argc, char **argv, t_var *l)
 }
 
 // push_swap duh...
-void	push_swap(int argc, char **argv, t_var *l)
+void	push_swap(int argc, char **argv, t_var *list)
 {
 	t_node	*s;
 
 	s = NULL;
-	l->temp = gen_temp(argc, argv, l);
-	check_duplic(l->temp);
-	check_arg (l->temp);
-	l->a = list_fill(l->temp, l, s);
+	list->temp = gen_temp(argc, argv, list);
+	check_duplic(list->temp);
+	check_arg (list->temp);
+	list->a = list_filler(list->temp, list, s);
+	if (sort_checker(&list->a, list->len) == 1)
+		error_exit("ERROR! List already sorted.\n", 1);
 	
 }
 

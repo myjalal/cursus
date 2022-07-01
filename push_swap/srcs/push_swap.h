@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/29 19:35:55 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/01 17:34:53 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ typedef struct var
 {
 	char			**temp;
 	int				len;
-	t_node			*a;
-	t_node			*b;
+	t_node			*a; //list a
+	t_node			*b; //list b
 }	t_var;
 
 /*-------check_dup.c--------*/
@@ -55,10 +55,16 @@ int					check_int(char *argv);
 // Runs all arg checks and outputs errors
 int					check_arg(char **argv);
 
+// Check if the list is sorted
+int					sort_checker(t_node **list, int len);
+
 /*--------populate.c--------*/
 //NULL list for initiation
-t_var				*list_init(t_var *l);
-
+t_var				*list_init(t_var *list);
+// temp argv list,  list, temp node
+t_node				*list_filler(char **argv, t_var *list, t_node *temp);
+// check if there is a top node, then either creats one or adds a node
+void				add_node(t_node **top, t_node *node);
 /*-------errors.c--------*/
 
 // Prints erros with correct output
