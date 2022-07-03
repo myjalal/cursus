@@ -26,7 +26,8 @@ PS_FILES	=	main.c			\
 				errors.c		\
 				populate.c		\
 				utils.c			\
-				test_tools.c
+				test_tools.c	\
+				move.c
 
 # C_FILES		=	c_srcs/c_main.c	
 
