@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"push_swap.h": "c",
+			"algorithm": "c"
+		}
+	}
+}

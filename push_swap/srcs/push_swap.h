@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/01 17:34:53 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:26:12 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,25 +31,26 @@ typedef struct node
 
 typedef struct var
 {
-	char			**temp;
+	char			**temp; // temp argv in strings
 	int				len;
+	int				fd;
 	t_node			*a; //list a
 	t_node			*b; //list b
 }	t_var;
 
 /*-------check_dup.c--------*/
 
-//check if there is a duplicate number in args
+// Check if there is a duplicate number in args
 void				check_duplic(char **argv);
-//compare string
+// Compare string
 int					ft_strcmp(const char	*s1, const char	*s2);
 
 /*-------check_arg.c--------*/
 
-//check if int is negative
-//static int is_neg(char *argv, bool *neg, int i);
+// Check if int is negative
+// Static int is_neg(char *argv, bool *neg, int i);
 
-// check if it's a valid int (INT_MAX and INT_MIN)
+// Check if it's a valid int (INT_MAX and INT_MIN)
 int					check_int(char *argv);
 
 // Runs all arg checks and outputs errors
@@ -59,16 +60,29 @@ int					check_arg(char **argv);
 int					sort_checker(t_node **list, int len);
 
 /*--------populate.c--------*/
-//NULL list for initiation
+// NULL list for initiation
 t_var				*list_init(t_var *list);
-// temp argv list,  list, temp node
+// Temp argv list,  list, temp node
 t_node				*list_filler(char **argv, t_var *list, t_node *temp);
-// check if there is a top node, then either creats one or adds a node
+// Check if there is a top node, then either creats one or adds a node
 void				add_node(t_node **top, t_node *node);
+// Add number to top of the list
+void 				top(t_node **list, t_node *node);
+// Add number to bottom of the list
+void 				bottom(t_node **list, t_node *node);
+
 /*-------errors.c--------*/
 
 // Prints erros with correct output
 int					error_exit(char *error, int err_exit);
+
+/*--------utils.c-----------*/
+// Free linked list
+void				ft_free(t_node **list);
+
+/*---------test_tools.c------*/ // !!!!! DELETE
+// Print linked list to test
+void				print_list(t_node *list);
 
 #endif
 

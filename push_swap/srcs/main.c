@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/01 17:45:35 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:29:05 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,11 @@ void	push_swap(int argc, char **argv, t_var *list)
 	check_arg (list->temp);
 	list->a = list_filler(list->temp, list, s);
 	if (sort_checker(&list->a, list->len) == 1)
+	{
+		ft_free(&list->a);
 		error_exit("ERROR! List already sorted.\n", 1);
+	}
+	ft_free(&s);
 	
 }
 

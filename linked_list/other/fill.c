@@ -1,25 +1,4 @@
-# include <unistd.h>
-# include <stdio.h>
-# include <string.h>
-# include <ctype.h>
-# include <limits.h>
-# include <stdlib.h>
-# include <stdbool.h>
-
-typedef struct node
-{
-	int				num;
-	struct node		*next;
-	struct node		*previous;
-}	t_node;
-
-typedef struct var
-{
-	char			**temp;
-	int				len;
-	t_node			*a; //list a
-	t_node			*b; //list b
-}	t_var;
+#include "test.h"
 
 long long	ps_atoll(const char *str)
 {

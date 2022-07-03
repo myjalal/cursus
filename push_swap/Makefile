@@ -24,7 +24,9 @@ PS_FILES	=	main.c			\
 				check_duplic.c	\
 				check_arg.c		\
 				errors.c		\
-				populate.c
+				populate.c		\
+				utils.c			\
+				test_tools.c
 
 # C_FILES		=	c_srcs/c_main.c	
 

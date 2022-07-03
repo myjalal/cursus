@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   populate.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
+/*   Updated: 2022/07/02 17:22:58 by jechekao         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 t_var	*list_init(t_var *list)
@@ -7,6 +19,7 @@ t_var	*list_init(t_var *list)
 		exit(1);
 	list->temp = NULL;
 	list->len = 0;
+	list->fd = 0;
 	list->a = NULL;
 	list->b = NULL;
 	return (list);
@@ -15,9 +28,6 @@ t_var	*list_init(t_var *list)
 void	add_node(t_node **top, t_node *node)
 {
 	t_node	*temp;
-	int		i;
-
-	i = 0;
 
 	if (*top == NULL)
 		*top = node;
