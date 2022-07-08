@@ -13,7 +13,7 @@ void	print_list(t_node *list)
 		printf("\nThe list is empty!!\n\n");
 	else
 	{
-		printf("\n\nPrinting the list...\n\n");
+		printf("\nPrinting the list...\n\n");
 		temp = list;
 		while (temp)
 		{

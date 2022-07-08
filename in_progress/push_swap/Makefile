@@ -27,7 +27,9 @@ PS_FILES	=	main.c			\
 				populate.c		\
 				utils.c			\
 				test_tools.c	\
-				move.c
+				move.c			\
+				run.c			\
+				small_alg.c
 
 # C_FILES		=	c_srcs/c_main.c	
 

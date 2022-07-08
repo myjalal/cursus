@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/03 11:29:47 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/08 18:27:26 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int					check_int(char *argv);
 int					check_arg(char **argv);
 
 // Check if the list is sorted
-int					sort_checker(t_node **list, int len);
+int					sort_checker(t_node **list);
 
 /*--------populate.c--------*/
 // NULL list for initiation
@@ -84,20 +84,35 @@ int					error_exit(char *error, int err_exit);
 // Free linked list
 void				ft_free(t_node **list);
 
+int					find_min(t_node	*list);
+
+int					find_last(t_node *list);
+
 /*---------move.c-----------*/
 // oparations
 
 // SA and SB
-void	swap(t_node **list);
+void				swap(t_node **list);
 
 //   PA and PB
-void	one_top_two(t_node **l_one, t_node **l_two);
+void				one_top_two(t_node **l_one, t_node **l_two);
 
 // RA and RB
-void	revers(t_node **list);
+void				revers(t_node **list);
 
 // RRA and RRB
-void	r_revers(t_node **list);
+void				r_revers(t_node **list);
+
+/*----------run.c----------*/
+// run up tp 2 operations
+void				run(int op, t_node **a, t_node **b);
+
+
+/*--------small_alg.c-------*/
+void				small(t_node **a, t_node **b, t_var *list);
+
+void				three_num(t_node **a, t_node **b);
+
 
 /*---------test_tools.c------*/ // !!!!! DELETE
 // Print linked list to test

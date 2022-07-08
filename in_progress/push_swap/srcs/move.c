@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/03 11:28:18 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/08 18:49:50 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ void	r_revers(t_node **list)
 
 	temp = *list;
 	data = malloc(sizeof(t_node));
-		temp = temp->next;
 	while (temp->next != NULL)
+		temp = temp->next;
 	data->num = temp->num;
 	temp = temp->previous;
 	temp->next = NULL;
