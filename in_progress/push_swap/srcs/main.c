@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/08 18:00:00 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 19:25:15 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,7 @@ void	push_swap(int argc, char **argv, t_var *list)
 		printf("too big\n"); //change to big algo
 	else
 		small(&list->a, &list->b, list);
-		print_list(list->a);//remove testing
 	ft_free(&s);
-	
 }
 
 int	main(int argc, char **argv)

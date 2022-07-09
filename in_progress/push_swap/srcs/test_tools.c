@@ -6,24 +6,33 @@
 
 */
 
-void	print_list(t_node *list)
+void	print_list(t_node *a, t_node *b)
 {
-	const t_node *temp;
-	if (list == NULL)
-		printf("\nThe list is empty!!\n\n");
-	else
-	{
-		printf("\nPrinting the list...\n\n");
-		temp = list;
-		while (temp)
-		{
-			printf("%d\n", temp->num);
-			temp = temp->next;
-		}
-		printf("\n");
-	}
-}
+	const t_node	*temp_a;
+	const t_node	*temp_b;
 
+	printf("\nPrinting the list...\n\n");
+	temp_a = a;
+	temp_b = b;
+	while (temp_a || temp_b)
+	{
+		if (temp_a)
+		{
+			printf("%d    ", temp_a->num);
+			temp_a = temp_a->next;
+		}
+		else if (!temp_a)
+			printf("     ");
+		if (temp_b)
+		{
+			printf("%d\n", temp_b->num);
+			temp_b = temp_b->next;
+		}
+		else if (!temp_b)
+			printf(" \n");
+	}
+	printf("______\nA    B\n");
+}
 
 /*
 int main(int argc, char *argv[])

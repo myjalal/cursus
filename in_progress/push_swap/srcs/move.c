@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/08 18:49:50 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 18:46:17 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void	one_top_two(t_node **l_one, t_node **l_two)
 		temp->previous = NULL;
 		*l_two = temp;
 		*l_one = (*l_one)->next;
-		//free(temp);
 	}
 	else
 	{
@@ -50,7 +49,6 @@ void	one_top_two(t_node **l_one, t_node **l_two)
 		temp->next = (*l_two);
 		(*l_two) = temp;
 		*l_one = (*l_one)->next;
-		//free(temp);
 	}
 }
 

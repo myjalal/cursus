@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:43:09 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/08 19:53:53 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 19:15:23 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	ft_free(t_node **list)
 {
 	t_node	*temp;
-	
-	if(*list)
+
+	if (*list)
 	{
 		while (*list)
 		{
@@ -30,33 +30,50 @@ void	ft_free(t_node **list)
 	}
 }
 
-int	find_min(t_node	*list) //find min of a list
+int	find_min(t_node	*list)
 {
-	int i;
-	t_node *temp;
-	
+	int		i;
+	t_node	*temp;
+
 	i = list->num;
 	temp = list;
-	while(temp)
+	while (temp)
 	{
-		if(i >= temp->num)
+		if (i >= temp->num)
 			i = temp->num;
 		temp = temp->next;
 	}
-	return(i);
+	return (i);
 }
 
-int	find_last(t_node *list) //find last num of the list
+int	find_last(t_node *list)
 {
-	t_node *temp;
+	t_node	*temp;
 
 	temp = list;
-	while(temp->next)
+	while (temp->next)
 		temp = temp->next;
-	return(temp->num);
+	return (temp->num);
 }
 
-void	find_rotate_a(t_node **list, int num) //find number and rotate smartly
+int	find_indx(t_node *list, int num)
+{
+	int	indx;
+
+	indx = 1;
+	while (list)
+	{
+		if (list->num <= num)
+			return (indx);
+		list = list->next;
+		indx++;
+	}
+	return (-1);
+}
+
+/*
+void	find_rotate_a
+(t_node **list, int num) //find number and rotate smartly
 {
 	
-}
+}*/

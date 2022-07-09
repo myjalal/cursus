@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/08 18:27:26 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 19:26:36 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 # include <limits.h>
 # include <stdlib.h>
 # include "libft.h"
-# include <stdbool.h> // check if you are allower to use false and true and bool
+// check if you are allower to use false and true and bool
+# include <stdbool.h>
 
 typedef struct node
 {
@@ -31,11 +32,11 @@ typedef struct node
 
 typedef struct var
 {
-	char			**temp; // temp argv in strings
+	char			**temp;
 	int				len;
 	int				fd;
-	t_node			*a; //list a
-	t_node			*b; //list b
+	t_node			*a;
+	t_node			*b;
 }	t_var;
 
 /*-------check_dup.c--------*/
@@ -70,10 +71,10 @@ t_node				*list_filler(char **argv, t_var *list, t_node *temp);
 void				add_node(t_node **top, t_node *node);
 
 // Add number to top of the list
-void 				top(t_node **list, t_node *node);
+void				top(t_node **list, t_node *node);
 
 // Add number to bottom of the list
-void 				bottom(t_node **list, t_node *node);
+void				bottom(t_node **list, t_node *node);
 
 /*-------errors.c--------*/
 
@@ -84,9 +85,14 @@ int					error_exit(char *error, int err_exit);
 // Free linked list
 void				ft_free(t_node **list);
 
+//find min of a list
 int					find_min(t_node	*list);
 
+//find last num of the list
 int					find_last(t_node *list);
+
+//find the position of a number in the list
+int					find_indx(t_node *list, int num);
 
 /*---------move.c-----------*/
 // oparations
@@ -107,18 +113,25 @@ void				r_revers(t_node **list);
 // run up tp 2 operations
 void				run(int op, t_node **a, t_node **b);
 
+// run the remaining operations
+void				run_next(int op, t_node **a, t_node **b);
 
 /*--------small_alg.c-------*/
+// algo for 10 args or less
 void				small(t_node **a, t_node **b, t_var *list);
 
+// sort 3 num or less
 void				three_num(t_node **a, t_node **b);
 
+// sort 10 num or less
+void				ten_num(t_node **a, t_node **b, int len);
+
+// choose if it ra or rb
+void				rorate(t_node **a, int min, int len);
 
 /*---------test_tools.c------*/ // !!!!! DELETE
 // Print linked list to test
-void				print_list(t_node *list);
-
-
+void				print_list(t_node *a, t_node *b);
 
 #endif
 

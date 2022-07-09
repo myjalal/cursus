@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/02 17:22:58 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 18:47:44 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	add_node(t_node **top, t_node *node)
 		while (temp->next)
 			temp = temp -> next;
 		temp->next = node;
-		node->previous=temp;
+		node->previous = temp;
 	}
 }
 
@@ -58,10 +58,10 @@ t_node	*list_filler(char **argv, t_var *list, t_node *temp)
 		temp = NULL;
 	}
 	list->len = i;
-	return(list->a);
+	return (list->a);
 }
 
-void top(t_node **list, t_node *node)
+void	top(t_node **list, t_node *node)
 {
 	node->previous = NULL;
 	node->next = *list;
@@ -70,23 +70,18 @@ void top(t_node **list, t_node *node)
 	*list = node;
 }
 
-void bottom(t_node **list, t_node *node)
+void	bottom(t_node **list, t_node *node)
 {
-	t_node *temp;
+	t_node	*temp;
 
 	temp = *list;
 	if (*list == NULL)
 		*list = node;
 	else
 	{
-		while(temp->next)
+		while (temp->next)
 			temp = temp->next;
 		temp->next = node;
 		node->previous = temp;
 	}
-} //stopped here 01 juillet 2022
-
-/*
-/ was able to fill the list, verify if it already sorted, then created function 
-/ top and bottom to be able to add a node to the top or bottom of the list
-*/
+}
