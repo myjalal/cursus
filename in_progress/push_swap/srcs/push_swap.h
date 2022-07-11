@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 19:26:36 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/10 18:32:59 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 typedef struct node
 {
 	int				num;
+	int				indx;
 	struct node		*next;
 	struct node		*previous;
 }	t_node;
@@ -33,10 +34,12 @@ typedef struct node
 typedef struct var
 {
 	char			**temp;
+	int				ref;
 	int				len;
 	int				fd;
 	t_node			*a;
 	t_node			*b;
+	t_node			*sorted;
 }	t_var;
 
 /*-------check_dup.c--------*/
@@ -60,6 +63,9 @@ int					check_arg(char **argv);
 // Check if the list is sorted
 int					sort_checker(t_node **list);
 
+// check size of list
+int					list_len(t_node *a);
+
 /*--------populate.c--------*/
 // NULL list for initiation
 t_var				*list_init(t_var *list);
@@ -70,11 +76,11 @@ t_node				*list_filler(char **argv, t_var *list, t_node *temp);
 // Check if there is a top node, then either creats one or adds a node
 void				add_node(t_node **top, t_node *node);
 
-// Add number to top of the list
-void				top(t_node **list, t_node *node);
+// will index number from small to big
+void				indx_a(t_var *list);
 
-// Add number to bottom of the list
-void				bottom(t_node **list, t_node *node);
+// set rotation ref depending on the len
+void				pivote(t_var *list);
 
 /*-------errors.c--------*/
 
@@ -94,6 +100,9 @@ int					find_last(t_node *list);
 //find the position of a number in the list
 int					find_indx(t_node *list, int num);
 
+// find the number at position indx
+int					find_num(t_node *list, int indx);
+
 /*---------move.c-----------*/
 // oparations
 
@@ -110,11 +119,16 @@ void				revers(t_node **list);
 void				r_revers(t_node **list);
 
 /*----------run.c----------*/
-// run up tp 2 operations
+// run up to 2 operations at the same time
 void				run(int op, t_node **a, t_node **b);
 
 // run the remaining operations
-void				run_next(int op, t_node **a, t_node **b);
+void				run_1(int op, t_node **a, t_node **b);
+
+// run last operations
+void				run_2(int op, t_node **a, t_node **b);
+
+void				rotate_a(t_var *list);
 
 /*--------small_alg.c-------*/
 // algo for 10 args or less
@@ -129,10 +143,36 @@ void				ten_num(t_node **a, t_node **b, int len);
 // choose if it ra or rb
 void				rorate(t_node **a, int min, int len);
 
+/*--------larg_alg.c-------*/
+// algo for more then 10 args
+void				larg(t_node **a, t_node **b, t_var *list);
+
+//first sort
+void				sort_1(t_var *list);
+
+
+/*----------larg_utils-------*/
+// duplicate list and return new sorted list
+t_node				*sort_list(t_node *list, t_node *new);
+
+// return a new duplicated list
+t_node				*copy_list(t_node *head);
+
+// swap x->num with y->num
+void				num_swap(t_node *x, t_node *y);
+
+// return 0 if list->indx > ref return 1 if list->indx < ref and 2 if list->indx == ref
+int					ref_check(t_node *list, int	ref);
+
+
 /*---------test_tools.c------*/ // !!!!! DELETE
 // Print linked list to test
 void				print_list(t_node *a, t_node *b);
 
+void				print_indx(t_node *a, t_node *sorted);
+/*
+void				sort_indx(t_node *list, int len);
+*/
 #endif
 
 /*

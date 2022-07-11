@@ -6,13 +6,34 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 17:22:40 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 19:10:04 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/10 20:20:39 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	run_next(int op, t_node **a, t_node **b)
+void	run_2(int op, t_node **a, t_node **b)
+{
+	if (op == 8)
+	{
+		r_revers(b);
+		printf("rrb\n");
+	}
+	else if (op == 9)
+	{
+		revers(a);
+		revers(b);
+		printf("rr\n");
+	}
+	else if (op == 10)
+	{
+		r_revers(a);
+		r_revers(b);
+		printf("rrr\n");
+	}
+}
+
+void	run_1(int op, t_node **a, t_node **b)
 {
 	if (op == 4)
 	{
@@ -34,11 +55,8 @@ void	run_next(int op, t_node **a, t_node **b)
 		r_revers(a);
 		printf("rra\n");
 	}
-	else if (op == 8)
-	{
-		r_revers(b);
-		printf("rrb\n");
-	}
+	else
+		run_2(op, a, b);
 }
 
 void	run(int op, t_node **a, t_node **b)
@@ -64,5 +82,28 @@ void	run(int op, t_node **a, t_node **b)
 		printf("pa\n");
 	}
 	else
-		run_next(op, a, b);
+		run_1(op, a, b);
+}
+
+void	rotate_a(t_var *list) //to revise not sure (normalize_a)
+{
+	int		indx;
+	int		num;
+	t_node	*temp;
+
+	temp = list->a;
+	num = (list_len(temp) / 2);
+	indx = 1;
+	while (temp)
+	{
+		if (temp->num <= list->ref)
+			break;
+		temp = temp->next;
+		indx++;
+	}
+	printf("index = %d, num = %d\n",indx, num); 
+	if (indx < num)
+		run(5, &list->a, &list->b);
+	else
+		run(7, &list->a, &list->b);
 }

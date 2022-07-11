@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 18:43:30 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 19:23:26 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/09 21:51:35 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,5 @@ void	small(t_node **a, t_node **b, t_var *list)
 		three_num(a, b);
 	if (list->len <= 10)
 		ten_num(a, b, list->len);
-	free (a);
+	ft_free(a);
 }

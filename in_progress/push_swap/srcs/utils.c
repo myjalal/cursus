@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:43:09 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 19:15:23 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/10 17:01:07 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,15 @@ int	find_indx(t_node *list, int num)
 	return (-1);
 }
 
-/*
-void	find_rotate_a
-(t_node **list, int num) //find number and rotate smartly
+int	find_num(t_node *list, int indx)
 {
-	
-}*/
+	t_node	*temp;
+
+	temp = list;
+	while(--indx)
+	{
+		printf("index = %d\n", indx);
+		temp = temp->next;
+	}
+	return(temp->num);
+}

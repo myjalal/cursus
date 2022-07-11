@@ -29,7 +29,9 @@ PS_FILES	=	main.c			\
 				test_tools.c	\
 				move.c			\
 				run.c			\
-				small_alg.c
+				small_alg.c		\
+				larg_alg.c		\
+				larg_utils.c
 
 # C_FILES		=	c_srcs/c_main.c	
 

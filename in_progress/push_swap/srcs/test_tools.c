@@ -31,23 +31,67 @@ void	print_list(t_node *a, t_node *b)
 		else if (!temp_b)
 			printf(" \n");
 	}
-	printf("______\nA    B\n");
+	printf("______\nA    B\n\n");
 }
 
-/*
-int main(int argc, char *argv[])
+void	print_indx(t_node *a, t_node *sorted)
 {
-	char **list;
-	int i = 0;
+	const t_node	*temp_a;
+	const t_node	*temp_b;
 
-	list = NULL;
-	if (argc == 2)
-		list = ft_split(argv[1], ' ');
-	else if (argc > 2)
-		list = &argv[1];
-	while (list[i])
+	printf("\nPrinting the list...\n\n");
+	temp_a = a;
+	temp_b = sorted;
+	while (temp_a)
+	{
+		printf("%d -> %d     %d\n", temp_a->num, temp_a->indx, temp_b->num);
+		temp_a = temp_a->next;
+		temp_b = temp_b->next;
+	}
+	printf("_________________\nA   indx   sorted\n\n");
+}
+
+
+
+
+/*
+void	print_indx(t_node *list)
+{
+	const t_node	*temp;
+
+	printf("\nPrinting the list...\n\n");
+	temp = list;
+	while (temp)
+	{
+		printf("num = %d   index = %d\n", temp->num, temp->indx);
+		temp = temp->next;
+	}
+	printf("______\nA  Indx\n\n");
+}
+
+void	sort_indx(t_node *list, int len)
+{
+	t_node	*temp;
+	int		i;
+	int		min;
+
+	i = 0;
+	min = find_min(list);
+	
+	while(i <= len)
+	{
+		temp = list;
+		while(temp)
 		{
-			printf("number %s\n", list[i]);
-			i++;
+			if (temp->num == min)
+			{
+				temp->indx = ++i;
+				min++;
+				break;
+			}
+			temp = temp->next;
 		}
-}*/
+	}
+	print_indx(list);
+}
+*/
