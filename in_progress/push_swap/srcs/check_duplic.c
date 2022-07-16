@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:18:17 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/28 20:19:11 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:57:16 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	check_duplic(char **argv)
 				j++;
 			else if (ft_strcmp(argv[j], str) == 0)
 			{
-				ft_putstr_fd("duplicate numbers found\n", 1);
+				ft_putstr_fd("ERROR\n", 1);
 				free(str);
 				exit(1);
 			}

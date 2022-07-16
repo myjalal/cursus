@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 18:26:05 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:57:40 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ void	push_swap(int argc, char **argv, t_var *list)
 		larg(&list->a, &list->b, list);
 	else
 	{
-		print_list(list->a, list->b); //remove
+		//print_list(list->a, list->b); //remove
 		small(&list->a, &list->b, list);
-		print_list(list->a, list->b); //remove
+		//print_list(list->a, list->b); //remove
 	}
 	ft_free(&s);
 }
@@ -53,8 +53,8 @@ int	main(int argc, char **argv)
 	t_var	*l;
 
 	l = NULL;
-	if (argc < 2)
-		error_exit("No argument found\nPlease try again\n", 1);
+	if (argc <= 2)
+		error_exit(NULL, 1);
 	else
 	{
 		l = list_init(l);

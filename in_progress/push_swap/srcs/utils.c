@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:43:09 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 17:01:07 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:58:27 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	find_num(t_node *list, int indx)
 	temp = list;
 	while(--indx)
 	{
-		printf("index = %d\n", indx);
+		//printf("index = %d\n", indx);
 		temp = temp->next;
 	}
 	return(temp->num);

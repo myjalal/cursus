@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 18:32:59 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/15 21:24:23 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,7 +128,11 @@ void				run_1(int op, t_node **a, t_node **b);
 // run last operations
 void				run_2(int op, t_node **a, t_node **b);
 
+// smart rotation of stack A
 void				rotate_a(t_var *list);
+
+// smart rotation of stack B
+void				rotate_b(t_var *list);
 
 /*--------small_alg.c-------*/
 // algo for 10 args or less
@@ -147,8 +151,17 @@ void				rorate(t_node **a, int min, int len);
 // algo for more then 10 args
 void				larg(t_node **a, t_node **b, t_var *list);
 
-//first sort
-void				sort_1(t_var *list);
+// First sort
+void				sort(t_var *list);
+
+// Second sort
+void				sort_min(t_var *list);
+
+// Last sort
+void				sort_max(t_var *list);
+
+// Find max number of list
+int					find_max(t_node	*list);
 
 
 /*----------larg_utils-------*/

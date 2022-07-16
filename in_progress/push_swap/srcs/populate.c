@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 20:03:40 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:57:57 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void	indx_a(t_var *list)
 			temp_1 = temp_1->next;
 	}
 	pivote(list);
-	printf("ref = %d\n", list->ref);//delete
+	//printf("ref = %d\n", list->ref);//delete
 }
 
 void	pivote(t_var *list)
@@ -109,30 +109,3 @@ void	pivote(t_var *list)
 		temp = temp->next;
 	}
 }
-
-/*
-void	top(t_node **list, t_node *node) // don't need ? 
-{
-	node->previous = NULL;
-	node->next = *list;
-	if (*list != NULL)
-		(*list)->previous = node;
-	*list = node;
-}
-
-void	bottom(t_node **list, t_node *node) // don't need ? 
-{
-	t_node	*temp;
-
-	temp = *list;
-	if (*list == NULL)
-		*list = node;
-	else
-	{
-		while (temp->next)
-			temp = temp->next;
-		temp->next = node;
-		node->previous = temp;
-	}
-}
-*/

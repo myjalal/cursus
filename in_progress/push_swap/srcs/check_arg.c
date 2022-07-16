@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 17:20:19 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:57:03 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,11 @@ int	check_arg(char **argv)
 	while (argv[++i])
 	{
 		if (check_int(argv[i]) == 0)
-			error_exit("ERROR: Not a valid int\n", 1);
+			error_exit("ERROR\n", 1);
 		else if (check_int(argv[i]) == 2)
-			error_exit("OVERFLOW ERROR: less then INT_MIN\n", 1);
+			error_exit("ERROR\n", 1);
 		else if (check_int(argv[i]) == 3)
-			error_exit("OVERFLOW ERROR: more then INT_MAX\n", 1);
+			error_exit("ERROR\n", 1);
 	}
 	return (1);
 }
@@ -70,6 +70,8 @@ int	sort_checker(t_node **list)
 	t_node	*tmp;
 
 	tmp = *list;
+	if (tmp && !tmp->next)
+		return (0);
 	while (tmp && tmp->next)
 	{
 		if (tmp->num < tmp->next->num)

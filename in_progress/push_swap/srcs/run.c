@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 17:22:40 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 20:20:39 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/15 21:45:06 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,9 +101,32 @@ void	rotate_a(t_var *list) //to revise not sure (normalize_a)
 		temp = temp->next;
 		indx++;
 	}
-	printf("index = %d, num = %d\n",indx, num); 
+	//printf("index = %d, num = %d\n",indx, num); 
 	if (indx < num)
 		run(5, &list->a, &list->b);
 	else
 		run(7, &list->a, &list->b);
+}
+
+void	rotate_b(t_var *list)
+{
+	int		indx;
+	int		num;
+	t_node	*temp;
+
+	temp = list->b;
+	num = (list_len(temp) / 2);
+	indx = 1;
+	while (temp)
+	{
+		if (temp->num >= list->ref)
+			break;
+		temp = temp->next;
+		indx++;
+	}
+	//printf("index = %d, num = %d\n",indx, num); 
+	if (list->b && indx < num)
+		run(6, &list->a, &list->b);
+	else if (list->b)
+		run(8, &list->a, &list->b);
 }

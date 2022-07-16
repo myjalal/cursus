@@ -6,14 +6,14 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 18:46:17 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:41:21 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 // SA and SB
-void	swap(t_node **list)
+void	swap(t_node **list) // redo
 {
 	int	i;
 	int	j;
@@ -28,7 +28,7 @@ void	swap(t_node **list)
 }
 
 //   PA and PB
-void	one_top_two(t_node **l_one, t_node **l_two)
+void	one_top_two(t_node **l_one, t_node **l_two) // i may need to free
 {
 	t_node	*temp;
 
@@ -40,6 +40,7 @@ void	one_top_two(t_node **l_one, t_node **l_two)
 		temp->previous = NULL;
 		*l_two = temp;
 		*l_one = (*l_one)->next;
+		(*l_one)->previous = NULL;
 	}
 	else
 	{
@@ -47,8 +48,15 @@ void	one_top_two(t_node **l_one, t_node **l_two)
 		temp->num = (*l_one)->num;
 		temp->previous = NULL;
 		temp->next = (*l_two);
+		(*l_two)->previous = temp;
 		(*l_two) = temp;
-		*l_one = (*l_one)->next;
+		if ((*l_one)->next)
+		{
+			*l_one = (*l_one)->next;
+			(*l_one)->previous = NULL;
+		}
+		else 
+			*l_one = NULL;
 	}
 }
 
@@ -67,6 +75,7 @@ void	revers(t_node **list)
 	data->next = NULL;
 	temp->next = data;
 	*list = (*list)->next;
+	(*list)->previous = NULL;
 }
 
 // RRA and RRB
@@ -79,10 +88,11 @@ void	r_revers(t_node **list)
 	data = malloc(sizeof(t_node));
 	while (temp->next != NULL)
 		temp = temp->next;
-	data->num = temp->num;
+	data = temp;
 	temp = temp->previous;
+	data->previous = NULL;
 	temp->next = NULL;
 	data->next = *list;
 	(*list)->previous = data;
-	*list = (*list)->previous;
+	*list = data;
 }

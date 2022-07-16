@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 14:28:22 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/10 20:11:40 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:54:35 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,28 @@ int		ref_check(t_node *list, int	ref)
 		if (list->num == ref)
 			i = 2;
 		list = list->next;
+	}
+	return (i);
+}
+
+int	find_max(t_node	*list)
+{
+	int		i;
+	t_node	*temp;
+
+	i = 0;
+	temp = NULL;
+	if (list)
+	{
+		i = list->num;
+		temp = list;
+		while (list)
+		{
+			if (list->num >= i)
+				i = list->num;
+			list = list->next;
+		}
+		list = temp;
 	}
 	return (i);
 }
