@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/17 15:52:26 by jechekao          #+#    #+#              #
+#    Updated: 2022/07/17 18:14:48 by jechekao         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 PS_NAME		=	push_swap
 # C_NAME		=	checker
 
@@ -13,7 +25,8 @@ SUB_DIR		=	obj/ps_srcs obj/c_srcs
 FLAG		=	-c			\
 				-Wall		\
 				-Wextra		\
-				-Werror
+				-Werror		\
+				-g
 
 INCLUDE		=	-I include/					\
 				-I $(LIB_DIR)
@@ -52,7 +65,7 @@ $(LIB)		:
 				/bin/mv $(LIB_DIR)$(LIB) .
 
 $(PS_NAME)	:	$(PS_OBJ) $(LIB)
-				$(CC) -fsanitize=address -o $@ $^
+				$(CC) -o $@ $^
 
 # $(C_NAME)	:	$(C_OBJ) $(LIB)
 				# $(CC) -fsanitize=address -o $@ $^

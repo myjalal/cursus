@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:57:03 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/17 17:41:53 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	check_int(char *argv)
 	return (1);
 }
 
-int	check_arg(char **argv)
+int	check_arg(char **argv, t_var *list)
 {
 	int	i;
 
@@ -56,11 +56,11 @@ int	check_arg(char **argv)
 	while (argv[++i])
 	{
 		if (check_int(argv[i]) == 0)
-			error_exit("ERROR\n", 1);
+			error_exit("Error\n", 1, list);
 		else if (check_int(argv[i]) == 2)
-			error_exit("ERROR\n", 1);
+			error_exit("Error\n", 1, list);
 		else if (check_int(argv[i]) == 3)
-			error_exit("ERROR\n", 1);
+			error_exit("Error\n", 1, list);
 	}
 	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 17:22:40 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/15 21:45:06 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 21:17:48 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,9 @@ void	run_2(int op, t_node **a, t_node **b)
 
 void	run_1(int op, t_node **a, t_node **b)
 {
+	t_node	*temp;
+
+	temp = NULL;
 	if (op == 4)
 	{
 		one_top_two(a, b);
@@ -85,7 +88,7 @@ void	run(int op, t_node **a, t_node **b)
 		run_1(op, a, b);
 }
 
-void	rotate_a(t_var *list) //to revise not sure (normalize_a)
+void	rotate_a(t_var *list)
 {
 	int		indx;
 	int		num;
@@ -97,11 +100,10 @@ void	rotate_a(t_var *list) //to revise not sure (normalize_a)
 	while (temp)
 	{
 		if (temp->num <= list->ref)
-			break;
+			break ;
 		temp = temp->next;
 		indx++;
 	}
-	//printf("index = %d, num = %d\n",indx, num); 
 	if (indx < num)
 		run(5, &list->a, &list->b);
 	else
@@ -120,11 +122,10 @@ void	rotate_b(t_var *list)
 	while (temp)
 	{
 		if (temp->num >= list->ref)
-			break;
+			break ;
 		temp = temp->next;
 		indx++;
 	}
-	//printf("index = %d, num = %d\n",indx, num); 
 	if (list->b && indx < num)
 		run(6, &list->a, &list->b);
 	else if (list->b)

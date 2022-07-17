@@ -6,14 +6,14 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:41:21 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 21:15:47 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
 // SA and SB
-void	swap(t_node **list) // redo
+void	swap(t_node **list)
 {
 	int	i;
 	int	j;
@@ -28,35 +28,28 @@ void	swap(t_node **list) // redo
 }
 
 //   PA and PB
-void	one_top_two(t_node **l_one, t_node **l_two) // i may need to free
+void	one_top_two(t_node **l_one, t_node **l_two)
 {
 	t_node	*temp;
 
-	if (*l_one && *l_two == NULL)
+	temp = *l_one;
+	if ((*l_one)->next == NULL)
+		*l_one = NULL;
+	else
 	{
-		temp = malloc(sizeof(t_node));
-		temp->num = (*l_one)->num;
-		temp->next = NULL;
-		temp->previous = NULL;
-		*l_two = temp;
 		*l_one = (*l_one)->next;
 		(*l_one)->previous = NULL;
 	}
+	if (*l_two == NULL)
+	{
+		temp->next = NULL;
+		*l_two = temp;
+	}
 	else
 	{
-		temp = malloc(sizeof(t_node));
-		temp->num = (*l_one)->num;
-		temp->previous = NULL;
-		temp->next = (*l_two);
+		temp->next = *l_two;
 		(*l_two)->previous = temp;
-		(*l_two) = temp;
-		if ((*l_one)->next)
-		{
-			*l_one = (*l_one)->next;
-			(*l_one)->previous = NULL;
-		}
-		else 
-			*l_one = NULL;
+		*l_two = temp;
 	}
 }
 
@@ -64,35 +57,34 @@ void	one_top_two(t_node **l_one, t_node **l_two) // i may need to free
 void	revers(t_node **list)
 {
 	t_node	*temp;
-	t_node	*data;
 
 	temp = *list;
-	data = malloc(sizeof(t_node));
-	data->num = temp->num;
-	while (temp->next != NULL)
-		temp = temp->next;
-	data->previous = temp;
-	data->next = NULL;
-	temp->next = data;
 	*list = (*list)->next;
 	(*list)->previous = NULL;
+	temp->next = NULL;
+	while ((*list)->next)
+		*list = (*list)->next;
+	temp->previous = *list;
+	(*list)->next = temp;
+	while ((*list)->previous)
+		*list = (*list)->previous;
 }
 
 // RRA and RRB
 void	r_revers(t_node **list)
 {
 	t_node	*temp;
-	t_node	*data;
+	int		i;
 
+	i = list_len(*list) - 1;
 	temp = *list;
-	data = malloc(sizeof(t_node));
 	while (temp->next != NULL)
 		temp = temp->next;
-	data = temp;
-	temp = temp->previous;
-	data->previous = NULL;
-	temp->next = NULL;
-	data->next = *list;
-	(*list)->previous = data;
-	*list = data;
+	temp->next = *list;
+	temp->previous = NULL;
+	(*list)->previous = temp;
+	while (--i)
+		*list = (*list)->next;
+	(*list)->next = NULL;
+	*list = temp;
 }

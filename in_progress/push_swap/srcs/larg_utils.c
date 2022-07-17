@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 14:28:22 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:54:35 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 21:13:47 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,14 +62,14 @@ t_node	*copy_list(t_node *head)
 	}
 }
 
-int		ref_check(t_node *list, int	ref)
+int	ref_check(t_node *list, int ref)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (!list)
 		return (0);
-	while(list && i != 2)
+	while (list && i != 2)
 	{
 		if (list->num < ref)
 			i = 1;

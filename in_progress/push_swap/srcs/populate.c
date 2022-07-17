@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:57:57 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/17 18:57:42 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ t_var	*list_init(t_var *list)
 	if (!list)
 		exit(1);
 	list->temp = NULL;
-	list->ref = 0;//pivot
 	list->len = 0;
-	list->fd = 0;
 	list->a = NULL;
 	list->b = NULL;
 	list->sorted = NULL;
@@ -58,6 +56,7 @@ t_node	*list_filler(char **argv, t_var *list, t_node *temp)
 		temp->previous = NULL;
 		add_node(&list->a, temp);
 		temp = NULL;
+		free(temp);
 	}
 	list->len = i;
 	indx_a(list);
@@ -86,17 +85,17 @@ void	indx_a(t_var *list)
 		else
 			temp_1 = temp_1->next;
 	}
+	ft_free(&list->sorted);
 	pivote(list);
-	//printf("ref = %d\n", list->ref);//delete
 }
 
 void	pivote(t_var *list)
 {
 	t_node	*temp;
 	int		i;
-	
+
 	temp = list->a;
-	if(list->len <= 10)
+	if (list->len <= 10)
 		i = list->len / 2;
 	else if (list->len > 10 && list->len < 200)
 		i = list->len / 4;

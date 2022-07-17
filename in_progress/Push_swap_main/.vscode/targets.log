@@ -1,0 +1,1201 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Sun Jul 17 18:42:33 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+ 
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 13)
+PUSH_SWAP = push_swap
+# makefile (from `Makefile', line 67)
+OBJ = $(S_OBJ) $(P_OBJ) $(C_OBJ)
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from `Makefile', line 69)
+S_SRC_PATH = $(S_SRC:%=$(S_SRC_DIR)%)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/jechekao/Desktop/cursus/in_progress/Push_swap_main
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 74)
+S_OBJ_PATH = $(addprefix $(OBJ_DIR), $(S_OBJ))
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 18)
+COMP = gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o
+# makefile (from `Makefile', line 20)
+OBJ_DIR = obj/
+# makefile (from `Makefile', line 66)
+C_OBJ = $(C_SRC:%.c=%.o)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-8d806048-40f1-43eb-9093-ff6555b11792.sock
+# environment
+VSCODE_CWD = /
+# makefile (from `Makefile', line 14)
+CHECKER = checker
+# environment
+PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
+# makefile (from `Makefile', line 64)
+S_OBJ = $(S_SRC:%.c=%.o)
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 72)
+SRC_PATH = $(S_SRC_PATH) $(P_SRC_PATH) $(C_SRC_PATH)
+# environment
+LaunchInstanceID = 852211BE-F74B-477A-A193-9ED3C9ECF603
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.5JbFYiX7tL/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/jechekao/Homebrew/Temp
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/jechekao/Desktop/cursus/in_progress/Push_swap_main
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/jechekao
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/jechekao/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+LOGNAME = jechekao
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/jechekao/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 70)
+P_SRC_PATH = $(P_SRC:%=$(P_SRC_DIR)%)
+# makefile (from `Makefile', line 46)
+P_SRC = find_biggest_smallest.c find_median.c find_moves.c find_stack_len.c insertion_solve_half.c insertion_solve_quarters.c push_median.c push_quarters.c push_swap.c reset_moves.c solve_5_or_less.c solver.c sorted.c
+# makefile (from `Makefile', line 21)
+S_SRC_DIR = srcs/shared/
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+HOMEBREW_CACHE = /tmp/jechekao/Homebrew/Caches
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 24)
+LIBFT = libft/
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = jechekao
+# makefile (from `Makefile', line 76)
+C_OBJ_PATH = $(addprefix $(OBJ_DIR), $(C_OBJ))
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 22)
+P_SRC_DIR = srcs/push_swap/
+# makefile (from `Makefile', line 15)
+NAME = $(PUSH_SWAP) $(CHECKER)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/jechekao/Library/Application Support/Code/1.68.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 75)
+P_OBJ_PATH = $(addprefix $(OBJ_DIR), $(P_OBJ))
+# makefile (from `Makefile', line 16)
+LIBFT_A = libftprintf.a
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 26)
+S_SRC = create_frame.c display_stacks.c do_pa.c do_pb.c do_ra.c do_rb.c do_rr.c do_rra.c do_rrb.c do_rrr.c do_sa.c do_sb.c do_ss.c fill_stack_a.c push_swap_error.c push_swap_free.c stack_add_end.c stack_add_top.c stack_del_top.c
+# environment
+__CF_USER_TEXT_ENCODING = 0x18B02:0x0:0x52
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 77)
+OBJ_PATH = $(S_OBJ_PATH) $(P_OBJ_PATH) $(C_OBJ_PATH)
+# environment
+SECURITYSESSIONID = 186a7
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 65)
+P_OBJ = $(P_SRC:%.c=%.o)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 71)
+C_SRC_PATH = $(C_SRC:%=$(C_SRC_DIR)%)
+# makefile (from `Makefile', line 60)
+C_SRC = checker.c do_launch.c sort_test.c
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 35168
+# makefile (from `Makefile', line 23)
+C_SRC_DIR = srcs/checker/
+# variable set hash-table stats:
+# Load=94/1024=9%, Rehash=0, Collisions=53/174=30%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777225, inode 706557): 19 files, no impossibilities.
+
+# 19 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+srcs/push_swap/sorted.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+solve_5_or_less.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+find_median.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+sort_test.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 105):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(C_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/create_frame.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+colour:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 116):
+	@echo "\x1b[36m""\x1b[1A\x1b[M"
+	
+
+reset_moves.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/checker/do_launch.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/fill_stack_a.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+obj/do_rr.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/find_median.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_sa.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+stack_del_top.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/do_rb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/find_stack_len.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+do_rr.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+all: color do_libft obj/ push_swap checker
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  commands to execute (from `Makefile', line 80):
+	@echo "\\n\033[32;1m PUSH_SWAP AND CHECKER COMPLETE \033[0m \\n"
+	
+
+# Not a target:
+srcs/shared/do_sa.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+display_stacks.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/push_swap_free.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/do_launch.o: srcs/checker/checker.c srcs/checker/do_launch.c srcs/checker/sort_test.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 99):
+	@$(MAKE) $(C_OBJ)
+	
+
+.PHONY: all clean flcean re color
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flcean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/display_stacks.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_rra.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/create_frame.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/shared/do_rra.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/fill_stack_a.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/push_swap.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/insertion_solve_half.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+find_moves.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+do_libft:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := do_libft
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  commands to execute (from `Makefile', line 112):
+	@make -C $(LIBFT)
+	@cp $(LIBFT)/$(LIBFT_A) .
+	
+
+ 
+obj/do_sa.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/push_swap_free.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/display_stacks.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 16:23:56
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+push_quarters.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/find_biggest_smallest.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/find_moves.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_sb.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/push_swap_error.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/do_rra.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/sorted.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/shared/do_sb.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/push_swap/reset_moves.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/checker/sort_test.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/do_rr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/checker/checker.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+create_frame.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+do_rrb.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/find_median.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+push_swap_error.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/stack_add_top.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_pa.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/push_swap/solver.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/checker.o: srcs/checker/checker.c srcs/checker/do_launch.c srcs/checker/sort_test.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 99):
+	@$(MAKE) $(C_OBJ)
+	
+
+ 
+obj/push_swap_error.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/push_quarters.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/do_pa.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+push_median.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/do_sb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 124):
+	@/bin/rm -f $(PUSH_SWAP) $(CHECKER) $(LIBFT_A)
+	@make -C $(LIBFT) fclean
+	@echo "\\n\033[32;1m Cleaned $(NAME) \033[0m \\n"
+	
+
+obj/:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 83):
+	@mkdir -p $(OBJ_DIR)
+	@echo Create: Object directory
+	
+
+# Not a target:
+srcs/push_swap/solve_5_or_less.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/stack_add_end.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sorted.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+do_pb.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/do_rrb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+color:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+obj/stack_add_top.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/insertion_solve_quarters.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/do_rrb.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/insertion_solve_half.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+obj/do_pa.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/find_moves.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+insertion_solve_half.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/push_swap/push_median.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+checker.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 105):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(C_SRC_DIR)$(@:%.o=%.c)
+	
+
+ 
+checker: obj/create_frame.o obj/display_stacks.o obj/do_pa.o obj/do_pb.o obj/do_ra.o obj/do_rb.o obj/do_rr.o obj/do_rra.o obj/do_rrb.o obj/do_rrr.o obj/do_sa.o obj/do_sb.o obj/do_ss.o obj/fill_stack_a.o obj/push_swap_error.o obj/push_swap_free.o obj/stack_add_end.o obj/stack_add_top.o obj/stack_del_top.o obj/find_biggest_smallest.o obj/find_median.o obj/find_moves.o obj/find_stack_len.o obj/insertion_solve_half.o obj/insertion_solve_quarters.o obj/push_median.o obj/push_quarters.o obj/push_swap.o obj/reset_moves.o obj/solve_5_or_less.o obj/solver.o obj/sorted.o obj/checker.o obj/do_launch.o obj/sort_test.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	@gcc $(S_OBJ_PATH) $(P_OBJ_PATH) *.a -o push_swap \
+	-I includes -I libft/includes
+	@gcc $(S_OBJ_PATH) $(C_OBJ_PATH) *.a -o checker \
+	-I includes -I libft/includes
+	
+
+obj/stack_add_end.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/shared/do_rb.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+obj/reset_moves.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/shared/do_pb.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean: color
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 119):
+	@/bin/rm -rf $(OBJ_DIR) $(LIBFT_A)
+	@make -C $(LIBFT) clean
+	@echo "\\n\033[32;1m Cleaned libft object files \033[0m"
+	
+
+# Not a target:
+srcs/shared/do_rrr.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_ra.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+push_swap.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+push_swap: obj/create_frame.o obj/display_stacks.o obj/do_pa.o obj/do_pb.o obj/do_ra.o obj/do_rb.o obj/do_rr.o obj/do_rra.o obj/do_rrb.o obj/do_rrr.o obj/do_sa.o obj/do_sb.o obj/do_ss.o obj/fill_stack_a.o obj/push_swap_error.o obj/push_swap_free.o obj/stack_add_end.o obj/stack_add_top.o obj/stack_del_top.o obj/find_biggest_smallest.o obj/find_median.o obj/find_moves.o obj/find_stack_len.o obj/insertion_solve_half.o obj/insertion_solve_quarters.o obj/push_median.o obj/push_quarters.o obj/push_swap.o obj/reset_moves.o obj/solve_5_or_less.o obj/solver.o obj/sorted.o obj/checker.o obj/do_launch.o obj/sort_test.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	@gcc $(S_OBJ_PATH) $(P_OBJ_PATH) *.a -o push_swap \
+	-I includes -I libft/includes
+	@gcc $(S_OBJ_PATH) $(C_OBJ_PATH) *.a -o checker \
+	-I includes -I libft/includes
+	
+
+find_stack_len.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/do_ra.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/solver.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+stack_add_top.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+do_ss.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/shared/stack_del_top.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/push_quarters.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+push_swap_free.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/push_swap/find_stack_len.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/shared/do_ss.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/do_pb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/solve_5_or_less.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+fill_stack_a.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/sort_test.o: srcs/checker/checker.c srcs/checker/do_launch.c srcs/checker/sort_test.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 99):
+	@$(MAKE) $(C_OBJ)
+	
+
+# Not a target:
+libftprintf.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+stack_add_end.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/insertion_solve_quarters.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+obj/do_ra.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+# Not a target:
+srcs/push_swap/push_swap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/stack_del_top.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+obj/do_ss.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+find_biggest_smallest.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+do_rb.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+insertion_solve_quarters.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+solver.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 108):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
+	
+
+obj/push_median.o: srcs/push_swap/find_biggest_smallest.c srcs/push_swap/find_median.c srcs/push_swap/find_moves.c srcs/push_swap/find_stack_len.c srcs/push_swap/insertion_solve_half.c srcs/push_swap/insertion_solve_quarters.c srcs/push_swap/push_median.c srcs/push_swap/push_quarters.c srcs/push_swap/push_swap.c srcs/push_swap/reset_moves.c srcs/push_swap/solve_5_or_less.c srcs/push_swap/solver.c srcs/push_swap/sorted.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 96):
+	@$(MAKE) $(P_OBJ)
+	
+
+obj/do_rrr.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 93):
+	@$(MAKE) $(S_OBJ)
+	
+
+do_launch.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 105):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(C_SRC_DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+srcs/push_swap/find_biggest_smallest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+do_rrr.o: libftprintf.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 102):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(S_SRC_DIR)$(@:%.o=%.c)
+	
+
+# files hash-table stats:
+# Load=121/1024=12%, Rehash=0, Collisions=138/793=17%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sun Jul 17 18:42:33 2022
+
+ 

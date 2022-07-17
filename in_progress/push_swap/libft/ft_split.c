@@ -6,67 +6,70 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:20:48 by jechekao          #+#    #+#             */
-/*   Updated: 2022/05/29 16:04:47 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/17 16:51:17 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words(char const *s, char c)
+static int	word_count(const char *s, char c)
 {
-	size_t	word;
-	int		skip;
+	int	i;
+	int	flag;
 
-	word = 0;
-	skip = 1;
+	i = 0;
+	flag = 0;
 	while (*s)
 	{
-		if (*s != c && skip)
+		if (*s != c && flag == 0)
 		{
-			skip = 0;
-			word++;
+			flag = 1;
+			i++;
 		}
 		else if (*s == c)
-			skip = 1;
+			flag = 0;
 		s++;
 	}
-	return (word);
+	return (i);
 }
 
-static void	make_words(char **words, char const *s, char c, size_t n_words)
+static char	*word_dup(const char *s, int x, int y)
 {
-	char	*ptr_c;
+	char	*word;
+	int		i;
 
-	while (*s && *s == c)
-		s++;
-	while (n_words--)
-	{
-		ptr_c = ft_strchr(s, c);
-		if (ptr_c != NULL)
-		{
-			*words = ft_substr(s, 0, ptr_c - s);
-			while (*ptr_c && *ptr_c == c)
-				ptr_c++;
-			s = ptr_c;
-		}
-		else
-			*words = ft_substr(s, 0, ft_strlen(s) + 1);
-		words++;
-	}
-	*words = NULL;
+	i = 0;
+	word = malloc((y - x + 1) * sizeof(char));
+	while (x < y)
+		word[i++] = s[x++];
+	word[i] = '\0';
+	return (word);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	num_words;
-	char	**words;
+	size_t	i;
+	size_t	j;
+	int		idx;
+	char	**split;
 
-	if (s == NULL)
+	i = -1;
+	j = 0;
+	idx = -1;
+	split = ft_calloc((word_count(s, c) + 1), sizeof(*split));
+	if (!split)
 		return (NULL);
-	num_words = count_words(s, c);
-	words = malloc(sizeof(char **) * (num_words + 1));
-	if (words == NULL)
-		return (NULL);
-	make_words(words, s, c, num_words);
-	return (words);
+	while (++i <= ft_strlen(s))
+	{
+		if (s[i] != c && idx < 0)
+			idx = i;
+		else if ((s[i] == c || i == ft_strlen(s)) && idx >= 0)
+		{
+			split[j] = word_dup(s, idx, i);
+			j++;
+			idx = -1;
+		}
+	}
+	split[j] = NULL;
+	return (split);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jechekao <jechekao@student.42quebec.com>   +#+  +:+       +#+        */
+/*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:44:46 by jechekao          #+#    #+#             */
-/*   Updated: 2021/11/13 16:57:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/16 22:26:49 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

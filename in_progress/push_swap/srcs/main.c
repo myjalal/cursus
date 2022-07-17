@@ -6,46 +6,41 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:57:40 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/17 19:00:28 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-//split spaces " " from argv[] and generate a temp list
-char	**gen_temp(int argc, char **argv, t_var *l)
+void	**gen_temp(int argc, char **argv, t_var *l)
 {
 	if (argc == 2)
 		l->temp = ft_split(argv[1], ' ');
 	else
 		l->temp = &argv[1];
-	return (l->temp);
+	return (0);
 }
 
-// push_swap duh...
 void	push_swap(int argc, char **argv, t_var *list)
 {
 	t_node	*s;
-
+	
 	s = NULL;
-	list->temp = gen_temp(argc, argv, list);
+	gen_temp(argc, argv, list);
 	check_duplic(list->temp);
-	check_arg (list->temp);
-	list->a = list_filler(list->temp, list, s);
-	if (sort_checker(&list->a) == 1)
-	{
-		ft_free(&list->a);
-		error_exit("ERROR! List already sorted.\n", 1);
-	}
-	if (list->len > 10)
+	check_arg (list->temp, list);
+	list_filler(list->temp, list, s);
+	ft_free(&s);
+	free_string(list->temp);
+	if (list->len == 1)
+		exit(1);
+	else if (sort_checker(&list->a) == 1)
+		exit(1);
+	else if (list->len > 10)
 		larg(&list->a, &list->b, list);
 	else
-	{
-		//print_list(list->a, list->b); //remove
 		small(&list->a, &list->b, list);
-		//print_list(list->a, list->b); //remove
-	}
-	ft_free(&s);
+	//push_swap_free(list);
 }
 
 int	main(int argc, char **argv)
@@ -53,15 +48,12 @@ int	main(int argc, char **argv)
 	t_var	*l;
 
 	l = NULL;
-	if (argc <= 2)
-		error_exit(NULL, 1);
-	else
-	{
-		l = list_init(l);
-		push_swap(argc, argv, l);
-		free(l);
-		l = NULL;
-		return (0);
-	}
+	if (argc < 2)
+		return (1);
+	l = list_init(l);
+	push_swap(argc, argv, l);
+	free_frame(l);
+	//free(l);
+	//l = NULL;
 	return (0);
 }

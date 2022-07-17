@@ -6,11 +6,18 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:18:17 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 15:57:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/17 17:22:37 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	str_free(char **str)
+{
+	if (*str)
+		free(*str);
+	*str = NULL;
+}
 
 int	ft_strcmp(const char	*s1, const char	*s2)
 {
@@ -30,31 +37,32 @@ int	ft_strcmp(const char	*s1, const char	*s2)
 	return (0);
 }
 
-void	check_duplic(char **argv)
+
+void	check_duplic(char **strv)
 {
 	char	*str;
 	int		i;
 	int		j;
 
 	i = 0;
-	while (argv[i])
+	while (strv[i])
 	{
-		str = ft_strdup(argv[i]);
+		str = ft_strdup(strv[i]);
 		j = 0;
-		while (argv[j])
+		while (strv[j])
 		{
 			if (i == j)
 				j++;
-			else if (ft_strcmp(argv[j], str) == 0)
+			else if (ft_strcmp(strv[j], str) == 0)
 			{
-				ft_putstr_fd("ERROR\n", 1);
-				free(str);
+				ft_putstr_fd("Error1\n", 1);
+				str_free(&str);
 				exit(1);
 			}
 			else
 				j++;
 		}
+		str_free(&str);
 		i++;
 	}
-	free(str);
 }
