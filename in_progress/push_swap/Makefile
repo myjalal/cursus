@@ -6,7 +6,7 @@
 #    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:52:26 by jechekao          #+#    #+#              #
-#    Updated: 2022/07/17 18:14:48 by jechekao         ###   ########.fr        #
+#    Updated: 2022/07/24 17:00:45 by jechekao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,8 +25,7 @@ SUB_DIR		=	obj/ps_srcs obj/c_srcs
 FLAG		=	-c			\
 				-Wall		\
 				-Wextra		\
-				-Werror		\
-				-g
+				-Werror		
 
 INCLUDE		=	-I include/					\
 				-I $(LIB_DIR)
@@ -34,7 +33,7 @@ INCLUDE		=	-I include/					\
 RM			=	/bin/rm -f
 
 PS_FILES	=	main.c			\
-				check_duplic.c	\
+				fill_a.c		\
 				check_arg.c		\
 				errors.c		\
 				populate.c		\
@@ -71,9 +70,6 @@ $(PS_NAME)	:	$(PS_OBJ) $(LIB)
 				# $(CC) -fsanitize=address -o $@ $^
 
 clean		:	
-				for dir in $(MODULES); do			\
-					@$(MAKE) clean -C $$dir;		\
-				done
 				@/bin/rm -rf $(OBJ_DIR)
 
 fclean		:	clean

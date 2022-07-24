@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 14:28:22 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 21:13:47 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 18:44:13 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ void	num_swap(t_node *x, t_node *y)
 	y->num = tmp;
 }
 
-t_node	*sort_list(t_node *list, t_node *new)
+void	sort_list(t_var *list)
 {
 	t_node	*base;
 	t_node	*tmp;
 	t_node	*cmp;
 
-	new = copy_list(list);
-	base = new;
+	list->sorted = copy_list(list->a, list);
+	base = list->sorted;
 	tmp = NULL;
 	cmp = NULL;
 	while (base->next)
@@ -44,20 +44,21 @@ t_node	*sort_list(t_node *list, t_node *new)
 		num_swap(base, cmp);
 		base = base->next;
 	}
-	return (new);
 }
 
-t_node	*copy_list(t_node *head)
+t_node	*copy_list(t_node *head, t_var *list)
 {
 	t_node	*new;
 
+	new = NULL;
 	if (head == NULL)
 		return (NULL);
 	else
 	{
-		new = malloc(sizeof(t_node));
+		if (!(new = (t_node *)malloc(sizeof(t_node))))
+			error_exit(list);
 		new->num = head->num;
-		new->next = copy_list(head->next);
+		new->next = copy_list(head->next, list);
 		return (new);
 	}
 }

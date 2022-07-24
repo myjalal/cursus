@@ -8,22 +8,17 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sat Jul 23 19:00:42 2022
+# Make data base, printed on Sun Jul 24 17:02:37 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# makefile (from `Makefile', line 13)
-PUSH_SWAP = push_swap
-# makefile (from `Makefile', line 45)
-OBJ = $(P_OBJ)
 # environment
 VSCODE_LOG_NATIVE = false
-# makefile (from `Makefile', line 47)
-P_SRC_PATH = $(P_SRC:%=$(DIR)%)
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -34,43 +29,42 @@ P_SRC_PATH = $(P_SRC:%=$(DIR)%)
 CURDIR := /Users/jechekao/Desktop/cursus/in_progress/push_swap
 # makefile
 SHELL = /bin/sh
+# makefile (from `Makefile', line 33)
+RM = /bin/rm -f
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 19)
-COMP = gcc -Wall -Werror -Wextra -I include -I libft/ -c -o
-# makefile (from `Makefile', line 27)
+# makefile (from `Makefile', line 18)
+LIB_DIR = libft/
+# makefile (from `Makefile', line 22)
 OBJ_DIR = obj/
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-ece57436-bc6f-4c2a-b9ef-94c4e2d4ffca.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-2eb8d54a-5546-4037-990c-ebd344809fe3.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
+# makefile (from `Makefile', line 13)
+PS_NAME = push_swap
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
-# makefile (from `Makefile', line 48)
-SRC_PATH = $(P_SRC_PATH)
-# environment
-LaunchInstanceID = ADE530A7-63D8-4F5F-8CC2-4C2C85E708DB
- 
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# makefile (from `Makefile', line 17)
+# makefile (from `Makefile', line 19)
 LIB = libft.a
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
-# makefile (from `Makefile', line 28)
+# makefile (from `Makefile', line 21)
 DIR = srcs/
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.qKvFvL2Pm8/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.l22bN7Lwx7/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -93,6 +87,8 @@ VSCODE_CODE_CACHE_PATH = /Users/jechekao/Library/Application Support/Code/Cached
 LOGNAME = jechekao
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `Makefile', line 52)
+PS_OBJ = $(PS_SRCS:$(DIR)%.c=$(OBJ_DIR)%.o)
 # environment
 ZSH = /Users/jechekao/.oh-my-zsh
 # environment
@@ -110,15 +106,15 @@ HOMEBREW_CACHE = /tmp/jechekao/Homebrew/Caches
 # environment
 SHLVL = 1
 # makefile (from `Makefile', line 16)
-LIBFT = libft/
+CC = clang
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = jechekao
 # makefile
 .DEFAULT_GOAL := all
-# makefile (from `Makefile', line 15)
-NAME = $(PUSH_SWAP)
+# makefile (from `Makefile', line 30)
+INCLUDE = -I include/ -I $(LIB_DIR)
 # environment
 LESS = -R
 # automatic
@@ -140,19 +136,19 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000010.Electron
+XPC_SERVICE_NAME = com.microsoft.VSCode.2648
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# makefile (from `Makefile', line 50)
-P_OBJ_PATH = $(addprefix $(OBJ_DIR), $(P_OBJ))
 # automatic
 +F = $(notdir $+)
-# makefile (from `Makefile', line 30)
-P_SRC = main.c check_duplic.c check_arg.c errors.c populate.c utils.c test_tools.c move.c run.c small_alg.c larg_alg.c larg_utils.c
+# makefile (from `Makefile', line 35)
+PS_FILES = main.c fill_a.c check_arg.c errors.c populate.c utils.c test_tools.c move.c run.c small_alg.c larg_alg.c larg_utils.c
+# makefile (from `Makefile', line 23)
+SUB_DIR = obj/ps_srcs obj/c_srcs
+# makefile (from `Makefile', line 25)
+FLAG = -c -Wall -Wextra -Werror		
 # environment
 __CF_USER_TEXT_ENCODING = 0x18B02:0x0:0x52
-# environment
-COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -161,26 +157,22 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
-# makefile (from `Makefile', line 51)
-OBJ_PATH = $(P_OBJ_PATH)
-# environment
-SECURITYSESSIONID = 18977
 # automatic
 ^F = $(notdir $^)
-# makefile (from `Makefile', line 44)
-P_OBJ = $(P_SRC:%.c=%.o)
 # default
 SUFFIXES := 
 # default
 .INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 50)
+PS_SRCS = $(addprefix $(DIR), $(PS_FILES))
 # environment
 MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 98497
+VSCODE_PID = 10608
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=14/133=11%
+# Load=79/1024=8%, Rehash=0, Collisions=7/113=6%
 
 # Pattern-specific Variable Values
 
@@ -188,164 +180,150 @@ VSCODE_PID = 98497
 
 # Directories
 
-# . (device 16777225, inode 389840): 12 files, no impossibilities.
+# . (device 16777230, inode 389840): 18 files, no impossibilities.
+# srcs (device 16777230, inode 406497): 15 files, no impossibilities so far.
 
-# 12 files, no impossibilities in 1 directories.
+# 33 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+obj/%.o: srcs/%.c
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
 
-small_alg.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
-
-obj/larg_utils.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-colour:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 77):
-	@echo "\x1b[36m""\x1b[1A\x1b[M"
+obj/larg_utils.o: srcs/larg_utils.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `larg_utils'
+#  Last modified 2022-07-24 17:02:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/larg_utils.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:51:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-obj/larg_alg.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-populate.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+obj/larg_alg.o: srcs/larg_alg.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `larg_alg'
+#  Last modified 2022-07-24 17:02:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/larg_alg.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:51:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-all: color do_libft obj push_swap
+all: push_swap
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
-#  commands to execute (from `Makefile', line 54):
-	@echo "\\n\033[32;1m PUSH_SWAP COMPLETE \033[0m \\n"
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/move.o: srcs/move.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `move'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
-.PHONY: all clean flcean re color
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-flcean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-obj/move.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-obj/errors.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
+obj/errors.o: srcs/errors.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `errors'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/move.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 21:15:47
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 srcs/errors.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 15:49:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-obj/check_duplic.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-obj/main.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
+obj/main.o: srcs/main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `main'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 .SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-srcs/check_duplic.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-errors.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
  
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-23 18:53:28
+#  Last modified 2022-07-24 17:00:45
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -353,130 +331,100 @@ Makefile:
 
 # Not a target:
 srcs/main.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:58:28
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-obj/run.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
+obj/run.o: srcs/run.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `run'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
-# Not a target:
 libft.a:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2022-07-24 17:02:16
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 63):
+	@$(MAKE) -C $(LIB_DIR)
+	/bin/mv $(LIB_DIR)$(LIB) .
+	
 
 # Not a target:
 srcs/run.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-check_duplic.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:31:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 fclean: clean
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 85):
-	@/bin/rm -f $(PUSH_SWAP) $(CHECKER) $(LIB)
-	@make -C $(LIBFT) fclean
-	@echo "\\n\033[32;1m Cleaned $(NAME) \033[0m \\n"
+#  commands to execute (from `Makefile', line 76):
+	@$(MAKE) fclean -C $(LIB_DIR)
+	@$(RM) $(LIB)
+	@$(RM) $(PS_NAME)
+	# @$(RM) $(C_NAME)
 	
 
-obj/check_arg.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-obj:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 57):
-	@mkdir -p $(OBJ_DIR)
-	@echo Create: Object directory
+obj/check_arg.o: srcs/check_arg.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `check_arg'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/check_arg.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-color:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:22:10
 #  File has been updated.
 #  Successfully updated.
-
-obj/populate.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-do_libft:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := do_libft
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := 
-# automatic
-# | := 
-# automatic
-# < := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
-#  commands to execute (from `Makefile', line 73):
-	@make -C $(LIBFT)
-	@cp $(LIBFT)/$(LIB) .
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+obj/populate.o: srcs/populate.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `populate'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/populate.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-larg_utils.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -484,140 +432,123 @@ larg_utils.o: libft.a
 #  Modification time never checked.
 #  File has not been updated.
 
-larg_alg.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
-
-test_tools.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
-
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 
-run.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+obj/fill_a.o: srcs/fill_a.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `fill_a'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
-clean: color
+clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 80):
-	@/bin/rm -rf $(OBJ_DIR) $(LIB)
-	@make -C $(LIBFT) clean
-	@echo "\\n\033[32;1m Cleaned libft object files \033[0m"
+#  commands to execute (from `Makefile', line 73):
+	@/bin/rm -rf $(OBJ_DIR)
 	
 
-obj/utils.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
+obj/utils.o: srcs/utils.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
+srcs/fill_a.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 15:32:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
 srcs/utils.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:25:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-check_arg.o: libft.a
+push_swap: obj/main.o obj/fill_a.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small_alg.o obj/larg_alg.o obj/larg_utils.o libft.a
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+#  Last modified 2022-07-24 17:02:16
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 67):
+	$(CC) -o $@ $^
+	# $(CC) -fsanitize=address -o $@ $^
 	
 
-push_swap: obj/main.o obj/check_duplic.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small_alg.o obj/larg_alg.o obj/larg_utils.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 61):
-	@gcc $(P_OBJ_PATH) *.a -o push_swap \
-	-I includes -I libft/includes
+obj/small_alg.o: srcs/small_alg.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `small_alg'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
-move.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
-
-utils.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
-	
-
-obj/small_alg.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-obj/test_tools.o: srcs/main.c srcs/check_duplic.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/run.c srcs/small_alg.c srcs/larg_alg.c srcs/larg_utils.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 65):
-	@$(MAKE) $(P_OBJ)
-	
-
-main.o: libft.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 69):
-	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
-	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+obj/test_tools.o: srcs/test_tools.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `test_tools'
+#  Last modified 2022-07-24 17:02:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 59):
+	@mkdir -p $(OBJ_DIR) $(SUB_DIR)
+	$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
 	
 
 # Not a target:
 srcs/small_alg.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 16:28:30
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 # Not a target:
 srcs/test_tools.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 18:41:22
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=51/1024=5%, Rehash=0, Collisions=4/246=2%
+# Load=34/1024=3%, Rehash=0, Collisions=0/104=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -629,6 +560,6 @@ srcs/test_tools.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul 23 19:00:42 2022
+# Finished Make data base on Sun Jul 24 17:02:37 2022
 
  

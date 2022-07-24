@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 18:43:30 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/09 21:51:35 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:28:30 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ void	ten_num(t_node **a, t_node **b, int len)
 	{
 		run(3, a, b);
 	}
-	ft_free(b);
 }
 
 void	three_num(t_node **a, t_node **b)
@@ -72,5 +71,4 @@ void	small(t_node **a, t_node **b, t_var *list)
 		three_num(a, b);
 	if (list->len <= 10)
 		ten_num(a, b, list->len);
-	ft_free(a);
 }

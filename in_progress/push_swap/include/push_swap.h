@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/23 21:23:13 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 18:13:58 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@
 # include <limits.h>
 # include <stdlib.h>
 # include "libft.h"
-// check if you are allower to use false and true and bool
-# include <stdbool.h>
 
 typedef struct node
 {
@@ -41,25 +39,18 @@ typedef struct var
 	t_node			*sorted;
 }	t_var;
 
-/*-------check_dup.c--------*/
+/*---------fill_a-----------*/
 
-// Check if there is a duplicate number in args
-void				check_duplic(char **argv);
-// Compare string
-int					ft_strcmp(const char	*s1, const char	*s2);
+void			fill_a(t_var *list);
 
-void				str_free(char **str);
+void			check_error(t_var *list);
+
+void			creat_a(t_var *list, char *str, int i, int j);
+
+void			check_dup(t_var *list);
+
 
 /*-------check_arg.c--------*/
-
-// Check if int is negative
-// Static int is_neg(char *argv, bool *neg, int i);
-
-// Check if it's a valid int (INT_MAX and INT_MIN)
-int					check_int(char *argv);
-
-// Runs all arg checks and outputs errors
-int					check_arg(char **argv, t_var *list);
 
 // Check if the list is sorted
 int					sort_checker(t_node **list);
@@ -72,7 +63,7 @@ int					list_len(t_node *a);
 t_var				*list_init(t_var *list, char **argv);
 
 // Temp argv list,  list, temp node
-t_node				*list_filler(char **argv, t_var *list, t_node *temp);
+void				list_filler(t_var *list, t_node *new, int num);
 
 // Check if there is a top node, then either creats one or adds a node
 void				add_node(t_node **top, t_node *node);
@@ -86,18 +77,16 @@ void				pivote(t_var *list);
 /*-------errors.c--------*/
 
 // Prints erros with correct output
-int					error_exit(char *error, int err_exit, t_var *list);
+void				error_exit(t_var *list);
 
-void				push_swap_free(t_var *frame);
+//void				push_swap_free(t_var *frame);
 
-void				free_stack(t_node *stack);
+void				free_linked_list(t_node *list);
 
-void				free_frame(t_var *frame);
+void				free_all(t_var *frame);
 
 void				free_string(char **str);
 /*--------utils.c-----------*/
-// Free linked list
-void				ft_free(t_node **list);
 
 //find min of a list
 int					find_min(t_node	*list);
@@ -157,7 +146,7 @@ void				rorate(t_node **a, int min, int len);
 
 /*--------larg_alg.c-------*/
 // algo for more then 10 args
-void				larg(t_node **a, t_node **b, t_var *list);
+void				larg(t_var *list);
 
 // First sort
 void				sort(t_var *list);
@@ -174,10 +163,10 @@ int					find_max(t_node	*list);
 
 /*----------larg_utils-------*/
 // duplicate list and return new sorted list
-t_node				*sort_list(t_node *list, t_node *new);
+void				sort_list(t_var *list);
 
 // return a new duplicated list
-t_node				*copy_list(t_node *head);
+t_node				*copy_list(t_node *head, t_var *list);
 
 // swap x->num with y->num
 void				num_swap(t_node *x, t_node *y);

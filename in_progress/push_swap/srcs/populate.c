@@ -6,13 +6,13 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/23 21:22:23 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 18:59:16 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_var	*list_init(t_var *list, char **argv)
+t_var	*list_init(t_var *list, char **argv) //needed
 {
 	list = (t_var *)malloc(sizeof(t_var));
 	if (!list)
@@ -25,7 +25,7 @@ t_var	*list_init(t_var *list, char **argv)
 	return (list);
 }
 
-void	add_node(t_node **top, t_node *node)
+void	add_node(t_node **top, t_node *node) //needed
 {
 	t_node	*temp;
 
@@ -39,37 +39,29 @@ void	add_node(t_node **top, t_node *node)
 		temp->next = node;
 		node->previous = temp;
 	}
+	printf("new is: %p and a is: %p\n", node, &temp);
 }
 
-t_node	*list_filler(char **argv, t_var *list, t_node *temp)
+void	list_filler(t_var *list, t_node *new, int num) //needed
 {
-	int	i;
-
-	i = -1;
-	while (argv[++i])
-	{
-		temp = malloc(sizeof(t_node));
-		if (!list)
-			return (NULL);
-		temp->num = ps_atoll(argv[i]);
-		temp->next = NULL;
-		temp->previous = NULL;
-		add_node(&list->a, temp);
-		temp = NULL;
-		free(temp);
-	}
-	list->len = i;
-	indx_a(list);
-	return (list->a);
+	if (!(new = malloc(sizeof(t_node))))
+		error_exit(list);
+	new->next = NULL;
+	new->previous = NULL;
+	new->num = num;
+	add_node(&list->a, new);
+	printf("new holds: %d\n", new->num);
+	//printf("new is: %p and a is: %p\n", new, &list->a);
+	//new = NULL;
 }
 
-void	indx_a(t_var *list)
+void	indx_a(t_var *list) //needed
 {
 	int		i;
 	t_node	*temp;
 	t_node	*temp_1;
 
-	list->sorted = sort_list(list->a, list->sorted);
+	sort_list(list);
 	list->len = list_len(list->a);
 	i = 0;
 	temp = list->sorted;
@@ -85,11 +77,10 @@ void	indx_a(t_var *list)
 		else
 			temp_1 = temp_1->next;
 	}
-	ft_free(&list->sorted);
 	pivote(list);
 }
 
-void	pivote(t_var *list)
+void	pivote(t_var *list) //needed
 {
 	t_node	*temp;
 	int		i;

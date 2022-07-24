@@ -6,42 +6,54 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 18:50:41 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/17 18:56:08 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 18:31:57 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // managing errors
 #include "push_swap.h"
 
-void		free_stack(t_node *stack)
+void		free_linked_list(t_node *list)
 {
-	t_node		*track_next;
+	t_node		*node;
 	t_node		*delete;
 
-	if (stack)
+	if (list)
 	{
-		track_next = stack->next;
-		while (track_next != stack)
+		node = list->next;
+		while (node)
 		{
-			delete = track_next;
-			track_next = track_next->next;
+			delete = node;
+			node = node->next;
 			free(delete);
+			delete = NULL;
 		}
-		free(track_next);
+		free(node);
+		node = NULL;
 	}
 }
 
-void		free_frame(t_var *frame)
+void		free_all(t_var *list)
 {
-	if (frame)
+	if (list)
 	{
-		if (frame->a)
-			free_stack(frame->a);
-		if (frame->b)
-			free_stack(frame->b);
-		if (frame->sorted)
-			free_stack(frame->sorted);
-		free(frame);
+		if (list->a)
+		{
+			free_linked_list(list->a);
+			list->a = NULL;
+		}
+		if (list->b)
+		{
+			free_linked_list(list->b);
+			list->b = NULL;
+		}	
+		if (list->sorted)
+		{
+			free_linked_list(list->sorted);
+			list->sorted = NULL;
+		}
+		free(list);
+		list = NULL;
 	}
 }
 
@@ -60,10 +72,9 @@ void			free_string(char **str)
 	str = NULL;
 }
 
-int	error_exit(char *error, int err_exit, t_var *list)
+void	error_exit(t_var *list)
 {
-	if (err_exit != 0)
-		ft_putstr_fd(error, 2);
-	free_frame(list);
-	exit(err_exit);
+	write(2, "Error\n", 6);
+	free_all(list);
+	exit(-1);
 }

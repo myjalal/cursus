@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 17:22:40 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 21:17:48 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:31:19 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,19 @@ void	run_2(int op, t_node **a, t_node **b)
 	if (op == 8)
 	{
 		r_revers(b);
-		printf("rrb\n");
+		write(1, "rrb\n", 4);
 	}
 	else if (op == 9)
 	{
 		revers(a);
 		revers(b);
-		printf("rr\n");
+		write(1, "rr\n", 3);
 	}
 	else if (op == 10)
 	{
 		r_revers(a);
 		r_revers(b);
-		printf("rrr\n");
+		write(1, "rrr\n", 4);
 	}
 }
 
@@ -41,22 +41,22 @@ void	run_1(int op, t_node **a, t_node **b)
 	if (op == 4)
 	{
 		one_top_two(a, b);
-		printf("pb\n");
+		write(1, "pb\n", 3);
 	}
 	else if (op == 5)
 	{
 		revers(a);
-		printf("ra\n");
+		write(1, "ra\n", 3);
 	}
 	else if (op == 6)
 	{
 		revers(b);
-		printf("rb\n");
+		write(1, "rb\n", 3);
 	}
 	else if (op == 7)
 	{
 		r_revers(a);
-		printf("rra\n");
+		write(1, "rra\n", 4);
 	}
 	else
 		run_2(op, a, b);
@@ -72,17 +72,17 @@ void	run(int op, t_node **a, t_node **b)
 	if (op == 1)
 	{
 		swap(a);
-		printf("sa\n");
+		write(1, "sa\n", 3);
 	}
 	else if (op == 2)
 	{
 		swap(b);
-		printf("sb\n");
+		write(1, "sb\n", 3);
 	}
 	else if (op == 3)
 	{
 		one_top_two(b, a);
-		printf("pa\n");
+		write(1, "pa\n", 3);
 	}
 	else
 		run_1(op, a, b);

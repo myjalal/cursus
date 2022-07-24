@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:15:43 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 21:12:39 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:51:07 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,9 @@ void	sort(t_var *list)
 	}
 }
 
-void	larg(t_node **a, t_node **b, t_var *list)
+void	larg(t_var *list)
 {
 	sort(list);
 	sort_min(list);
 	sort_max(list);
-	ft_free(a);
-	ft_free(b);
 }

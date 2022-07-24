@@ -6,64 +6,37 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 21:27:03 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/23 21:32:26 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/24 18:38:51 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static long		atoi_push_swap(t_var *list, char *str)
+void		check_dup(t_var *list)
 {
-	long	num;
-	int		i;
-	int		len;
-	int		sign;
-
-	num = 0;
-	i = 0;
-	len = 0;
-	sign = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\f')
-		i++;
-	str[i] == '-' ? (sign = -1) : 0;
-	if (str[i] == '-' || str[i] == '+')
-		i++;
-	while (str[i] == '0')
-		i++;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = num * 10 + (str[i] - '0');
-		i++;
-		len++;
-	}
-	len > 10 ? push_swap_error(list) : 0;
-	return (num * sign);
-}
-
-static void		check_duplicates(t_var *list)
-{
-	t_stack		*slow;
-	t_stack		*fast;
+	t_node		*slow;
+	t_node		*fast;
 
 	slow = list->a;
-	while (slow != list->a->prev)
+	while (slow)
 	{
 		fast = slow->next;
-		while (fast != list->a)
+		while (fast)
 		{
 			if (slow->num == fast->num)
-				push_swap_error(list);
+				error_exit(list);
 			fast = fast->next;
 		}
 		slow = slow->next;
 	}
 }
 
-static void		complete_filling(t_var *list, char *str, int i, int j)
+void		creat_a(t_var *list, char *str, int i, int j)
 {
-	long int	test_int_size;
+	long int	num;
+	t_node		*new;
 
+	new = NULL;
 	while (str)
 	{
 		while (*str)
@@ -75,19 +48,20 @@ static void		complete_filling(t_var *list, char *str, int i, int j)
 				j++;
 			if (!*str)
 				break ;
-			test_int_size = atoi_push_swap(list, str);
-			if (test_int_size > 2147483647 || test_int_size < -2147483648)
-				push_swap_error(list);
-			stack_add_end(list, 'a', test_int_size);
+			num = ft_atoi(str);
+			if (num > 2147483647 || num < -2147483648)
+				error_exit(list);
+			list_filler(list, new, num);
+			//free_linked_list(new);
 			str += j;
 		}
 		str = list->argv[++i];
 	}
 	if (!list->a)
-		push_swap_error(list);
+		error_exit(list);
 }
 
-static void		error_parser(t_var *list)
+void		check_error(t_var *list)
 {
 	char	*str;
 	int		i;
@@ -107,13 +81,13 @@ static void		error_parser(t_var *list)
 						(str == list->argv[i] || *(str - 1) == ' '))
 				str++;
 			else
-				push_swap_error(list);
+				error_exit(list);
 		}
 		str = list->argv[++i];
 	}
 }
 
-void			fill_stack_a(t_var *list)
+void			fill_a(t_var *list)
 {
 	char	*str;
 	int		i;
@@ -121,13 +95,9 @@ void			fill_stack_a(t_var *list)
 
 	i = 1;
 	j = 0;
-	if (ft_strcmp(list->argv[i], "-v") == 0)
-	{
-		list->argv++;
-		list->print_stacks = 1;
-	}
 	str = list->argv[i];
-	error_parser(list);
-	complete_filling(list, str, i, j);
-	check_duplicates(list);
+	check_error(list);
+	creat_a(list, str, i, j);
+	check_dup(list);
+	indx_a(list);
 }
