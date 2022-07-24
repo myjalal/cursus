@@ -1,7 +1,69 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
-clang -o push_swap obj/main.o obj/check_duplic.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small_alg.o obj/larg_alg.o obj/larg_utils.o libft.a
- 
-# clang -fsanitize=address -o push_swap obj/main.o obj/check_duplic.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small_alg.o obj/larg_alg.o obj/larg_utils.o libft.a
+make -C libft/
+cp libft//libft.a .
+mkdir -p obj/
+echo Create: Object directory
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o check_duplic.o check_arg.o errors.o populate.o utils.o test_tools.o move.o run.o small_alg.o larg_alg.o larg_utils.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
 make: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
  
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/main.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/check_duplic.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/check_arg.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/errors.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/populate.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/utils.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/test_tools.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/move.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/run.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/small_alg.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/larg_alg.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/larg_utils.o] Error 2
+

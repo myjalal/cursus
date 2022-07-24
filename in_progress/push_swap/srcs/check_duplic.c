@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:18:17 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/17 17:22:37 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/23 19:04:25 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,13 @@ void	check_duplic(char **strv)
 			else if (ft_strcmp(strv[j], str) == 0)
 			{
 				ft_putstr_fd("Error1\n", 1);
-				str_free(&str);
+				//str_free(&str);
 				exit(1);
 			}
 			else
 				j++;
 		}
-		str_free(&str);
+		//str_free(&str);
 		i++;
 	}
 }

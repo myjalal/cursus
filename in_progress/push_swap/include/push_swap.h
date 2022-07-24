@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/17 18:48:50 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/23 21:23:13 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct node
 
 typedef struct var
 {
-	char			**temp;
+	char			**argv;
 	int				ref;
 	int				len;
 	t_node			*a;
@@ -69,7 +69,7 @@ int					list_len(t_node *a);
 
 /*--------populate.c--------*/
 // NULL list for initiation
-t_var				*list_init(t_var *list);
+t_var				*list_init(t_var *list, char **argv);
 
 // Temp argv list,  list, temp node
 t_node				*list_filler(char **argv, t_var *list, t_node *temp);

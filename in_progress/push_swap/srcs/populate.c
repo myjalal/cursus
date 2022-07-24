@@ -6,18 +6,18 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/17 18:57:42 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/23 21:22:23 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_var	*list_init(t_var *list)
+t_var	*list_init(t_var *list, char **argv)
 {
 	list = (t_var *)malloc(sizeof(t_var));
 	if (!list)
 		exit(1);
-	list->temp = NULL;
+	list->argv = argv;
 	list->len = 0;
 	list->a = NULL;
 	list->b = NULL;

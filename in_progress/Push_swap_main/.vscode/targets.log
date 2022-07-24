@@ -8,13 +8,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sun Jul 17 18:42:33 2022
+# Make data base, printed on Sat Jul 23 17:49:49 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
- 
 # automatic
 ?F = $(notdir $?)
 # makefile (from `Makefile', line 13)
@@ -36,7 +36,7 @@ CURDIR := /Users/jechekao/Desktop/cursus/in_progress/Push_swap_main
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 74)
@@ -52,7 +52,7 @@ C_OBJ = $(C_SRC:%.c=%.o)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-8d806048-40f1-43eb-9093-ff6555b11792.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-b609d384-86b7-4108-99e4-0977f1fa81d7.sock
 # environment
 VSCODE_CWD = /
 # makefile (from `Makefile', line 14)
@@ -66,7 +66,7 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # makefile (from `Makefile', line 72)
 SRC_PATH = $(S_SRC_PATH) $(P_SRC_PATH) $(C_SRC_PATH)
 # environment
-LaunchInstanceID = 852211BE-F74B-477A-A193-9ED3C9ECF603
+LaunchInstanceID = ADE530A7-63D8-4F5F-8CC2-4C2C85E708DB
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -74,7 +74,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.5JbFYiX7tL/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.qKvFvL2Pm8/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -114,6 +114,7 @@ XPC_FLAGS = 0x0
 # default
 MAKE = $(MAKE_COMMAND)
 # default
+ 
 MAKECMDGOALS := all
 # environment
 HOMEBREW_CACHE = /tmp/jechekao/Homebrew/Caches
@@ -154,7 +155,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000010.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 75)
@@ -180,7 +181,7 @@ LC_ALL = C
 # makefile (from `Makefile', line 77)
 OBJ_PATH = $(S_OBJ_PATH) $(P_OBJ_PATH) $(C_OBJ_PATH)
 # environment
-SECURITYSESSIONID = 186a7
+SECURITYSESSIONID = 18977
 # automatic
 ^F = $(notdir $^)
 # makefile (from `Makefile', line 65)
@@ -198,7 +199,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 35168
+VSCODE_PID = 98497
 # makefile (from `Makefile', line 23)
 C_SRC_DIR = srcs/checker/
 # variable set hash-table stats:
@@ -210,9 +211,9 @@ C_SRC_DIR = srcs/checker/
 
 # Directories
 
-# . (device 16777225, inode 706557): 19 files, no impossibilities.
+# . (device 16777225, inode 706557): 17 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -288,7 +289,6 @@ srcs/shared/fill_stack_a.c:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 obj/do_rr.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -367,6 +367,7 @@ srcs/shared/do_sa.c:
 
 display_stacks.o: libftprintf.a
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 102):
@@ -488,7 +489,6 @@ do_libft:
 	@cp $(LIBFT)/$(LIBFT_A) .
 	
 
- 
 obj/do_sa.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -564,6 +564,7 @@ do_sb.o: libftprintf.a
 srcs/shared/push_swap_error.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 obj/do_rra.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
@@ -676,7 +677,6 @@ obj/checker.o: srcs/checker/checker.c srcs/checker/do_launch.c srcs/checker/sort
 	@$(MAKE) $(C_OBJ)
 	
 
- 
 obj/push_swap_error.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -766,6 +766,7 @@ do_pb.o: libftprintf.a
 obj/do_rrb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared/do_pa.c srcs/shared/do_pb.c srcs/shared/do_ra.c srcs/shared/do_rb.c srcs/shared/do_rr.c srcs/shared/do_rra.c srcs/shared/do_rrb.c srcs/shared/do_rrr.c srcs/shared/do_sa.c srcs/shared/do_sb.c srcs/shared/do_ss.c srcs/shared/fill_stack_a.c srcs/shared/push_swap_error.c srcs/shared/push_swap_free.c srcs/shared/stack_add_end.c srcs/shared/stack_add_top.c srcs/shared/stack_del_top.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 93):
 	@$(MAKE) $(S_OBJ)
@@ -852,7 +853,6 @@ checker.o: libftprintf.a
 	@$(COMP) $(OBJ_DIR)$@ $(C_SRC_DIR)$(@:%.o=%.c)
 	
 
- 
 checker: obj/create_frame.o obj/display_stacks.o obj/do_pa.o obj/do_pb.o obj/do_ra.o obj/do_rb.o obj/do_rr.o obj/do_rra.o obj/do_rrb.o obj/do_rrr.o obj/do_sa.o obj/do_sb.o obj/do_ss.o obj/fill_stack_a.o obj/push_swap_error.o obj/push_swap_free.o obj/stack_add_end.o obj/stack_add_top.o obj/stack_del_top.o obj/find_biggest_smallest.o obj/find_median.o obj/find_moves.o obj/find_stack_len.o obj/insertion_solve_half.o obj/insertion_solve_quarters.o obj/push_median.o obj/push_quarters.o obj/push_swap.o obj/reset_moves.o obj/solve_5_or_less.o obj/solver.o obj/sorted.o obj/checker.o obj/do_launch.o obj/sort_test.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -933,6 +933,7 @@ push_swap.o: libftprintf.a
 	@$(COMP) $(OBJ_DIR)$@ $(P_SRC_DIR)$(@:%.o=%.c)
 	
 
+ 
 push_swap: obj/create_frame.o obj/display_stacks.o obj/do_pa.o obj/do_pb.o obj/do_ra.o obj/do_rb.o obj/do_rr.o obj/do_rra.o obj/do_rrb.o obj/do_rrr.o obj/do_sa.o obj/do_sb.o obj/do_ss.o obj/fill_stack_a.o obj/push_swap_error.o obj/push_swap_free.o obj/stack_add_end.o obj/stack_add_top.o obj/stack_del_top.o obj/find_biggest_smallest.o obj/find_median.o obj/find_moves.o obj/find_stack_len.o obj/insertion_solve_half.o obj/insertion_solve_quarters.o obj/push_median.o obj/push_quarters.o obj/push_swap.o obj/reset_moves.o obj/solve_5_or_less.o obj/solver.o obj/sorted.o obj/checker.o obj/do_launch.o obj/sort_test.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -1024,7 +1025,6 @@ obj/do_pb.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c srcs/shared
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 #  commands to execute (from `Makefile', line 93):
 	@$(MAKE) $(S_OBJ)
 	
@@ -1096,6 +1096,7 @@ obj/stack_del_top.o: srcs/shared/create_frame.c srcs/shared/display_stacks.c src
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 93):
+ 
 	@$(MAKE) $(S_OBJ)
 	
 
@@ -1196,6 +1197,6 @@ do_rrr.o: libftprintf.a
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jul 17 18:42:33 2022
+# Finished Make data base on Sat Jul 23 17:49:49 2022
 
  

@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 20:19:29 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/17 19:00:28 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/23 21:26:37 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	**gen_temp(int argc, char **argv, t_var *l)
 	return (0);
 }
 
-void	push_swap(int argc, char **argv, t_var *list)
+/*void	push_swap(int argc, char **argv, t_var *list)
 {
 	t_node	*s;
 	
@@ -31,7 +31,7 @@ void	push_swap(int argc, char **argv, t_var *list)
 	check_arg (list->temp, list);
 	list_filler(list->temp, list, s);
 	ft_free(&s);
-	free_string(list->temp);
+	//free_string(list->temp);
 	if (list->len == 1)
 		exit(1);
 	else if (sort_checker(&list->a) == 1)
@@ -41,6 +41,11 @@ void	push_swap(int argc, char **argv, t_var *list)
 	else
 		small(&list->a, &list->b, list);
 	//push_swap_free(list);
+}*/
+
+static void	push_swap(t_var *list)
+{
+	fill_a(list);
 }
 
 int	main(int argc, char **argv)
@@ -50,8 +55,8 @@ int	main(int argc, char **argv)
 	l = NULL;
 	if (argc < 2)
 		return (1);
-	l = list_init(l);
-	push_swap(argc, argv, l);
+	l = list_init(l, argv);
+	push_swap(l);
 	free_frame(l);
 	//free(l);
 	//l = NULL;
