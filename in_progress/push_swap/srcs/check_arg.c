@@ -6,11 +6,10 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 16:22:10 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 14:28:08 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// check if the arguments are valid 
 #include "push_swap.h"
 
 int	sort_checker(t_node **list)

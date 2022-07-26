@@ -6,13 +6,12 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/16 21:15:47 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 14:28:44 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-// SA and SB
 void	swap(t_node **list)
 {
 	int	i;
@@ -27,7 +26,6 @@ void	swap(t_node **list)
 	}
 }
 
-//   PA and PB
 void	one_top_two(t_node **l_one, t_node **l_two)
 {
 	t_node	*temp;
@@ -53,7 +51,6 @@ void	one_top_two(t_node **l_one, t_node **l_two)
 	}
 }
 
-// RA and RB
 void	revers(t_node **list)
 {
 	t_node	*temp;
@@ -70,7 +67,6 @@ void	revers(t_node **list)
 		*list = (*list)->previous;
 }
 
-// RRA and RRB
 void	r_revers(t_node **list)
 {
 	t_node	*temp;

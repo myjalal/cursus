@@ -6,7 +6,7 @@
 #    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:52:26 by jechekao          #+#    #+#              #
-#    Updated: 2022/07/24 17:00:45 by jechekao         ###   ########.fr        #
+#    Updated: 2022/07/25 19:44:11 by jechekao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,9 +41,11 @@ PS_FILES	=	main.c			\
 				test_tools.c	\
 				move.c			\
 				run.c			\
-				small_alg.c		\
-				larg_alg.c		\
-				larg_utils.c
+				small.c			\
+				large.c			\
+				large_utils.c	\
+				fat.c			\
+				fat_utils.c
 
 # C_FILES		=	c_srcs/c_main.c	
 

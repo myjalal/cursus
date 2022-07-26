@@ -6,13 +6,13 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 18:59:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 20:11:57 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_var	*list_init(t_var *list, char **argv) //needed
+t_var	*list_init(t_var *list, char **argv)
 {
 	list = (t_var *)malloc(sizeof(t_var));
 	if (!list)
@@ -25,7 +25,7 @@ t_var	*list_init(t_var *list, char **argv) //needed
 	return (list);
 }
 
-void	add_node(t_node **top, t_node *node) //needed
+void	add_node(t_node **top, t_node *node)
 {
 	t_node	*temp;
 
@@ -39,10 +39,9 @@ void	add_node(t_node **top, t_node *node) //needed
 		temp->next = node;
 		node->previous = temp;
 	}
-	printf("new is: %p and a is: %p\n", node, &temp);
 }
 
-void	list_filler(t_var *list, t_node *new, int num) //needed
+void	list_filler(t_var *list, t_node *new, int num)
 {
 	if (!(new = malloc(sizeof(t_node))))
 		error_exit(list);
@@ -50,12 +49,9 @@ void	list_filler(t_var *list, t_node *new, int num) //needed
 	new->previous = NULL;
 	new->num = num;
 	add_node(&list->a, new);
-	printf("new holds: %d\n", new->num);
-	//printf("new is: %p and a is: %p\n", new, &list->a);
-	//new = NULL;
 }
 
-void	indx_a(t_var *list) //needed
+void	indx_a(t_var *list)
 {
 	int		i;
 	t_node	*temp;
@@ -63,6 +59,9 @@ void	indx_a(t_var *list) //needed
 
 	sort_list(list);
 	list->len = list_len(list->a);
+	list->quarter = list->len / 4;
+	list->half = list->len / 2;
+	list->three_q = list->half / 2;
 	i = 0;
 	temp = list->sorted;
 	temp_1 = list->a;
@@ -80,7 +79,7 @@ void	indx_a(t_var *list) //needed
 	pivote(list);
 }
 
-void	pivote(t_var *list) //needed
+void	pivote(t_var *list)
 {
 	t_node	*temp;
 	int		i;

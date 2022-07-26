@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHECKER_PATH=./checker
+CHECKER_PATH=./checker_Mac
 PUSHSWAP_PATH=./push_swap
 
 ## colors

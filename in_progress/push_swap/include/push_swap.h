@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 18:13:58 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 19:49:35 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,14 @@ typedef struct var
 	char			**argv;
 	int				ref;
 	int				len;
+	int				len_b;
+	int				min;
+	int				max;
+	int				index_min;
+	int				index_max;
+	int				quarter;
+	int				half;
+	int				three_q;
 	t_node			*a;
 	t_node			*b;
 	t_node			*sorted;
@@ -48,7 +56,6 @@ void			check_error(t_var *list);
 void			creat_a(t_var *list, char *str, int i, int j);
 
 void			check_dup(t_var *list);
-
 
 /*-------check_arg.c--------*/
 
@@ -79,13 +86,9 @@ void				pivote(t_var *list);
 // Prints erros with correct output
 void				error_exit(t_var *list);
 
-//void				push_swap_free(t_var *frame);
-
 void				free_linked_list(t_node *list);
 
 void				free_all(t_var *frame);
-
-void				free_string(char **str);
 /*--------utils.c-----------*/
 
 //find min of a list
@@ -99,6 +102,9 @@ int					find_indx(t_node *list, int num);
 
 // find the number at position indx
 int					find_num(t_node *list, int indx);
+
+// Find the min and max of list->b
+void				find_min_max_b(t_var *list);
 
 /*---------move.c-----------*/
 // oparations
@@ -131,7 +137,7 @@ void				rotate_a(t_var *list);
 // smart rotation of stack B
 void				rotate_b(t_var *list);
 
-/*--------small_alg.c-------*/
+/*--------small.c-------*/
 // algo for 10 args or less
 void				small(t_node **a, t_node **b, t_var *list);
 
@@ -144,9 +150,9 @@ void				ten_num(t_node **a, t_node **b, int len);
 // choose if it ra or rb
 void				rorate(t_node **a, int min, int len);
 
-/*--------larg_alg.c-------*/
+/*--------large.c-------*/
 // algo for more then 10 args
-void				larg(t_var *list);
+void				large(t_var *list);
 
 // First sort
 void				sort(t_var *list);
@@ -161,7 +167,7 @@ void				sort_max(t_var *list);
 int					find_max(t_node	*list);
 
 
-/*----------larg_utils-------*/
+/*----------large_utils-------*/
 // duplicate list and return new sorted list
 void				sort_list(t_var *list);
 
@@ -173,6 +179,14 @@ void				num_swap(t_node *x, t_node *y);
 
 // return 0 if list->indx > ref return 1 if list->indx < ref and 2 if list->indx == ref
 int					ref_check(t_node *list, int	ref);
+
+/*-------------fat.c--------*/
+
+// find fastest num to send from a to b (min or max)
+void				fat(t_var *list);
+
+/*------------fat_utils.c------*/
+void				ai_rotate_b(t_node *b, t_var *list);
 
 /*---------test_tools.c------*/ // !!!!! DELETE
 // Print linked list to test

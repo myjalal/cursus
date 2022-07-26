@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 21:27:03 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 18:38:51 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 13:53:20 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ void		creat_a(t_var *list, char *str, int i, int j)
 			if (num > 2147483647 || num < -2147483648)
 				error_exit(list);
 			list_filler(list, new, num);
-			//free_linked_list(new);
 			str += j;
 		}
 		str = list->argv[++i];

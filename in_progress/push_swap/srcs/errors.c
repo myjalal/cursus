@@ -6,11 +6,10 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 18:50:41 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 18:31:57 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/25 14:28:16 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// managing errors
 #include "push_swap.h"
 
 void		free_linked_list(t_node *list)
@@ -20,7 +19,7 @@ void		free_linked_list(t_node *list)
 
 	if (list)
 	{
-		node = list->next;
+		node = list;
 		while (node)
 		{
 			delete = node;
@@ -55,21 +54,6 @@ void		free_all(t_var *list)
 		free(list);
 		list = NULL;
 	}
-}
-
-void			free_string(char **str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
-	{
-		free(str[i]);
-		i++;
-	}
-	if (str[i] == NULL)
-		free(str[i]);
-	str = NULL;
 }
 
 void	error_exit(t_var *list)

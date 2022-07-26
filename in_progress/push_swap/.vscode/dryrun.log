@@ -1,6 +1,27 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
-make: Nothing to be done for `all'.
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
  
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/main.c -o obj/main.o
+ 
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/utils.c -o obj/utils.o
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/test_tools.c -o obj/test_tools.o
+ 
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/small.c -o obj/small.o
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/large.c -o obj/large.o
+ 
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/large_utils.c -o obj/large_utils.o
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/fat.c -o obj/fat.o
+mkdir -p obj/ obj/ps_srcs obj/c_srcs
+clang -g -c -Wall -Wextra -Werror		 -I include/ -I libft/ srcs/fat_utils.c -o obj/fat_utils.o
+ 
+clang -o push_swap obj/main.o obj/fill_a.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small.o obj/large.o obj/large_utils.o obj/fat.o obj/fat_utils.o libft.a
+# clang -fsanitize=address -o push_swap obj/main.o obj/fill_a.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/run.o obj/small.o obj/large.o obj/large_utils.o obj/fat.o obj/fat_utils.o libft.a
 make: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap'
  
