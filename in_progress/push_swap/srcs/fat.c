@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 19:37:25 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/26 18:14:25 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/26 18:15:02 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void	push_btoa(t_var *list, int indx, int i)
 		
 	else
 	{
-		//printf("j = %d , len_b/2 = %d\n", j, list->len_b);
 		if (j > (list->len_b)/2)
 		{
 			while (list->b->indx != indx)
@@ -84,7 +83,6 @@ void		turn_count(t_var *list) // assigne search
 		else
 			list->len = (list->len / 4) - 1;
 	}
-	//printf("from = %d, ref = %d\n", list->from, list->ref);
 }
 
 void	fat(t_var *list)
@@ -105,13 +103,9 @@ void	fat(t_var *list)
 				run(5, &list->a, &list->b);
 			i--;
 			temp = list->a;
-			//print_list_index(list->a, list->b);
 		}
-		//print_list_index(list->a, list->b); //delete
 		ai_pushbtoa(list);
-		//print_list_index(list->a, list->b); //delete
 		list->turn--;
-		//printf("TURN = %d\n", list->turn);
 		fat(list);
 	}
 }
