@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 20:11:57 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/26 16:29:16 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ t_var	*list_init(t_var *list, char **argv)
 		exit(1);
 	list->argv = argv;
 	list->len = 0;
+	list->from = 0;
+	list->turn = 4;
 	list->a = NULL;
 	list->b = NULL;
 	list->sorted = NULL;
@@ -59,9 +61,6 @@ void	indx_a(t_var *list)
 
 	sort_list(list);
 	list->len = list_len(list->a);
-	list->quarter = list->len / 4;
-	list->half = list->len / 2;
-	list->three_q = list->half / 2;
 	i = 0;
 	temp = list->sorted;
 	temp_1 = list->a;

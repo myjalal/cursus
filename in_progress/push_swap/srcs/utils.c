@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:43:09 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 19:48:48 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/26 14:09:43 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	find_num(t_node *list, int indx)
 
 void	find_min_max_b(t_var *list) // new
 {
-	list->min = find_min(list->b);
-	list->max = find_max(list->b);
+	list->min = find_min_index(list->b);
+	list->max = find_max_index(list->b);
 	list->len_b = (list_len(list->b)/2);
 }

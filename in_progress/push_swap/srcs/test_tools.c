@@ -34,6 +34,34 @@ void	print_list(t_node *a, t_node *b)
 	printf("______\nA    B\n\n");
 }
 
+void	print_list_index(t_node *a, t_node *b)
+{
+	const t_node	*temp_a;
+	const t_node	*temp_b;
+
+	printf("\nPrinting list index ...\n\n");
+	temp_a = a;
+	temp_b = b;
+	while (temp_a || temp_b)
+	{
+		if (temp_a)
+		{
+			printf("%d    ", temp_a->indx);
+			temp_a = temp_a->next;
+		}
+		else if (!temp_a)
+			printf("     ");
+		if (temp_b)
+		{
+			printf("%d\n", temp_b->indx);
+			temp_b = temp_b->next;
+		}
+		else if (!temp_b)
+			printf(" \n");
+	}
+	printf("______\nA    B\n\n");
+}
+
 void	print_indx(t_node *a, t_node *sorted)
 {
 	const t_node	*temp_a;

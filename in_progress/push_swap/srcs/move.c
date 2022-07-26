@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 11:28:04 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 14:28:44 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/26 18:07:41 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,24 @@
 void	swap(t_node **list)
 {
 	int	i;
+	int	i_indx;
 	int	j;
+	int	j_indx;
 
 	if ((*list) && (*list)->next)
 	{
 		i = (*list)->num;
+		i_indx = (*list)->indx;
 		j = (*list)->next->num;
+		j_indx = (*list)->next->indx;
 		(*list)->next->num = i;
+		(*list)->next->indx = i_indx;
 		(*list)->num = j;
+		(*list)->indx = j_indx;
+		
 	}
 }
+
 
 void	one_top_two(t_node **l_one, t_node **l_two)
 {

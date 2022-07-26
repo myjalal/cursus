@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 19:34:33 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 19:49:35 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/26 17:05:07 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,8 @@ typedef struct var
 	int				max;
 	int				index_min;
 	int				index_max;
-	int				quarter;
-	int				half;
-	int				three_q;
+	int				turn;
+	int				from;
 	t_node			*a;
 	t_node			*b;
 	t_node			*sorted;
@@ -163,10 +162,6 @@ void				sort_min(t_var *list);
 // Last sort
 void				sort_max(t_var *list);
 
-// Find max number of list
-int					find_max(t_node	*list);
-
-
 /*----------large_utils-------*/
 // duplicate list and return new sorted list
 void				sort_list(t_var *list);
@@ -180,17 +175,32 @@ void				num_swap(t_node *x, t_node *y);
 // return 0 if list->indx > ref return 1 if list->indx < ref and 2 if list->indx == ref
 int					ref_check(t_node *list, int	ref);
 
+// Find max number of list
+int					find_max(t_node	*list);
+
 /*-------------fat.c--------*/
 
 // find fastest num to send from a to b (min or max)
 void				fat(t_var *list);
 
+void				push_atob(t_var *list, int i);
+
+void				push_btoa(t_var *list, int indx, int i);
+
 /*------------fat_utils.c------*/
+int					find_max_index(t_node	*list);
+
+int					find_min_index(t_node	*list);
+
 void				ai_rotate_b(t_node *b, t_var *list);
+
+void				ai_pushbtoa(t_var *list);
 
 /*---------test_tools.c------*/ // !!!!! DELETE
 // Print linked list to test
 void				print_list(t_node *a, t_node *b);
+
+void				print_list_index(t_node *a, t_node *b);
 
 void				print_indx(t_node *a, t_node *sorted);
 
