@@ -5,6 +5,215 @@ cp libft//libftprintf.a .
 mkdir -p obj/
 echo Create: Object directory
 /Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+ 
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
  
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: create_frame.o"\x1b[1A\x1b[M"
@@ -131,89 +340,6 @@ echo Create: stack_del_top.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
- 
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
  
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: create_frame.o"\x1b[1A\x1b[M"
@@ -232,214 +358,7 @@ echo Create: do_rr.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
 echo Create: do_rra.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
  
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
- 
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
- 
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
 echo Create: do_rrb.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
 echo Create: do_rrr.o"\x1b[1A\x1b[M"
@@ -507,6 +426,51 @@ gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
  
 /Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+ 
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: create_frame.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
@@ -590,6 +554,179 @@ echo Create: stack_del_top.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+ 
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+ 
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: create_frame.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
+ 
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: create_frame.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
@@ -635,169 +772,44 @@ make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: create_frame.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
+echo Create: display_stacks.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
+echo Create: do_pa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
+echo Create: do_pb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
+echo Create: do_ra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
+echo Create: do_rb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
+echo Create: do_rr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
+echo Create: do_rra.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
+echo Create: do_rrb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
+echo Create: do_rrr.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
+echo Create: do_sa.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
+echo Create: do_sb.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
+echo Create: do_ss.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
+echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
+echo Create: push_swap_error.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
+echo Create: push_swap_free.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
+echo Create: stack_add_end.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
+echo Create: stack_add_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
+echo Create: stack_del_top.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
  
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
- 
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make create_frame.o display_stacks.o do_pa.o do_pb.o do_ra.o do_rb.o do_rr.o do_rra.o do_rrb.o do_rrr.o do_sa.o do_sb.o do_ss.o fill_stack_a.o push_swap_error.o push_swap_free.o stack_add_end.o stack_add_top.o stack_del_top.o
- 
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: create_frame.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/create_frame.o srcs/shared/create_frame.c
-echo Create: display_stacks.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/display_stacks.o srcs/shared/display_stacks.c
-echo Create: do_pa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pa.o srcs/shared/do_pa.c
-echo Create: do_pb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_pb.o srcs/shared/do_pb.c
-echo Create: do_ra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ra.o srcs/shared/do_ra.c
-echo Create: do_rb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rb.o srcs/shared/do_rb.c
-echo Create: do_rr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rr.o srcs/shared/do_rr.c
-echo Create: do_rra.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rra.o srcs/shared/do_rra.c
-echo Create: do_rrb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrb.o srcs/shared/do_rrb.c
-echo Create: do_rrr.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_rrr.o srcs/shared/do_rrr.c
-echo Create: do_sa.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sa.o srcs/shared/do_sa.c
-echo Create: do_sb.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_sb.o srcs/shared/do_sb.c
-echo Create: do_ss.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/do_ss.o srcs/shared/do_ss.c
-echo Create: fill_stack_a.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/fill_stack_a.o srcs/shared/fill_stack_a.c
-echo Create: push_swap_error.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_error.o srcs/shared/push_swap_error.c
-echo Create: push_swap_free.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap_free.o srcs/shared/push_swap_free.c
-echo Create: stack_add_end.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_end.o srcs/shared/stack_add_end.c
-echo Create: stack_add_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_add_top.o srcs/shared/stack_add_top.c
-echo Create: stack_del_top.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/stack_del_top.o srcs/shared/stack_del_top.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
  
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
@@ -828,243 +840,7 @@ gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj
 echo Create: sorted.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
  
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
- 
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
- 
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
- 
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
- 
-make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
-echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
-echo Create: find_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
-echo Create: find_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
-echo Create: find_stack_len.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
-echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
-echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
-echo Create: push_median.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
-echo Create: push_quarters.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
-echo Create: push_swap.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
-echo Create: reset_moves.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
-echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
-echo Create: solver.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
-echo Create: sorted.o"\x1b[1A\x1b[M"
-gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
-make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
  
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
@@ -1153,9 +929,255 @@ echo Create: solver.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
 echo Create: sorted.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+ 
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
  
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+ 
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+ 
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+ 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
+echo Create: find_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_median.o srcs/push_swap/find_median.c
+echo Create: find_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_moves.o srcs/push_swap/find_moves.c
+echo Create: find_stack_len.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_stack_len.o srcs/push_swap/find_stack_len.c
+echo Create: insertion_solve_half.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_half.o srcs/push_swap/insertion_solve_half.c
+echo Create: insertion_solve_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/insertion_solve_quarters.o srcs/push_swap/insertion_solve_quarters.c
+echo Create: push_median.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_median.o srcs/push_swap/push_median.c
+echo Create: push_quarters.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_quarters.o srcs/push_swap/push_quarters.c
+echo Create: push_swap.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/push_swap.o srcs/push_swap/push_swap.c
+echo Create: reset_moves.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/reset_moves.o srcs/push_swap/reset_moves.c
+echo Create: solve_5_or_less.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solve_5_or_less.o srcs/push_swap/solve_5_or_less.c
+echo Create: solver.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/solver.o srcs/push_swap/solver.c
+echo Create: sorted.o"\x1b[1A\x1b[M"
+gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make find_biggest_smallest.o find_median.o find_moves.o find_stack_len.o insertion_solve_half.o insertion_solve_quarters.o push_median.o push_quarters.o push_swap.o reset_moves.o solve_5_or_less.o solver.o sorted.o
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: find_biggest_smallest.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/find_biggest_smallest.o srcs/push_swap/find_biggest_smallest.c
@@ -1185,6 +1207,7 @@ echo Create: sorted.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sorted.o srcs/push_swap/sorted.c
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make checker.o do_launch.o sort_test.o
+ 
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: checker.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/checker.o srcs/checker/checker.c
@@ -1194,6 +1217,7 @@ echo Create: sort_test.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/sort_test.o srcs/checker/sort_test.c
 make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make checker.o do_launch.o sort_test.o
+ 
 make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/Push_swap_main'
 echo Create: checker.o"\x1b[1A\x1b[M"
 gcc -Wall -Werror -Wextra -I includes -I libft/includes -I libft/libft -c -o obj/checker.o srcs/checker/checker.c
