@@ -6,11 +6,55 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:36:32 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 14:28:08 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 15:25:29 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	rotate_a(t_var *list)
+{
+	int		indx;
+	int		num;
+	t_node	*temp;
+
+	temp = list->a;
+	num = (list_len(temp) / 2);
+	indx = 1;
+	while (temp)
+	{
+		if (temp->num <= list->ref)
+			break ;
+		temp = temp->next;
+		indx++;
+	}
+	if (indx < num)
+		run_fat(5, list);
+	else
+		run_fat(7, list);
+}
+
+void	rotate_b(t_var *list)
+{
+	int		indx;
+	int		num;
+	t_node	*temp;
+
+	temp = list->b;
+	num = (list_len(temp) / 2);
+	indx = 1;
+	while (temp)
+	{
+		if (temp->num >= list->ref)
+			break ;
+		temp = temp->next;
+		indx++;
+	}
+	if (list->b && indx < num)
+		run_fat(6, list);
+	else if (list->b)
+		run_fat(8, list);
+}
 
 int	sort_checker(t_node **list)
 {

@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:43:09 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/26 18:15:48 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 18:41:24 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,5 @@ void	find_min_max_b(t_var *list)
 {
 	list->min = find_min_index(list->b);
 	list->max = find_max_index(list->b);
-	list->len_b = (list_len(list->b)/2);
+	list->len_b = (list_len(list->b) / 2);
 }

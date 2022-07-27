@@ -5,34 +5,29 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/17 15:52:26 by jechekao          #+#    #+#              #
-#    Updated: 2022/07/25 19:44:11 by jechekao         ###   ########.fr        #
+#    Created: 2022/07/23 18:01:38 by jechekao          #+#    #+#              #
+#    Updated: 2022/07/27 19:46:21 by jechekao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-PS_NAME		=	push_swap
-# C_NAME		=	checker
+PUSH_SWAP =		push_swap
 
-CC			=	clang
-
-LIB_DIR		=	libft/
+NAME =			$(PUSH_SWAP) $(CHECKER)
+LIBFT		=	libft/
 LIB			=	libft.a
 
-DIR			=	srcs/
-OBJ_DIR		=	obj/
-SUB_DIR		=	obj/ps_srcs obj/c_srcs
+COMP =			gcc -Wall -Werror -Wextra -I include -I libft/ -c -o
 
 FLAG		=	-c			\
 				-Wall		\
 				-Wextra		\
-				-Werror		
+				-Werror		\
 
-INCLUDE		=	-I include/					\
-				-I $(LIB_DIR)
+OBJ_DIR =		obj/
+DIR =			srcs/
+C_SRC_DIR =		c_srcs/
 
-RM			=	/bin/rm -f
-
-PS_FILES	=	main.c			\
+P_SRC =			main.c			\
 				fill_a.c		\
 				check_arg.c		\
 				errors.c		\
@@ -40,46 +35,71 @@ PS_FILES	=	main.c			\
 				utils.c			\
 				test_tools.c	\
 				move.c			\
-				run.c			\
 				small.c			\
 				large.c			\
 				large_utils.c	\
 				fat.c			\
-				fat_utils.c
+				fat_utils.c		\
+				run_fat.c
 
-# C_FILES		=	c_srcs/c_main.c	
+C_SRC =			checker.c
 
-PS_SRCS		=	$(addprefix $(DIR), $(PS_FILES))
-# C_SRCS		=	$(addprefix $(DIR), $(C_FILES))
-PS_OBJ		=	$(PS_SRCS:$(DIR)%.c=$(OBJ_DIR)%.o)
-# C_OBJ		=	$(C_SRCS:$(DIR)%.c=$(OBJ_DIR)%.o)
+P_OBJ =			$(P_SRC:%.c=%.o)
+C_OBJ =			$(C_SRC:%.c=%.o)
+OBJ =			$(P_OBJ) $(C_OBJ)
 
-all			:	$(PS_NAME)	
-# $(C_NAME) 
+P_SRC_PATH =   	$(P_SRC:%=$(DIR)%)
+C_SRC_PATH =   	$(C_SRC:%=$(C_SRC_DIR)%)
+SRC_PATH =		$(P_SRC_PATH) $(C_SRC_PATH)
 
-obj/%.o		:	srcs/%.c
-				@mkdir -p $(OBJ_DIR) $(SUB_DIR)
-				$(CC) -g $(FLAG) $(INCLUDE) $< -o $@
+P_OBJ_PATH =	$(addprefix $(OBJ_DIR), $(P_OBJ))
+C_OBJ_PATH =	$(addprefix $(OBJ_DIR), $(C_OBJ))
+OBJ_PATH =		$(P_OBJ_PATH) $(C_OBJ_PATH)
 
-$(LIB)		:	
-				@$(MAKE) -C $(LIB_DIR)
-				/bin/mv $(LIB_DIR)$(LIB) .
+all:			color do_libft $(OBJ_DIR) $(NAME)
+				@echo "\\n\033[32;1m PUSH_SWAP COMPLETE \033[0m \\n"
 
-$(PS_NAME)	:	$(PS_OBJ) $(LIB)
-				$(CC) -o $@ $^
+$(OBJ_DIR):
+				@mkdir -p $(OBJ_DIR)
+				@echo Create: Object directory
 
-# $(C_NAME)	:	$(C_OBJ) $(LIB)
-				# $(CC) -fsanitize=address -o $@ $^
+$(NAME):		$(OBJ_PATH)
+				@gcc $(P_OBJ_PATH) *.a -o push_swap \
+					-I includes -I libft/
+				@gcc $(C_OBJ_PATH) *.a -o checker \
+					-I includes -I libft/
 
-clean		:	
-				@/bin/rm -rf $(OBJ_DIR)
+$(P_OBJ_PATH):	$(P_SRC_PATH)
+				@$(MAKE) $(P_OBJ)
 
-fclean		:	clean
-				@$(MAKE) fclean -C $(LIB_DIR)
-				@$(RM) $(LIB)
-				@$(RM) $(PS_NAME)
-				# @$(RM) $(C_NAME)
+$(C_OBJ_PATH):	$(C_SRC_PATH)
+				@$(MAKE) $(C_OBJ)
 
-re			:	fclean all
+$(C_OBJ):		$(LIB)
+				@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+				@$(COMP) $(OBJ_DIR)$@ $(C_SRC_DIR)$(@:%.o=%.c)
 
-.PHONY		:	all clean fclean re
+$(P_OBJ):		$(LIB)
+				@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+				@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+
+do_libft:
+				@make -C $(LIBFT)
+				@cp $(LIBFT)/$(LIB) .
+
+colour:
+				@echo "\x1b[36m""\x1b[1A\x1b[M"
+
+clean:			color
+				@/bin/rm -rf $(OBJ_DIR) $(LIB)
+				@make -C $(LIBFT) clean
+				@echo "\\n\033[32;1m Cleaned libft object files \033[0m"
+
+fclean:			clean
+				@/bin/rm -f $(PUSH_SWAP) $(CHECKER) $(LIB)
+				@make -C $(LIBFT) fclean
+				@echo "\\n\033[32;1m Cleaned $(NAME) \033[0m \\n"
+
+re: 			fclean all
+
+.PHONY:			all clean flcean re color

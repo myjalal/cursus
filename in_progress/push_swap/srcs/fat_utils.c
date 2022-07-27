@@ -6,11 +6,21 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 19:44:39 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/26 18:14:12 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 18:41:20 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+int	find_last_indx(t_node *list)
+{
+	t_node	*temp;
+
+	temp = list;
+	while (temp->next)
+		temp = temp->next;
+	return (temp->indx);
+}
 
 int	find_min_index(t_node	*list)
 {
@@ -80,6 +90,15 @@ void	ai_rotate_b(t_node *b, t_var *list)
 
 void	ai_pushbtoa(t_var *list)
 {
+	int	i;
+
+	i = 0;
+	if (list->turn == 2)
+	{
+		i = (list->len / 2) + 1;
+		while (find_last_indx(list->a) >= list->ref)
+			run_fat(7, list);
+	}
 	while (list->b)
 	{
 		ai_rotate_b(list->b, list);
@@ -91,6 +110,6 @@ void	ai_pushbtoa(t_var *list)
 		else
 			push_btoa(list, list->max, 0);
 	}
-	while(list->a->indx >= list->from && list->a->indx <= list->ref)
-		run(5, &list->a, &list->b);
+	while (list->a->indx >= list->from && list->a->indx <= list->ref)
+		run_fat(5, list);
 }

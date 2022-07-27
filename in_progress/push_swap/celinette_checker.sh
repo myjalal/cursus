@@ -27,7 +27,7 @@ printf "${LP}Number of runs: ${NC}"
 echo $NUM_RUNS
 
 #PUSH_SWAP FOR 200 NUMBERS ============================================================
-printf "${LP}\n*** Running pushswap for 1 to 200\n${NC}"
+printf "${LP}\n*** Running pushswap for -200 to 200\n${NC}"
 i="0"
 while [ $i -lt $NUM_RUNS ]
 	do
@@ -39,7 +39,7 @@ grep -o "KO" '/Users/jechekao/Desktop/cursus/in_progress/push_swap/celinette_che
 cat /dev/null > './celinette_checker'
 
 #PUSH_SWAP FOR -100 to 100 NUMBERS ============================================================
-printf "${LP}\n*** Running pushswap for -100 to 100\n${NC}"
+printf "${LP}\n*** Running pushswap for -1000 to 1000\n${NC}"
 i="0"
 while [ $i -lt $NUM_RUNS ]
 	do

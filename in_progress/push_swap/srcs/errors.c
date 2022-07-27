@@ -6,16 +6,16 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 18:50:41 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/25 14:28:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 15:31:02 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void		free_linked_list(t_node *list)
+void	free_linked_list(t_node *list)
 {
-	t_node		*node;
-	t_node		*delete;
+	t_node	*node;
+	t_node	*delete;
 
 	if (list)
 	{
@@ -32,7 +32,7 @@ void		free_linked_list(t_node *list)
 	}
 }
 
-void		free_all(t_var *list)
+void	free_all(t_var *list)
 {
 	if (list)
 	{

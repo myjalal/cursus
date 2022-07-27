@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   larg_utils.c                                       :+:      :+:    :+:   */
+/*   large_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 14:28:22 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/24 18:44:13 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 15:32:30 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,8 @@ t_node	*copy_list(t_node *head, t_var *list)
 		return (NULL);
 	else
 	{
-		if (!(new = (t_node *)malloc(sizeof(t_node))))
+		new = (t_node *)malloc(sizeof(t_node));
+		if (!new)
 			error_exit(list);
 		new->num = head->num;
 		new->next = copy_list(head->next, list);

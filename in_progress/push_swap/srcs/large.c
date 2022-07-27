@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:15:43 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/26 16:45:05 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 14:07:52 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ void	sort_max(t_var *list)
 		while (ref_check(list->b, list->ref) == 2)
 		{
 			if (list->b->next && list->b->next->num == list->ref)
-				run(2, &list->a, &list->b);
+				run_fat(2, list);
 			while (list->b && list->b->num != list->ref)
 				rotate_b(list);
 			while (list->b && list->b->num == list->ref)
 			{
-				run(3, &list->a, &list->b);
+				run_fat(3, list);
 				list->ref = find_max(list->b);
 			}
 		}
@@ -38,11 +38,11 @@ void	sort_min(t_var *list)
 	{
 		list->ref = find_min(list->a);
 		if (list->a->next && list->a->next->num == list->ref)
-			run(1, &list->a, &list->b);
+			run_fat(1, list);
 		while (ref_check(list->a, list->ref))
 		{
 			if (list->a->num == list->ref)
-				run(4, &list->a, &list->b);
+				run_fat(4, list);
 			else
 				rotate_a(list);
 		}
@@ -63,7 +63,7 @@ void	sort(t_var *list)
 		{
 			if (list->a->num <= list->ref)
 			{
-				run(4, &list->a, &list->b);
+				run_fat(4, list);
 				i--;
 			}
 			else

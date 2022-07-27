@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Jul 26 14:38:35 2022
+# Make data base, printed on Wed Jul 27 11:30:09 2022
 
 # Variables
 
@@ -51,13 +51,13 @@ C_OBJ = $(C_SRC:%.c=%.o)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-155ad27a-7711-4b52-9f91-3329d419b67f.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-621710d2-8132-4c57-888e-1f57f91618ff.sock
 # environment
 VSCODE_CWD = /
 # makefile (from `Makefile', line 14)
 CHECKER = checker
 # environment
-PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
+PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 # makefile (from `Makefile', line 64)
 S_OBJ = $(S_SRC:%.c=%.o)
 # environment
@@ -65,13 +65,15 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # makefile (from `Makefile', line 72)
 SRC_PATH = $(S_SRC_PATH) $(P_SRC_PATH) $(C_SRC_PATH)
 # environment
+LaunchInstanceID = C1C858B2-AAE4-4CB8-9A85-F29DB5FA96BD
+# environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.IUa7Oulets/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.y2KuYcIgF7/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -151,7 +153,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.2648
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 75)
@@ -164,6 +166,8 @@ LIBFT_A = libftprintf.a
 S_SRC = create_frame.c display_stacks.c do_pa.c do_pb.c do_ra.c do_rb.c do_rr.c do_rra.c do_rrb.c do_rrr.c do_sa.c do_sb.c do_ss.c fill_stack_a.c push_swap_error.c push_swap_free.c stack_add_end.c stack_add_top.c stack_del_top.c
 # environment
 __CF_USER_TEXT_ENCODING = 0x18B02:0x0:0x52
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -174,6 +178,8 @@ PAGER = less
 LC_ALL = C
 # makefile (from `Makefile', line 77)
 OBJ_PATH = $(S_OBJ_PATH) $(P_OBJ_PATH) $(C_OBJ_PATH)
+# environment
+SECURITYSESSIONID = 186a7
 # automatic
 ^F = $(notdir $^)
 # makefile (from `Makefile', line 65)
@@ -191,11 +197,11 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 17340
+VSCODE_PID = 55508
 # makefile (from `Makefile', line 23)
 C_SRC_DIR = srcs/checker/
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=53/171=31%
+# Load=94/1024=9%, Rehash=0, Collisions=53/174=30%
 
 # Pattern-specific Variable Values
 
@@ -1189,6 +1195,6 @@ do_rrr.o: libftprintf.a
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Jul 26 14:38:35 2022
+# Finished Make data base on Wed Jul 27 11:30:09 2022
 
  

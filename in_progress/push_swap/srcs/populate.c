@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 16:37:28 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/26 16:29:16 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/27 17:18:23 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ t_var	*list_init(t_var *list, char **argv)
 	if (!list)
 		exit(1);
 	list->argv = argv;
+	list->move = 0;
 	list->len = 0;
 	list->from = 0;
 	list->turn = 4;
@@ -43,9 +44,12 @@ void	add_node(t_node **top, t_node *node)
 	}
 }
 
-void	list_filler(t_var *list, t_node *new, int num)
+void	list_filler(t_var *list, int num)
 {
-	if (!(new = malloc(sizeof(t_node))))
+	t_node	*new;
+
+	new = malloc(sizeof(t_node));
+	if (!new)
 		error_exit(list);
 	new->next = NULL;
 	new->previous = NULL;
