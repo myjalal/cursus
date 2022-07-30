@@ -1,0 +1,82 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make -C libft/
+cp libft//libft.a .
+mkdir -p obj/
+echo Create: Object directory
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+ 
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+ 
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/main.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/fill_a.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/check_arg.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/errors.o] Error 2
+
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make main.o fill_a.o check_arg.o errors.o populate.o utils.o test_tools.o move.o small.o large.o large_utils.o fat.o fat_utils.o run_fat.o
+make[1]: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make[1]: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+make: Leaving directory `/Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct'
+ 
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/populate.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/utils.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/test_tools.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/move.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/small.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/large.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/large_utils.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/fat.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/fat_utils.o] Error 2
+make[1]: *** No rule to make target `libft.a', needed by `main.o'.
+make: *** [obj/run_fat.o] Error 2
+

@@ -1,0 +1,672 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Fri Jul 29 12:29:19 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from `Makefile', line 13)
+PUSH_SWAP = push_swap
+# makefile (from `Makefile', line 40)
+OBJ = $(P_OBJ)
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from `Makefile', line 42)
+P_SRC_PATH = $(P_SRC:%=$(DIR)%)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 19)
+COMP = gcc -Wall -Werror -Wextra -I include -I libft/ -c -g -o
+# makefile (from `Makefile', line 21)
+OBJ_DIR = obj/
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-7b924c4d-dc57-4526-9aee-c49fdf14300a.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 43)
+SRC_PATH = $(P_SRC_PATH)
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 17)
+LIB = libft.a
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 22)
+DIR = srcs/
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.tsu17qqFPm/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+HOMEBREW_TEMP = /tmp/jechekao/Homebrew/Temp
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/jechekao/Desktop/cursus/in_progress/push_swap_ready_to_correct
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/jechekao
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/jechekao/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+LOGNAME = jechekao
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/jechekao/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+HOMEBREW_CACHE = /tmp/jechekao/Homebrew/Caches
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 16)
+LIBFT = libft/
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = jechekao
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 15)
+NAME = $(PUSH_SWAP)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/jechekao/Library/Application Support/Code/1.68.0-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = com.microsoft.VSCode.2648
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 45)
+P_OBJ_PATH = $(addprefix $(OBJ_DIR), $(P_OBJ))
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 24)
+P_SRC = main.c fill_a.c check_arg.c errors.c populate.c utils.c test_tools.c move.c small.c large.c large_utils.c fat.c fat_utils.c run_fat.c
+# environment
+__CF_USER_TEXT_ENCODING = 0x18B02:0x0:0x52
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 46)
+OBJ_PATH = $(P_OBJ_PATH)
+# automatic
+^F = $(notdir $^)
+# makefile (from `Makefile', line 39)
+P_OBJ = $(P_SRC:%.c=%.o)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 94606
+# variable set hash-table stats:
+# Load=80/1024=8%, Rehash=0, Collisions=14/130=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777225, inode 389840): 19 files, no impossibilities.
+
+# 19 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+colour:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 71):
+	@echo "\x1b[36m""\x1b[1A\x1b[M"
+	
+
+populate.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+all: color do_libft obj push_swap
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  commands to execute (from `Makefile', line 49):
+	@echo "\\n\033[32;1m PUSH_SWAP COMPLETE \033[0m \\n"
+	
+
+obj/small.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+.PHONY: all clean flcean re color
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+flcean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+srcs/small.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/move.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/move.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/errors.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+obj/fat.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/errors.c:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/fat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/large_utils.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+do_libft:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := do_libft
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  commands to execute (from `Makefile', line 67):
+	@make -C $(LIBFT)
+	@cp $(LIBFT)/$(LIB) .
+	
+
+obj/main.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/large_utils.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+errors.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-28 15:51:38
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fill_a.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+# Not a target:
+libft.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+small.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+run_fat.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+large.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+fat_utils.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 79):
+	@/bin/rm -f $(PUSH_SWAP) $(LIB)
+	@make -C $(LIBFT) fclean
+	@echo "\\n\033[32;1m Cleaned $(NAME) \033[0m \\n"
+	
+
+obj/check_arg.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+obj:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	@mkdir -p $(OBJ_DIR)
+	@echo Create: Object directory
+	
+
+# Not a target:
+srcs/check_arg.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+color:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+obj/populate.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/populate.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/large.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/large.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_tools.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+obj/fill_a.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+clean: color
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 74):
+	@/bin/rm -rf $(OBJ_DIR) $(LIB)
+	@make -C $(LIBFT) clean
+	@echo "\\n\033[32;1m Cleaned libft object files \033[0m"
+	
+
+obj/utils.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/fill_a.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/utils.c:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+check_arg.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+push_swap: obj/main.o obj/fill_a.o obj/check_arg.o obj/errors.o obj/populate.o obj/utils.o obj/test_tools.o obj/move.o obj/small.o obj/large.o obj/large_utils.o obj/fat.o obj/fat_utils.o obj/run_fat.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 56):
+	@gcc $(P_OBJ_PATH) *.a -o push_swap \
+	-I includes -I libft/
+	
+
+move.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+utils.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+large_utils.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+obj/test_tools.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+main.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+fat.o: libft.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 63):
+	@echo Create: $(@:obj/%=%)"\x1b[1A\x1b[M"
+	@$(COMP) $(OBJ_DIR)$@ $(DIR)$(@:%.o=%.c)
+	
+
+obj/fat_utils.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/test_tools.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+srcs/fat_utils.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/run_fat.o: srcs/main.c srcs/fill_a.c srcs/check_arg.c srcs/errors.c srcs/populate.c srcs/utils.c srcs/test_tools.c srcs/move.c srcs/small.c srcs/large.c srcs/large_utils.c srcs/fat.c srcs/fat_utils.c srcs/run_fat.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 60):
+	@$(MAKE) $(P_OBJ)
+	
+
+# Not a target:
+srcs/run_fat.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=57/1024=6%, Rehash=0, Collisions=18/308=6%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Fri Jul 29 12:29:19 2022
+
+ 
