@@ -1,43 +1,101 @@
-make: Entering directory `/Users/jechekao/Desktop/cursus/push_swap/libft'
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn/libft'
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_atoi.c -o objs/srcs/ft_atoi.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_bzero.c -o objs/srcs/ft_bzero.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_calloc.c -o objs/srcs/ft_calloc.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_isalnum.c -o objs/srcs/ft_isalnum.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_isalpha.c -o objs/srcs/ft_isalpha.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_isascii.c -o objs/srcs/ft_isascii.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_isdigit.c -o objs/srcs/ft_isdigit.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_isprint.c -o objs/srcs/ft_isprint.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_itoa.c -o objs/srcs/ft_itoa.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstadd_back.c -o objs/srcs/ft_lstadd_back.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstadd_front.c -o objs/srcs/ft_lstadd_front.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstclear.c -o objs/srcs/ft_lstclear.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstdelone.c -o objs/srcs/ft_lstdelone.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstiter.c -o objs/srcs/ft_lstiter.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstlast.c -o objs/srcs/ft_lstlast.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstmap.c -o objs/srcs/ft_lstmap.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstnew.c -o objs/srcs/ft_lstnew.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_lstsize.c -o objs/srcs/ft_lstsize.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_memchr.c -o objs/srcs/ft_memchr.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_memcmp.c -o objs/srcs/ft_memcmp.o
  
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
- 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-gcc -c  ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-ar rcs libft.a ft_memset.o ft_bzero.o ft_memcpy.o ft_striteri.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strnstr.o ft_strncmp.o ft_atoi.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
-echo "libft.a created"
-ranlib libft.a
-echo "libft.a indexed"
-make: Leaving directory `/Users/jechekao/Desktop/cursus/push_swap/libft'
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_memcpy.c -o objs/srcs/ft_memcpy.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_memmove.c -o objs/srcs/ft_memmove.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_memset.c -o objs/srcs/ft_memset.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_printf.c -o objs/srcs/ft_printf.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_putchar_fd.c -o objs/srcs/ft_putchar_fd.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_putendl_fd.c -o objs/srcs/ft_putendl_fd.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_putnbr_fd.c -o objs/srcs/ft_putnbr_fd.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_putstr_fd.c -o objs/srcs/ft_putstr_fd.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_split.c -o objs/srcs/ft_split.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strchr.c -o objs/srcs/ft_strchr.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strcmp.c -o objs/srcs/ft_strcmp.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strdup.c -o objs/srcs/ft_strdup.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_striteri.c -o objs/srcs/ft_striteri.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strjoin.c -o objs/srcs/ft_strjoin.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strlcat.c -o objs/srcs/ft_strlcat.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strlcpy.c -o objs/srcs/ft_strlcpy.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strlen.c -o objs/srcs/ft_strlen.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strmapi.c -o objs/srcs/ft_strmapi.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strncmp.c -o objs/srcs/ft_strncmp.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strnstr.c -o objs/srcs/ft_strnstr.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strrchr.c -o objs/srcs/ft_strrchr.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_strtrim.c -o objs/srcs/ft_strtrim.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_substr.c -o objs/srcs/ft_substr.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_tolower.c -o objs/srcs/ft_tolower.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/ft_toupper.c -o objs/srcs/ft_toupper.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/get_next_line.c -o objs/srcs/get_next_line.o
+mkdir -p objs/srcs
+gcc -Wall -Werror -Wextra -g3 -Iincs -c srcs/get_next_line_utils.c -o objs/srcs/get_next_line_utils.o
+ar rc libft.a objs/srcs/ft_atoi.o objs/srcs/ft_bzero.o objs/srcs/ft_calloc.o objs/srcs/ft_isalnum.o objs/srcs/ft_isalpha.o objs/srcs/ft_isascii.o objs/srcs/ft_isdigit.o objs/srcs/ft_isprint.o objs/srcs/ft_itoa.o objs/srcs/ft_lstadd_back.o objs/srcs/ft_lstadd_front.o objs/srcs/ft_lstclear.o objs/srcs/ft_lstdelone.o objs/srcs/ft_lstiter.o objs/srcs/ft_lstlast.o objs/srcs/ft_lstmap.o objs/srcs/ft_lstnew.o objs/srcs/ft_lstsize.o objs/srcs/ft_memchr.o objs/srcs/ft_memcmp.o objs/srcs/ft_memcpy.o objs/srcs/ft_memmove.o objs/srcs/ft_memset.o objs/srcs/ft_printf.o objs/srcs/ft_putchar_fd.o objs/srcs/ft_putendl_fd.o objs/srcs/ft_putnbr_fd.o objs/srcs/ft_putstr_fd.o objs/srcs/ft_split.o objs/srcs/ft_strchr.o objs/srcs/ft_strcmp.o objs/srcs/ft_strdup.o objs/srcs/ft_striteri.o objs/srcs/ft_strjoin.o objs/srcs/ft_strlcat.o objs/srcs/ft_strlcpy.o objs/srcs/ft_strlen.o objs/srcs/ft_strmapi.o objs/srcs/ft_strncmp.o objs/srcs/ft_strnstr.o objs/srcs/ft_strrchr.o objs/srcs/ft_strtrim.o objs/srcs/ft_substr.o objs/srcs/ft_tolower.o objs/srcs/ft_toupper.o objs/srcs/get_next_line.o objs/srcs/get_next_line_utils.o
+printf "\033[0;32m💬 Libft is compiled ! 🍀\033[0m\n"
+make: Leaving directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn/libft'
  

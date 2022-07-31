@@ -1,9 +1,9 @@
 make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/jechekao/Desktop/mlx_learn'
+make: Entering directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn'
 make -C mlx/ all
  
 printf "\033[0;33m💬 File 'mlx/libmlx.a' is created ! 🍀\033[0m\n"
 make -C libft/ all
 printf "\033[0;33m💬 File 'libft/libft.a' is created ! 🍀\033[0m\n"
-make: Leaving directory `/Users/jechekao/Desktop/mlx_learn'
+make: Leaving directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn'
  

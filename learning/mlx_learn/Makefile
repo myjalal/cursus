@@ -33,7 +33,7 @@ subsystem	:
 				@printf "\033[0;33m💬 File '${LIB}' is created ! 🍀\033[0m\n"
 
 ${NAME}		:	${OBJS_FILES}
-				${CC} ${CFLAGS} ${OBJS_FILES} ${LIB} ${MLXFLAGS} ${MLX} -o ${NAME}
+				@${CC} ${CFLAGS} ${OBJS_FILES} ${LIB} ${MLXFLAGS} ${MLX} -o ${NAME}
 				@printf "\033[0;32m💬 File 'so_long' is created ! 🍀\033[0m\n"
 
 clean		:	

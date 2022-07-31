@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 17:16:37 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/30 17:16:38 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/31 19:04:15 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define SO_LONG_H
 
 /*****LIBRARIES*****/
-# include "../libft/libft.h"
+# include "../libft/incs/libft.h"
 # include "../mlx/mlx.h"
 
 # include <fcntl.h> // open
@@ -23,6 +23,7 @@
 /*****BUFFER_SIZE*****/
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
+#  define MLX_ERROR 1
 # endif
 
 /*****STRUCTURES*****/
@@ -45,7 +46,7 @@ typedef struct s_img
 	void	*road;
 	void	*coin;
 	void	*exit;
-}
+}	t_img;
 
 typedef struct s_map
 {
@@ -56,7 +57,9 @@ typedef struct s_map
 	int		h;
 	int		x;
 	int		y;
-}t_map;
+}	t_map;
+
+void	map_checker(char *file);
 
 #endif
 

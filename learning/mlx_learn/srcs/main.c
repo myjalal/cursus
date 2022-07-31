@@ -6,38 +6,83 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 19:41:43 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/30 17:17:01 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/07/31 19:22:34 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
+#include <string.h>
 
 
 
-void			param_init(t_frame *param, void *mlx, void *win)
+/*int	key_print(int key, t_mlx *mlx)
 {
-	param->mlx = mlx;
-	param->win = win;
-	param->x = 250;
-	param->y = 250;
-}
+	if (key == UP)
+	{
+		if (mlx->h >= 10)
+			mlx->h = mlx->h - 10;
+	}
+	else if (key == DOWN)
+	{
+		if (mlx->h <= 490)
+			mlx->h = mlx->h + 10;
+	}
+	else if (key == LEFT)
+	{
+		if (mlx->w >= 10)
+			mlx->w = mlx->w - 10;
+	}
+	else if (key == RIGHT)
+	{
+		if (mlx->w <= 490)
+			mlx->w = mlx->w + 10;
+	}
+	else if (key == ESC)
+		exit (0);
+	ft_printf("h = %d, w = %d\n", mlx->h, mlx->w);
+	mlx_pixel_put(mlx->mlx, mlx->win, mlx->w, mlx->h, 0xFFFFFF);
+	return (0);
+}*/
 
 
-int main(int argc, char **agrv)
+int main(int argc, char **argv)
 {
-	t_map	map;
+/*	t_map	map;
 	t_mlx	mlx;
-	int		w; //width
-	int		h; //hight
+	t_img	img;
+	int		i = 200; //width*/
+	int		i ; //hight
 	char	*file;
-	
+
 	file = argv[1];
-	mlx_ptr = mlx_init();
-	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "so_long");
-	param_init(param, mlx_prt, win_ptr);
+	if (argc < 2)
+	{
+		ft_printf("No arguments found\n");
+		exit(EXIT_FAILURE);
+	}
 	
-	mlx_pixel_put(mlx_ptr, win_ptr, 250, 250, 0xFFFFFF);
-	mlx_key_hook(win_ptr, key_print, (void *)0);
-	mlx_loop(mlx_ptr);	
+	i = ft_strlen(file) - 4;
+	if (ft_strcmp(".ber", &file[i]))
+		printf("ERROR\n");
+	else
+		ft_printf("No errors, %s", &file[i]);
 	
+	//ft_printf("\n%d\n",ft_strlen(argv[1]));
+	//map_checker (argv[1]);
+	/*mlx.mlx = mlx_init();
+	mlx.win = mlx_new_window(mlx.mlx, 500, 500, "so_long");
+	//ft_printf("h = %d, w = %d\n", mlx.h, mlx.w);
+	//mlx_key_hook(mlx.win, key_print, &mlx);
+	while (i <= mlx.h)
+	{
+		j = 200;
+		while (j <= mlx.w)
+			mlx_pixel_put(mlx.mlx, mlx.win, j++, i, 0xFFFFFF);
+		++i;
+	}
+	//mlx_pixel_put(mlx.mlx, mlx.win, 250, 250, 0xFFFFFF);
+	
+	mlx_loop(mlx.mlx);	*/
+	
+	return (0);
 }

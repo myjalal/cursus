@@ -8,51 +8,55 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Fri Jul  1 14:16:58 2022
+# Make data base, printed on Sun Jul 31 19:04:51 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
- 
-# makefile (from `Makefile', line 17)
-OBJ = $(FILES:.c=.o)
-# makefile (from `Makefile', line 13)
-BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `Makefile', line 5)
+INCLUDES = incs
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/jechekao/Desktop/cursus/push_swap/libft
+CURDIR := /Users/jechekao/Desktop/cursus/learning/mlx_learn/libft
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 19)
-RM = rm -f
 # environment
-VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"f62d0d328ea2a469bad3c39b06263023.fr","_translationsConfigFile":"/Users/jechekao/Library/Application Support/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/tcf.json","_cacheRoot":"/Users/jechekao/Library/Application Support/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr","_resolvedLanguagePackCoreLocation":"/Users/jechekao/Library/Application Support/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/Users/jechekao/Library/Application Support/Code/clp/f62d0d328ea2a469bad3c39b06263023.fr/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"575d78304484aa5fa0cbb32d34fd883d.fr","_translationsConfigFile":"/Users/jechekao/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/tcf.json","_cacheRoot":"/Users/jechekao/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr","_resolvedLanguagePackCoreLocation":"/Users/jechekao/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/Users/jechekao/Library/Application Support/Code/clp/575d78304484aa5fa0cbb32d34fd883d.fr/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
-# makefile (from `Makefile', line 3)
-CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 11)
+CFLAGS = -Wall -Werror -Wextra -g3
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 7)
+SRCS = ${wildcard srcs/*.c}
+# makefile (from `Makefile', line 3)
+SRCSDIR = srcs
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# makefile (from `Makefile', line 18)
+OBJS = $(SRCS:%.c=$(OBJSDIR)/%.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-013e70fa-adaf-4c86-8f1c-fe17f23b5df6.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n000cb080032r2/T/vscode-ipc-0c979b58-83d3-449b-ab48-91b157f59387.sock
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin
+PATH = /Users/jechekao/.brew/bin:/Users/jechekao/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Apple/usr/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+LaunchInstanceID = EBE8AB6C-AF70-45BF-BC71-90CFF490D60D
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -60,21 +64,21 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.seSZreuEGx/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ykjoBAomXW/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
+HOMEBREW_TEMP = /tmp/jechekao/Homebrew/Temp
+# environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /Users/jechekao/Desktop/cursus/push_swap/libft
+PWD = /Users/jechekao/Desktop/cursus/learning/mlx_learn/libft
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/jechekao
-# makefile (from `Makefile', line 18)
-BONUS_OBJ = $(BONUS_FILES:.c=.o)
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
@@ -89,6 +93,8 @@ ZSH = /Users/jechekao/.oh-my-zsh
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `Makefile', line 4)
+OBJSDIR = objs
 # environment
 XPC_FLAGS = 0x0
 # default
@@ -96,14 +102,18 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
+HOMEBREW_CACHE = /tmp/jechekao/Homebrew/Caches
+# environment
 SHLVL = 1
+# makefile (from `Makefile', line 10)
+CC = gcc
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = jechekao
 # makefile
 .DEFAULT_GOAL := all
-# makefile (from `Makefile', line 1)
+# makefile (from `Makefile', line 2)
 NAME = libft.a
 # environment
 LESS = -R
@@ -126,13 +136,15 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.1140
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000001.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
 __CF_USER_TEXT_ENCODING = 0x18B02:0x0:0x52
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
@@ -141,6 +153,8 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a7
 # automatic
 ^F = $(notdir $^)
 # default
@@ -152,11 +166,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 56920
-# makefile (from `Makefile', line 5)
-FILES = ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
+VSCODE_PID = 92055
 # variable set hash-table stats:
-# Load=71/1024=7%, Rehash=0, Collisions=5/110=5%
+# Load=77/1024=8%, Rehash=0, Collisions=7/110=6%
 
 # Pattern-specific Variable Values
 
@@ -164,9 +176,10 @@ FILES = ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.
 
 # Directories
 
-# . (device 16777225, inode 406501): 49 files, no impossibilities.
+# . (device 16777230, inode 916490): 9 files, no impossibilities.
+# srcs (device 16777230, inode 966317): 50 files, no impossibilities.
 
-# 49 files, no impossibilities in 1 directories.
+# 59 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -174,34 +187,48 @@ FILES = ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.
 
 # Files
 
-ft_strmapi.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+# Not a target:
+srcs/ft_strlcpy.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 13:23:25
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objs/srcs/ft_striteri.o: srcs/ft_striteri.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_striteri'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_strncmp.c:
+srcs/ft_lstmap.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 13:23:36
+#  Last modified 2021-11-13 20:07:49
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_memchr.c:
+srcs/ft_strncmp.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 13:24:34
+#  Last modified 2022-07-31 17:40:03
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_isalnum.c:
+srcs/ft_isalnum.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 12:58:46
 #  File has been updated.
@@ -209,45 +236,49 @@ ft_isalnum.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-normi: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_lstnew.o: srcs/ft_lstnew.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 48):
-	norminette $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_lstnew'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
-all,:
+# Not a target:
+srcs/ft_strcmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 17:40:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_lstadd_front.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:53:58
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: libft.a
 #  Phony target (prerequisite of .PHONY).
+#  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_lstadd_front.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
- 
-ft_memcpy.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_itoa.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_strdup.c:
+srcs/ft_strdup.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 12:58:23
 #  File has been updated.
@@ -256,46 +287,22 @@ ft_strdup.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_lstdelone.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ft_memcmp.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_strlen.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_memmove.c:
+srcs/ft_lstdelone.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 13:24:43
+#  Last modified 2021-11-13 16:35:15
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_isdigit.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+.PHONY: all clean fclean re test
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
 
 # Not a target:
-ft_strchr.c:
+srcs/ft_strchr.c:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 12:58:05
 #  File has been updated.
@@ -303,25 +310,34 @@ ft_strchr.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-all: libft.a
-#  Command-line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
-
-ft_memchr.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_putnbr_fd.o: srcs/ft_putnbr_fd.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_putnbr_fd'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/get_next_line_utils.o: srcs/get_next_line_utils.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/get_next_line_utils'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_toupper.c:
+srcs/ft_toupper.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 13:24:03
 #  File has been updated.
@@ -329,36 +345,47 @@ ft_toupper.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_memset.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_calloc.o: srcs/ft_calloc.c
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: `'
-#  File does not exist.
+#  Implicit/static pattern stem: `srcs/ft_calloc'
+#  Last modified 2022-07-31 18:59:41
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := ft_memset.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-# automatic
-# | := 
-# automatic
-# < := ft_memset.c
-# automatic
-# ^ := ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-# automatic
-# ? := ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=3/12=25%
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_substr.o: srcs/ft_substr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_substr'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_isascii.o: srcs/ft_isascii.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_isascii'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_strnstr.c:
+srcs/ft_strnstr.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:44:44
 #  File has been updated.
@@ -367,7 +394,7 @@ ft_strnstr.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_putstr_fd.c:
+srcs/ft_putstr_fd.c:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-29 17:43:25
 #  File has been updated.
@@ -376,79 +403,58 @@ ft_putstr_fd.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-main.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
- 
-ft_tolower.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_strrchr.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_strjoin.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_split.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_putchar_fd.c:
+srcs/get_next_line.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 12:57:17
+#  Last modified 2022-01-30 14:22:10
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_strlcat.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_isalpha.o: srcs/ft_isalpha.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_atoi.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-29 19:48:19
+#  Implicit/static pattern stem: `srcs/ft_isalpha'
+#  Last modified 2022-07-31 18:59:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_lstsize.o: srcs/ft_lstsize.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstsize'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
 
 git:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 57):
+#  commands to execute (from `Makefile', line 43):
 	git add .
 	git commit -m "$m"
 	git push origin main
 	
+
+# Not a target:
+srcs/ft_atoi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 15:32:55
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .SUFFIXES:
@@ -457,7 +463,68 @@ git:
 #  File has not been updated.
 
 # Not a target:
-ft_strtrim.c:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 18:59:29
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_putchar_fd.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:57:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_isascii.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:58:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+libft.a: objs/srcs/ft_atoi.o objs/srcs/ft_bzero.o objs/srcs/ft_calloc.o objs/srcs/ft_isalnum.o objs/srcs/ft_isalpha.o objs/srcs/ft_isascii.o objs/srcs/ft_isdigit.o objs/srcs/ft_isprint.o objs/srcs/ft_itoa.o objs/srcs/ft_lstadd_back.o objs/srcs/ft_lstadd_front.o objs/srcs/ft_lstclear.o objs/srcs/ft_lstdelone.o objs/srcs/ft_lstiter.o objs/srcs/ft_lstlast.o objs/srcs/ft_lstmap.o objs/srcs/ft_lstnew.o objs/srcs/ft_lstsize.o objs/srcs/ft_memchr.o objs/srcs/ft_memcmp.o objs/srcs/ft_memcpy.o objs/srcs/ft_memmove.o objs/srcs/ft_memset.o objs/srcs/ft_printf.o objs/srcs/ft_putchar_fd.o objs/srcs/ft_putendl_fd.o objs/srcs/ft_putnbr_fd.o objs/srcs/ft_putstr_fd.o objs/srcs/ft_split.o objs/srcs/ft_strchr.o objs/srcs/ft_strcmp.o objs/srcs/ft_strdup.o objs/srcs/ft_striteri.o objs/srcs/ft_strjoin.o objs/srcs/ft_strlcat.o objs/srcs/ft_strlcpy.o objs/srcs/ft_strlen.o objs/srcs/ft_strmapi.o objs/srcs/ft_strncmp.o objs/srcs/ft_strnstr.o objs/srcs/ft_strrchr.o objs/srcs/ft_strtrim.o objs/srcs/ft_substr.o objs/srcs/ft_tolower.o objs/srcs/ft_toupper.o objs/srcs/get_next_line.o objs/srcs/get_next_line_utils.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 23):
+	@ar rc $(NAME) $(OBJS)
+	@printf "\033[0;32m💬 Libft is compiled ! 🍀\033[0m\n"
+	
+
+objs/srcs/ft_strlcpy.o: srcs/ft_strlcpy.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strlcpy'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+test: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 41):
+	./$(NAME)
+	
+
+# Not a target:
+srcs/ft_strtrim.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:51:11
 #  File has been updated.
@@ -465,53 +532,96 @@ ft_strtrim.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+objs/srcs/ft_lstmap.o: srcs/ft_lstmap.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstmap'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_strncmp.o: srcs/ft_strncmp.c
+ 
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strncmp'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_isalnum.o: srcs/ft_isalnum.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_isalnum'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
 # Not a target:
-Makefile:
+srcs/ft_lstadd_back.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 14:49:17
+#  Last modified 2021-11-13 12:12:22
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_isprint.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_strcmp.o: srcs/ft_strcmp.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-libft.a: ft_memset.o ft_bzero.o ft_memcpy.o ft_striteri.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_strlcpy.o ft_strlcat.o ft_strchr.o ft_strrchr.o ft_strnstr.o ft_strncmp.o ft_atoi.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o
-#  Implicit rule search has not been done.
-#  File does not exist.
+#  Implicit/static pattern stem: `srcs/ft_strcmp'
+#  Last modified 2022-07-31 18:59:42
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
-#  commands to execute (from `Makefile', line 24):
-	@ar rcs $@ $(OBJ)
-	@echo "$(NAME) created"
-	@ranlib $@
-	@echo "$(NAME) indexed"
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_lstadd_front.o: srcs/ft_lstadd_front.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstadd_front'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_strdup.o: srcs/ft_strdup.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strdup'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_lstadd_back.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-test: main.c libft.a bonus
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 54):
-	@gcc $(FLAG) main.c $(NAME) && ./a.out
-	
-
-# Not a target:
-ft_putendl_fd.c:
+srcs/ft_putendl_fd.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:59:11
 #  File has been updated.
@@ -519,8 +629,21 @@ ft_putendl_fd.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+objs/srcs/ft_lstdelone.o: srcs/ft_lstdelone.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstdelone'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
 # Not a target:
-ft_strmapi.c:
+srcs/ft_strmapi.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-12 17:00:16
 #  File has been updated.
@@ -529,30 +652,55 @@ ft_strmapi.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_lstiter.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+srcs/ft_lstiter.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 16:27:13
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_striteri.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_memmove.o: srcs/ft_memmove.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_memmove'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
-ft_bzero.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_strchr.o: srcs/ft_strchr.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_strchr'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_toupper.o: srcs/ft_toupper.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_toupper'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_memcpy.c:
- 
+srcs/ft_memcpy.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 13:24:39
 #  File has been updated.
@@ -561,7 +709,7 @@ ft_memcpy.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_itoa.c:
+srcs/ft_itoa.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-12 16:13:10
 #  File has been updated.
@@ -569,14 +717,8 @@ ft_itoa.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-fclean,:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
 # Not a target:
-ft_memcmp.c:
+srcs/ft_memcmp.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:18:14
 #  File has been updated.
@@ -585,7 +727,7 @@ ft_memcmp.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_strlen.c:
+srcs/ft_strlen.c:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-29 16:54:21
 #  File has been updated.
@@ -593,66 +735,75 @@ ft_strlen.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-.PHONY: all, clean, fclean, re
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-ft_isdigit.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-13 12:58:54
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-normib: ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 51):
-	norminette $(BONUS_FILES)
-	
-
-# Not a target:
-ft_isalpha.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-13 12:58:49
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-bonus: ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 33):
-	@gcc -c $(FLAG) $(BONUS_FILES)
-	@ar rcs $(NAME) $(BONUS_OBJ)
-	@ranlib $(NAME)
-	
-
-ft_putnbr_fd.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
 fclean: clean
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 42):
-	@$(RM) $(NAME)
-	@echo "$(NAME) deleted"
+#  commands to execute (from `Makefile', line 35):
+	@rm -rf $(NAME)
+	@printf "\033[0;31m💬 '${NAME}' is deleted ! 👻\033[0m\n"
+	
+
+objs/srcs/ft_strnstr.o: srcs/ft_strnstr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strnstr'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_putstr_fd.o: srcs/ft_putstr_fd.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_putstr_fd'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_memset.c:
+srcs/ft_lstlast.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:54:45
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_memchr.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 13:24:34
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objs/srcs/get_next_line.o: srcs/get_next_line.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/get_next_line'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+# Not a target:
+srcs/ft_memset.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 13:24:51
 #  File has been updated.
@@ -660,24 +811,22 @@ ft_memset.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_calloc.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_putchar_fd.o: srcs/ft_putchar_fd.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_substr.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_putchar_fd'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_tolower.c:
+srcs/ft_tolower.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 13:24:00
 #  File has been updated.
@@ -685,8 +834,21 @@ ft_tolower.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+objs/srcs/ft_atoi.o: srcs/ft_atoi.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_atoi'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
 # Not a target:
-ft_strrchr.c:
+srcs/ft_strrchr.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-12 16:13:10
 #  File has been updated.
@@ -695,7 +857,7 @@ ft_strrchr.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_strjoin.c:
+srcs/ft_strjoin.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:46:32
 #  File has been updated.
@@ -704,36 +866,62 @@ ft_strjoin.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_split.c:
-#  Implicit rule search has been done.
-#  Last modified 2022-05-29 16:04:47
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
-ft_lstclear.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ft_isalpha.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-ft_strlcat.c:
+srcs/ft_split.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 16:51:17
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_lstclear.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:54:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_printf.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-13 14:20:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_memmove.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 13:24:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objs/srcs/ft_strtrim.o: srcs/ft_strtrim.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strtrim'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+# Not a target:
+srcs/ft_strlcat.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 15:54:25
 #  File has been updated.
@@ -741,60 +929,17 @@ ft_strlcat.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Not a target:
-ft_lstmap.c:
+objs/srcs/ft_lstadd_back.o: srcs/ft_lstadd_back.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-clean,:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-ft_bzero.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-13 12:58:36
+#  Implicit/static pattern stem: `srcs/ft_lstadd_back'
+#  Last modified 2022-07-31 18:59:41
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-ft_strlcpy.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_isprint.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-12 16:13:10
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
- 
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
-ft_isascii.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-13 12:58:51
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-ft_strncmp.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 re: fclean all
@@ -803,25 +948,145 @@ re: fclean all
 #  File does not exist.
 #  File has not been updated.
 
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 38):
-	@$(RM) $(OBJ) $(BONUS_OBJ)
-	@echo "OBJ deleted"
-	
+# Not a target:
+srcs/ft_isdigit.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:58:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_isalnum.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_putendl_fd.o: srcs/ft_putendl_fd.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_putendl_fd'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_striteri.c:
+srcs/ft_bzero.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:58:36
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 31):
+	@rm -rf $(OBJSDIR)
+	@printf "\033[0;34m💬 Files in '${OBJSDIR}' are deleted ! 👻\033[0m\n"
+	
+
+objs/srcs/ft_strmapi.o: srcs/ft_strmapi.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strmapi'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_lstiter.o: srcs/ft_lstiter.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstiter'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+# Not a target:
+srcs/ft_isprint.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-12 16:13:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_lstsize.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:55:18
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objs/srcs/ft_memcpy.o: srcs/ft_memcpy.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_memcpy'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_itoa.o: srcs/ft_itoa.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_itoa'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_memcmp.o: srcs/ft_memcmp.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_memcmp'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_strlen.o: srcs/ft_strlen.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strlen'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+# Not a target:
+srcs/ft_striteri.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-12 18:48:38
 #  File has been updated.
@@ -829,70 +1094,83 @@ ft_striteri.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_isascii.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_isdigit.o: srcs/ft_isdigit.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_isdigit'
+#  Last modified 2022-07-31 18:59:41
+ 
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
-ft_strdup.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_lstlast.o: srcs/ft_lstlast.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_lstlast'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
-ft_memmove.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_memchr.o: srcs/ft_memchr.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_strchr.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_lstnew.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ft_toupper.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_strnstr.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-ft_putstr_fd.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_memchr'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_putnbr_fd.c:
+srcs/ft_lstnew.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-13 12:14:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+objs/srcs/ft_memset.o: srcs/ft_memset.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_memset'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_tolower.o: srcs/ft_tolower.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_tolower'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+# Not a target:
+srcs/ft_putnbr_fd.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 12:57:28
 #  File has been updated.
@@ -900,8 +1178,82 @@ ft_putnbr_fd.c:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+objs/srcs/ft_strrchr.o: srcs/ft_strrchr.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strrchr'
+#  Last modified 2022-07-31 18:59:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_strjoin.o: srcs/ft_strjoin.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_strjoin'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_split.o: srcs/ft_split.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_split'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_lstclear.o: srcs/ft_lstclear.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_lstclear'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_printf.o: srcs/ft_printf.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_printf'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
 # Not a target:
-ft_calloc.c:
+srcs/get_next_line_utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-30 14:22:10
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+srcs/ft_calloc.c:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-13 12:58:40
 #  File has been updated.
@@ -910,70 +1262,64 @@ ft_calloc.c:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
-ft_substr.c:
+srcs/ft_substr.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 16:57:16
+#  Last modified 2022-07-24 13:45:04
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_putchar_fd.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_strlcat.o: srcs/ft_strlcat.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
- 
-ft_atoi.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_strlcat'
+#  Last modified 2022-07-31 18:59:42
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # Not a target:
-ft_lstsize.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ft_strtrim.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
-	
-
-# Not a target:
-ft_lstlast.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-ft_strlcpy.c:
+srcs/ft_isalpha.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-13 13:23:25
+#  Last modified 2021-11-13 12:58:49
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-ft_putendl_fd.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strlcpy.c ft_strlcat.c ft_strchr.c ft_strrchr.c ft_strnstr.c ft_strncmp.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+objs/srcs/ft_bzero.o: srcs/ft_bzero.c
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 30):
-	@gcc -c $(FLAG) $(FILES)
+#  Implicit/static pattern stem: `srcs/ft_bzero'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
+	
+
+objs/srcs/ft_isprint.o: srcs/ft_isprint.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `srcs/ft_isprint'
+#  Last modified 2022-07-31 18:59:41
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 27):
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $@
 	
 
 # files hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=156/1362=11%
+# Load=105/1024=10%, Rehash=0, Collisions=13/222=6%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -985,6 +1331,6 @@ ft_putendl_fd.o: ft_memset.c ft_bzero.c ft_memcpy.c ft_striteri.c ft_memmove.c f
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Jul  1 14:16:58 2022
+# Finished Make data base on Sun Jul 31 19:04:51 2022
 
  
