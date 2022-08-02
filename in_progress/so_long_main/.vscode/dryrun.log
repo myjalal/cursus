@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/jechekao/Desktop/cursus/in_progress/so_long_main'
 make -C minilibx_opengl_20191021/ all
- 
 printf "\033[0;33m💬 File 'minilibx_opengl_20191021/libmlx.a' is created ! 🍀\033[0m\n"
 make -C libft/ all
 printf "\033[0;33m💬 File 'libft/libft.a' is created ! 🍀\033[0m\n"

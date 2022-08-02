@@ -1,9 +1,13 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn'
-make -C mlx/ all
  
+make -C mlx/ all
 printf "\033[0;33m💬 File 'mlx/libmlx.a' is created ! 🍀\033[0m\n"
 make -C libft/ all
 printf "\033[0;33m💬 File 'libft/libft.a' is created ! 🍀\033[0m\n"
+gcc -Wall -Werror -Wextra -g -fsanitize=address -I include/   -c -o srcs/main.o srcs/main.c
+gcc -Wall -Werror -Wextra -g -fsanitize=address -I include/   -c -o srcs/map_check.o srcs/map_check.c
+gcc -Wall -Werror -Wextra -g -fsanitize=address -I include/ srcs/main.o srcs/map_check.o libft/libft.a -L mlx/ -lmlx -framework OpenGL -framework AppKit mlx/libmlx.a -o so_long
+printf "\033[0;32m💬 File 'so_long' is created ! 🍀\033[0m\n"
 make: Leaving directory `/Users/jechekao/Desktop/cursus/learning/mlx_learn'
  

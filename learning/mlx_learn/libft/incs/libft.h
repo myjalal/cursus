@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:32:49 by  jechekao         #+#    #+#             */
-/*   Updated: 2022/07/31 19:07:32 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/08/01 17:45:41 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int				ft_tolower(int c);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
+// strcmp from i to NULL [strFROMcmp]
+int				ft_strfcmp(const char	*s1, const char	*s2, size_t n);
 int				ft_strcmp(const char	*s1, const char	*s2);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);

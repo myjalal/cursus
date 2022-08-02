@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 19:41:43 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/31 19:22:34 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/08/01 18:48:07 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,14 @@
 	mlx_pixel_put(mlx->mlx, mlx->win, mlx->w, mlx->h, 0xFFFFFF);
 	return (0);
 }*/
+void	so_long(char *file)
+{
+	//t_map	mlx;
+	t_map	map;
+	//t_map	img;
 
+	map_checker(&map, file);
+}
 
 int main(int argc, char **argv)
 {
@@ -51,22 +58,12 @@ int main(int argc, char **argv)
 	t_mlx	mlx;
 	t_img	img;
 	int		i = 200; //width*/
-	int		i ; //hight
-	char	*file;
-
-	file = argv[1];
 	if (argc < 2)
 	{
 		ft_printf("No arguments found\n");
 		exit(EXIT_FAILURE);
 	}
-	
-	i = ft_strlen(file) - 4;
-	if (ft_strcmp(".ber", &file[i]))
-		printf("ERROR\n");
-	else
-		ft_printf("No errors, %s", &file[i]);
-	
+	 so_long(argv[1]);
 	//ft_printf("\n%d\n",ft_strlen(argv[1]));
 	//map_checker (argv[1]);
 	/*mlx.mlx = mlx_init();

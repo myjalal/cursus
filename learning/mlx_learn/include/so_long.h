@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 17:16:37 by jechekao          #+#    #+#             */
-/*   Updated: 2022/07/31 19:04:15 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/08/01 20:18:10 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,16 +50,17 @@ typedef struct s_img
 
 typedef struct s_map
 {
-	t_mlx	mlx;
-	t_img	img;
-	char	**map;
-	int		w;
-	int		h;
-	int		x;
-	int		y;
+	t_mlx		mlx;
+	t_img		img;
+	char		**map;
+	size_t		w;
+	size_t		h;
+	int			x;
+	int			y;
 }	t_map;
 
-void	map_checker(char *file);
+void	map_checker(t_map *map, char *file);
+void	print(t_map *map);
 
 #endif
 

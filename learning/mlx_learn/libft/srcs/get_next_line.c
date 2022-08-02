@@ -6,7 +6,7 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 12:48:59 by jechekao          #+#    #+#             */
-/*   Updated: 2022/01/30 13:24:19 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/08/01 18:59:24 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*retline(char *buff)
 		return (NULL);
 	while (buff[i] && buff[i] != '\n')
 		i++;
-	line = ft_calloc(i + 2, sizeof(char));
+	line = ft_calloc_gnl(i + 2, sizeof(char));
 	i = 0;
 	while (buff[i] && buff[i] != '\n')
 	{
@@ -49,7 +49,7 @@ char	*nextline(char *buff)
 		free(buff);
 		return (NULL);
 	}
-	ret = ft_calloc((ft_strlen(buff) - i + 1), sizeof(char));
+	ret = ft_calloc_gnl((ft_strlen_gnl(buff) - i + 1), sizeof(char));
 	i++;
 	while (buff[i])
 		ret[j++] = buff[i++];
@@ -63,8 +63,8 @@ char	*readnewline(int fd, char *res)
 	int		ret;
 
 	if (!res)
-		res = ft_calloc(1, 1);
-	buff = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
+		res = ft_calloc_gnl(1, 1);
+	buff = ft_calloc_gnl(BUFFER_SIZE + 1, sizeof(char));
 	ret = 1;
 	while (ret > 0)
 	{
@@ -76,7 +76,7 @@ char	*readnewline(int fd, char *res)
 		}
 		buff[ret] = '\0';
 		res = join_free (res, buff);
-		if (ft_strchr(buff, '\n'))
+		if (ft_strchr_gnl(buff, '\n'))
 			break ;
 	}
 	free(buff);

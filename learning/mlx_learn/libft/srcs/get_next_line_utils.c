@@ -6,13 +6,13 @@
 /*   By: jechekao <jechekao@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/30 12:48:55 by jechekao          #+#    #+#             */
-/*   Updated: 2022/01/30 13:18:45 by jechekao         ###   ########.fr       */
+/*   Updated: 2022/08/01 18:59:17 by jechekao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_strchr(const char *string, int c)
+char	*ft_strchr_gnl(const char *string, int c)
 {
 	char	*str;
 
@@ -25,7 +25,7 @@ char	*ft_strchr(const char *string, int c)
 		return (NULL);
 }
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlen_gnl(const char *s)
 {
 	int	i;
 
@@ -35,15 +35,15 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-char	*ft_strjoin(char const	*s1, char const	*s2)
+char	*ft_strjoin_gnl(char const	*s1, char const	*s2)
 {
 	unsigned int	size;
 	unsigned int	i;
 	unsigned int	j;
 	char			*dst;
 
-	size = ft_strlen(s1) + ft_strlen(s2) + 1;
-	dst = ft_calloc(sizeof(char), size);
+	size = ft_strlen_gnl(s1) + ft_strlen_gnl(s2) + 1;
+	dst = ft_calloc_gnl(sizeof(char), size);
 	if (dst == NULL)
 		return (NULL);
 	i = 0;
@@ -62,7 +62,7 @@ char	*ft_strjoin(char const	*s1, char const	*s2)
 	return (dst);
 }
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc_gnl(size_t count, size_t size)
 {
 	unsigned int	total;
 	char			*dest;
@@ -85,7 +85,7 @@ char	*join_free(char *buffer, char *buf)
 {
 	char	*temp;
 
-	temp = ft_strjoin(buffer, buf);
+	temp = ft_strjoin_gnl(buffer, buf);
 	free(buffer);
 	return (temp);
 }
